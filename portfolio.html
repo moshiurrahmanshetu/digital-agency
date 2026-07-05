@@ -15,8 +15,7 @@
   <script>
     (function () {
       const savedTheme = localStorage.getItem("agency-theme");
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
+      document.documentElement.setAttribute("data-theme", savedTheme || "dark");
     })();
   </script>
 </head>
@@ -28,7 +27,7 @@
       <a href="index.html" class="logo-link">AVANT<span class="logo-dot"></span></a>
       <nav class="d-none d-lg-block">
         <ul class="nav-links-container">
-          <li><a href="index.html" class="nav-link-item">Home</a></li>
+          <li><a href="index.html" class="nav-link-item">Showcase</a></li>
           <li><a href="about.html" class="nav-link-item">About</a></li>
           <li><a href="services.html" class="nav-link-item">Services</a></li>
           <li><a href="portfolio.html" class="nav-link-item active">Portfolio</a></li>
@@ -59,7 +58,7 @@
   <div class="mobile-drawer">
     <button class="mobile-drawer-close" aria-label="Close mobile menu"><i class="bi bi-x-lg"></i></button>
     <div class="mobile-drawer-nav">
-      <a href="index.html" class="mobile-drawer-nav-link">Showcase</a>
+      <a href="index.html" class="mobile-drawer-nav-link">Home</a>
       <a href="about.html" class="mobile-drawer-nav-link">About Us</a>
       <a href="services.html" class="mobile-drawer-nav-link">Our Services</a>
       <a href="portfolio.html" class="mobile-drawer-nav-link active">Creative Portfolio</a>

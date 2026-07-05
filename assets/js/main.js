@@ -40,10 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
 function initThemeSystem() {
   const themeToggleButtons = document.querySelectorAll(".theme-toggle-btn");
   
-  // Apply saved theme or system default
+  // Apply saved theme or system default (defaulting to dark mode)
   const savedTheme = localStorage.getItem("agency-theme");
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+  const initialTheme = savedTheme || "dark";
   
   document.documentElement.setAttribute("data-theme", initialTheme);
   
