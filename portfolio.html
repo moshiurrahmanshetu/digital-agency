@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Portfolio - AVANT. Studio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/pages/portfolio.css">
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("agency-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo-link">AVANT<span class="logo-dot"></span></a>
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links-container">
+          <li><a href="index.html" class="nav-link-item">Showcase</a></li>
+          <li><a href="about.html" class="nav-link-item">About</a></li>
+          <li><a href="services.html" class="nav-link-item">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link-item active">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link-item">Pricing</a></li>
+          <li><a href="team.html" class="nav-link-item">Team</a></li>
+          <li><a href="faq.html" class="nav-link-item">FAQ</a></li>
+          <li><a href="blog.html" class="nav-link-item">Blog</a></li>
+          <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <div class="magnetic-wrap">
+          <button class="theme-toggle-btn" aria-label="Toggle theme mode">
+            <i class="bi bi-sun-fill theme-toggle-icon theme-toggle-icon-sun"></i>
+            <i class="bi bi-moon-stars-fill theme-toggle-icon theme-toggle-icon-moon"></i>
+          </button>
+        </div>
+        <a href="contact.html" class="btn-premium btn-premium-solid header-action-btn d-none d-sm-inline-flex">
+          Get in Touch <i class="bi bi-arrow-right"></i>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Open mobile menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <button class="mobile-drawer-close" aria-label="Close mobile menu"><i class="bi bi-x-lg"></i></button>
+    <div class="mobile-drawer-nav">
+      <a href="index.html" class="mobile-drawer-nav-link">Showcase</a>
+      <a href="about.html" class="mobile-drawer-nav-link">About Us</a>
+      <a href="services.html" class="mobile-drawer-nav-link">Our Services</a>
+      <a href="portfolio.html" class="mobile-drawer-nav-link active">Creative Portfolio</a>
+      <a href="pricing.html" class="mobile-drawer-nav-link">Plans & Pricing</a>
+      <a href="team.html" class="mobile-drawer-nav-link">Our Team</a>
+      <a href="faq.html" class="mobile-drawer-nav-link">FAQ</a>
+      <a href="blog.html" class="mobile-drawer-nav-link">Articles & News</a>
+      <a href="contact.html" class="mobile-drawer-nav-link">Contact Us</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <p class="mb-3 small">Let's build something exceptional together.</p>
+      <a href="contact.html" class="btn-premium btn-premium-solid w-100 py-3">Get in Touch <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- CONTENT WRAPPER -->
+  <div class="page-shell-wrapper">
+    <div class="ambient-bg-lights">
+      <div class="floating-blob blob-1"></div>
+      <div class="floating-blob blob-2"></div>
+    </div>
+
+    <!-- 01. PORTFOLIO HERO -->
+    <section class="portfolio-hero-section d-flex align-items-center" data-parallax-container id="portfolio-hero">
+      <div class="portfolio-hero-mesh"></div>
+      <div class="container position-relative" style="z-index: 5;">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 col-12 text-start">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="mb-4" data-aos="fade-down">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active text-gradient-primary" aria-current="page">Portfolio</li>
+              </ol>
+            </nav>
+
+            <!-- Kicker -->
+            <span class="text-kicker text-uppercase tracking-wider mb-3 d-inline-block" data-aos="fade-down" data-aos-delay="50">
+              Elite Exhibition
+            </span>
+
+            <!-- Title -->
+            <h1 class="h1-hero text-gradient-primary mb-4" data-aos="fade-up" data-aos-delay="100">
+              Transforming Ideas <br>into <span class="text-gradient-secondary">Digital Art</span>
+            </h1>
+
+            <!-- Description -->
+            <p class="lead text-secondary mb-5" data-aos="fade-up" data-aos-delay="150" style="font-size: 1.15rem; line-height: 1.75;">
+              Explore our curated showcase of bespoke brand identities, sub-100ms web applications, dynamic 3D motion systems, and high-converting performance marketing assets.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="magnetic-wrap">
+                <a href="contact.html" class="btn-premium btn-premium-solid">
+                  Start Your Project <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+              <div class="magnetic-wrap">
+                <a href="contact.html" class="btn-premium btn-premium-outline">
+                  Contact Us <i class="bi bi-chat-dots ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <!-- Creative Editorial Composition -->
+            <div class="portfolio-hero-composition" data-aos="zoom-in" data-aos-delay="250">
+              <div class="composition-grid-accent"></div>
+              
+              <!-- Core Editorial Image -->
+              <div class="hero-editorial-image-wrap">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Bespoke creative design composition" loading="lazy">
+              </div>
+
+              <!-- Floating Glass Card 1 -->
+              <div class="float-glass-card card-top-right">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="metric-icon-wrap bg-primary-glow text-primary">
+                    <i class="bi bi-patch-check-fill"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-0 text-gradient-primary small fw-bold">100/100 Speed</h6>
+                    <span class="text-muted" style="font-size: 0.65rem;">Lighthouse Certified</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Glass Card 2 -->
+              <div class="float-glass-card card-bottom-left">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="metric-icon-wrap bg-secondary-glow text-secondary">
+                    <i class="bi bi-award-fill"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-0 text-gradient-secondary small fw-bold">Design Award</h6>
+                    <span class="text-muted" style="font-size: 0.65rem;">Awwwards Site of the Day</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. FILTER NAVIGATION -->
+    <section class="portfolio-filter-container text-center" id="portfolio-filter-sec">
+      <div class="container">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">Curate Workspace</span>
+        <h2 class="h2-section text-gradient-primary mb-4" data-aos="fade-up">Explore Creative Arenas</h2>
+        
+        <div class="filter-nav-scroller mt-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-filter-nav">
+            <span class="filter-sliding-indicator"></span>
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+            <button class="filter-btn" data-filter="web-design">Web Design</button>
+            <button class="filter-btn" data-filter="development">Development</button>
+            <button class="filter-btn" data-filter="marketing">Marketing</button>
+            <button class="filter-btn" data-filter="motion">Motion</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. FEATURED PORTFOLIO GRID -->
+    <section class="portfolio-grid-section" id="portfolio-gallery">
+      <div class="container">
+        <!-- Masonry Grid with 12 items -->
+        <div class="portfolio-grid-page" id="masonry-items-grid">
+          
+          <!-- Item 1 - Branding -->
+          <div class="portfolio-col portfolio-aspect-tall" data-category="branding" data-aos="fade-up" data-aos-delay="50">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Aether Brand System" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">01</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">Branding</span>
+                    <h3 class="portfolio-hover-title">Aether Brand System</h3>
+                    <p class="portfolio-hover-desc">A gorgeous visual identity system configured for a premium next-gen fashion house.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">Branding</span>
+                    <span class="portfolio-year-tag">2026</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Aether Brand System</h4>
+                  <p class="portfolio-meta-desc">Reimagining sensory design guidelines and high-end physical assets.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 2 - UI/UX -->
+          <div class="portfolio-col portfolio-aspect-wide" data-category="ui-ux" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Nova Interactive Dashboard" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">02</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">UI/UX</span>
+                    <h3 class="portfolio-hover-title">Nova Energy Console</h3>
+                    <p class="portfolio-hover-desc">Real-time solar telemetry and power grid flow tracking dashboard.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">UI/UX</span>
+                    <span class="portfolio-year-tag">2026</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Nova Energy Console</h4>
+                  <p class="portfolio-meta-desc">High-density clean interface tracking over 40M active telemetry lines.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 3 - Web Design -->
+          <div class="portfolio-col portfolio-aspect-square" data-category="web-design" data-aos="fade-up" data-aos-delay="150">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Sonder Luxury Editorial" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">03</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">Web Design</span>
+                    <h3 class="portfolio-hover-title">Sonder Luxury Editorial</h3>
+                    <p class="portfolio-hover-desc">Immersive web editorial designed to support a flagship luxury design showcase.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">Web Design</span>
+                    <span class="portfolio-year-tag">2026</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Sonder Luxury Editorial</h4>
+                  <p class="portfolio-meta-desc">Combining asymmetric high-contrast layouts with fluid canvas transitions.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 4 - Development -->
+          <div class="portfolio-col portfolio-aspect-tall" data-category="development" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Helios SaaS Platform" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">04</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">Development</span>
+                    <h3 class="portfolio-hover-title">Helios SaaS Platform</h3>
+                    <p class="portfolio-hover-desc">A secure, scale-invariant cloud hosting dashboard with sub-10ms server responses.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">Development</span>
+                    <span class="portfolio-year-tag">2025</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Helios SaaS Platform</h4>
+                  <p class="portfolio-meta-desc">React frontend wired to resilient serverless microservice protocols.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 5 - Motion -->
+          <div class="portfolio-col portfolio-aspect-square" data-category="motion" data-aos="fade-up" data-aos-delay="250">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=80" alt="Aura Creative Motion" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">05</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">Motion</span>
+                    <h3 class="portfolio-hover-title">Aura Kinetic Motion</h3>
+                    <p class="portfolio-hover-desc">3D fluid simulation artwork mapping complex geometric light waves.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">Motion</span>
+                    <span class="portfolio-year-tag">2026</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Aura Kinetic Motion</h4>
+                  <p class="portfolio-meta-desc">Physics-based light and shadow particles compiled for social campaigns.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 6 - Marketing -->
+          <div class="portfolio-col portfolio-aspect-wide" data-category="marketing" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Vanguard Campaign" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">06</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">Marketing</span>
+                    <h3 class="portfolio-hover-title">Vanguard Campaign</h3>
+                    <p class="portfolio-hover-desc">Deploying programmatic customer acquisition pipelines yielding massive conversions.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">Marketing</span>
+                    <span class="portfolio-year-tag">2026</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Vanguard Launch</h4>
+                  <p class="portfolio-meta-desc">Dynamic multi-funnel landing loops generating high-velocity leads.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 7 - Branding -->
+          <div class="portfolio-col portfolio-aspect-square" data-category="branding" data-aos="fade-up" data-aos-delay="50">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" alt="Eclipse Cosmetics Design" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">07</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">Branding</span>
+                    <h3 class="portfolio-hover-title">Eclipse Cosmetics</h3>
+                    <p class="portfolio-hover-desc">Luxury physical skincare packaging, bottle structures, and typographic design.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">Branding</span>
+                    <span class="portfolio-year-tag">2026</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Eclipse Cosmetics</h4>
+                  <p class="portfolio-meta-desc">Creating sustainable luxury guidelines and visual systems.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 8 - Web Design -->
+          <div class="portfolio-col portfolio-aspect-tall" data-category="web-design" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80" alt="Krypton Web3 Portal" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">08</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">Web Design</span>
+                    <h3 class="portfolio-hover-title">Krypton Web3 Portal</h3>
+                    <p class="portfolio-hover-desc">A highly interactive digital gateway mapping tokenized node structures.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">Web Design</span>
+                    <span class="portfolio-year-tag">2025</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Krypton Web3 Portal</h4>
+                  <p class="portfolio-meta-desc">Dynamic shader grids tracking ledger states with luxury animations.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 9 - UI/UX -->
+          <div class="portfolio-col portfolio-aspect-wide" data-category="ui-ux" data-aos="fade-up" data-aos-delay="150">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Zephyr Mobile App" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">09</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">UI/UX</span>
+                    <h3 class="portfolio-hover-title">Zephyr Companion</h3>
+                    <p class="portfolio-hover-desc">Fluid gesture interactions and responsive system maps for a mobile application.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">UI/UX</span>
+                    <span class="portfolio-year-tag">2026</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Zephyr Companion</h4>
+                  <p class="portfolio-meta-desc">Minimalist mobile architecture incorporating native-feeling micro-events.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 10 - Development -->
+          <div class="portfolio-col portfolio-aspect-tall" data-category="development" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="Oasis E-commerce Core" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">10</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">Development</span>
+                    <h3 class="portfolio-hover-title">Oasis Commerce Engine</h3>
+                    <p class="portfolio-hover-desc">Headless cart API structures with localized catalog routing nodes.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">Development</span>
+                    <span class="portfolio-year-tag">2026</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Oasis Commerce Engine</h4>
+                  <p class="portfolio-meta-desc">Secure checkout pipelines and automated invoice creation paths.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 11 - Motion -->
+          <div class="portfolio-col portfolio-aspect-square" data-category="motion" data-aos="fade-up" data-aos-delay="250">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Apex Cinematic Reel" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">11</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">Motion</span>
+                    <h3 class="portfolio-hover-title">Apex Product Reel</h3>
+                    <p class="portfolio-hover-desc">High-fidelity 3D material showcase modeling premium audio equipment.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">Motion</span>
+                    <span class="portfolio-year-tag">2026</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Apex Product Reel</h4>
+                  <p class="portfolio-meta-desc">Photorealistic lighting and macro camera movements tracking texture lines.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 12 - Marketing -->
+          <div class="portfolio-col portfolio-aspect-wide" data-category="marketing" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-item" data-preview="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80">
+              <a href="portfolio-details.html" class="portfolio-card-link">
+                <div class="portfolio-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Stellar Growth System" class="portfolio-img" loading="lazy">
+                  <span class="portfolio-number">12</span>
+                  <div class="portfolio-hover-overlay"></div>
+                  <div class="portfolio-hover-details">
+                    <span class="portfolio-hover-category">Marketing</span>
+                    <h3 class="portfolio-hover-title">Stellar Growth Loop</h3>
+                    <p class="portfolio-hover-desc">AI-optimized targeting and story campaign systems driving solid ROI.</p>
+                    <div class="portfolio-hover-footer">
+                      <span class="portfolio-hover-link">View Project</span>
+                      <div class="portfolio-hover-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="portfolio-meta-header">
+                    <span class="portfolio-meta-category">Marketing</span>
+                    <span class="portfolio-year-tag">2025</span>
+                  </div>
+                  <h4 class="portfolio-meta-title">Stellar Growth Loop</h4>
+                  <p class="portfolio-meta-desc">Programmatic performance flows maximizing enterprise traffic reach.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. CASE STUDIES -->
+    <section class="case-studies-section" id="portfolio-case-studies">
+      <div class="container">
+        <div class="text-center mb-5 pb-3">
+          <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">The Deeper Stories</span>
+          <h2 class="h2-section text-gradient-primary" data-aos="fade-up">Elite Case Studies</h2>
+          <p class="lead text-secondary max-w-2xl mx-auto mt-2" data-aos="fade-up" data-aos-delay="100">
+            A comprehensive analytical look into our core strategic pipelines and creative technical completions.
+          </p>
+        </div>
+
+        <!-- Case Study 1 -->
+        <div class="case-study-showcase" data-aos="fade-up">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 col-12 text-start">
+              <span class="case-study-tag">Web Engineering</span>
+              <h3 class="font-display fw-bold h2 text-gradient-primary mb-4">Re-architecting Aether Storefront</h3>
+              <p class="text-secondary mb-4" style="line-height: 1.7;">
+                The legacy platform was bloated with visual template scripts causing critical slowdowns, resulting in cart dropouts and heavy conversion penalties.
+              </p>
+              
+              <div class="row g-4 mt-2">
+                <div class="col-sm-4">
+                  <h6 class="font-mono text-uppercase tracking-wider small text-gradient-primary mb-1">Challenge</h6>
+                  <p class="text-secondary small mb-0">Lighthouse speed below 45, leading to heavy mobile cart abandonment rates.</p>
+                </div>
+                <div class="col-sm-4">
+                  <h6 class="font-mono text-uppercase tracking-wider small text-gradient-secondary mb-1">Solution</h6>
+                  <p class="text-secondary small mb-0">Decoupled headless React architecture served directly from edge CDN lines.</p>
+                </div>
+                <div class="col-sm-4">
+                  <h6 class="font-mono text-uppercase tracking-wider small text-success mb-1">Result</h6>
+                  <p class="text-secondary small mb-0">Lighthouse score hits 100/100, bringing a major reduction in bounce rate.</p>
+                </div>
+              </div>
+
+              <div class="case-study-tech-pills">
+                <span class="case-study-tech-pill">React</span>
+                <span class="case-study-tech-pill">TypeScript</span>
+                <span class="case-study-tech-pill">Vite</span>
+                <span class="case-study-tech-pill">Tailwind CSS</span>
+                <span class="case-study-tech-pill">Edge Cache</span>
+              </div>
+
+              <!-- Metric Indicator -->
+              <div class="case-study-meta-metric">
+                <div class="case-study-metric-val text-success">
+                  <span class="stat-counter-number" data-target="320" data-suffix="%">0%</span>
+                </div>
+                <div class="case-study-metric-lbl">
+                  Growth in <br>Conversions
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6 col-12">
+              <div class="case-study-img-panel">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Aether storefront code re-architecture" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="case-study-showcase" data-aos="fade-up">
+          <div class="row align-items-center g-5 flex-lg-row-reverse">
+            <div class="col-lg-6 col-12 text-start">
+              <span class="case-study-tag">UI/UX Strategy</span>
+              <h3 class="font-display fw-bold h2 text-gradient-secondary mb-4">Nova Real-Time Energy Hub</h3>
+              <p class="text-secondary mb-4" style="line-height: 1.7;">
+                Designing a robust, pixel-perfect layout system to present solar telemetry data streams for massive state grids without overloading operator dashboards.
+              </p>
+              
+              <div class="row g-4 mt-2">
+                <div class="col-sm-4">
+                  <h6 class="font-mono text-uppercase tracking-wider small text-gradient-primary mb-1">Challenge</h6>
+                  <p class="text-secondary small mb-0">Operators overlooked critical grid spikes due to visual cluster and notification noise.</p>
+                </div>
+                <div class="col-sm-4">
+                  <h6 class="font-mono text-uppercase tracking-wider small text-gradient-secondary mb-1">Solution</h6>
+                  <p class="text-secondary small mb-0">High-contrast, dark dashboard utilizing visual hierarchy and progressive reveals.</p>
+                </div>
+                <div class="col-sm-4">
+                  <h6 class="font-mono text-uppercase tracking-wider small text-success mb-1">Result</h6>
+                  <p class="text-secondary small mb-0">Response speeds to critical incidents decreased to under 4 seconds.</p>
+                </div>
+              </div>
+
+              <div class="case-study-tech-pills">
+                <span class="case-study-tech-pill">Figma Proto</span>
+                <span class="case-study-tech-pill">Tailwind CSS</span>
+                <span class="case-study-tech-pill">WebSockets</span>
+                <span class="case-study-tech-pill">D3.js Charts</span>
+              </div>
+
+              <!-- Metric Indicator -->
+              <div class="case-study-meta-metric">
+                <div class="case-study-metric-val text-gradient-primary">
+                  <span class="stat-counter-number" data-target="99" data-suffix=".8%">0.0%</span>
+                </div>
+                <div class="case-study-metric-lbl">
+                  System Operator <br>Accuracy
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6 col-12">
+              <div class="case-study-img-panel">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Nova energy hub telemetry screen" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 3 -->
+        <div class="case-study-showcase" data-aos="fade-up">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 col-12 text-start">
+              <span class="case-study-tag">Brand Identity</span>
+              <h3 class="font-display fw-bold h2 text-gradient-primary mb-4">The Sonder Brand Re-imagining</h3>
+              <p class="text-secondary mb-4" style="line-height: 1.7;">
+                Translating an elite luxury designer's physical visual cues into a coherent, high-converting digital aesthetic framework.
+              </p>
+              
+              <div class="row g-4 mt-2">
+                <div class="col-sm-4">
+                  <h6 class="font-mono text-uppercase tracking-wider small text-gradient-primary mb-1">Challenge</h6>
+                  <p class="text-secondary small mb-0">Inconsistent offline-online branding diluted user-perceived value levels.</p>
+                </div>
+                <div class="col-sm-4">
+                  <h6 class="font-mono text-uppercase tracking-wider small text-gradient-secondary mb-1">Solution</h6>
+                  <p class="text-secondary small mb-0">Immersive editorial layout incorporating high-fashion serif fonts.</p>
+                </div>
+                <div class="col-sm-4">
+                  <h6 class="font-mono text-uppercase tracking-wider small text-success mb-1">Result</h6>
+                  <p class="text-secondary small mb-0">Organic search index and luxury media coverage grew significantly.</p>
+                </div>
+              </div>
+
+              <div class="case-study-tech-pills">
+                <span class="case-study-tech-pill">Brand Guide</span>
+                <span class="case-study-tech-pill">Vector Assets</span>
+                <span class="case-study-tech-pill">CSS Grid</span>
+                <span class="case-study-tech-pill">Typography Spec</span>
+              </div>
+
+              <!-- Metric Indicator -->
+              <div class="case-study-meta-metric">
+                <div class="case-study-metric-val text-gradient-secondary">
+                  <span class="stat-counter-number" data-target="150" data-suffix="%">0%</span>
+                </div>
+                <div class="case-study-metric-lbl">
+                  Brand Equity <br>Growth Score
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6 col-12">
+              <div class="case-study-img-panel">
+                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Sonder luxury branding editorial" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 05. PROJECT STATISTICS -->
+    <section class="portfolio-stats-section" id="stats-dashboard">
+      <div class="container">
+        <div class="portfolio-stats-wrap" data-aos="zoom-in">
+          <div class="row g-4 justify-content-center text-center">
+            <!-- Stat 1 -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="bento-stat-card mb-0 border-0 p-0" style="background: transparent;">
+                <div class="bento-icon-wrap mx-auto">
+                  <i class="bi bi-briefcase-fill"></i>
+                </div>
+                <h3 class="stat-counter-number text-gradient-primary mb-1 display-5 fw-bold" data-target="650" data-suffix="+">0+</h3>
+                <span class="outcome-lbl font-mono text-secondary">Projects Completed</span>
+              </div>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="bento-stat-card mb-0 border-0 p-0" style="background: transparent;">
+                <div class="bento-icon-wrap mx-auto">
+                  <i class="bi bi-emoji-smile-fill"></i>
+                </div>
+                <h3 class="stat-counter-number text-gradient-secondary mb-1 display-5 fw-bold" data-target="98" data-suffix="%">0%</h3>
+                <span class="outcome-lbl font-mono text-secondary">Client Satisfaction</span>
+              </div>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="bento-stat-card mb-0 border-0 p-0" style="background: transparent;">
+                <div class="bento-icon-wrap mx-auto">
+                  <i class="bi bi-globe-americas"></i>
+                </div>
+                <h3 class="stat-counter-number text-gradient-primary mb-1 display-5 fw-bold" data-target="18" data-suffix="">0</h3>
+                <span class="outcome-lbl font-mono text-secondary">Countries Reached</span>
+              </div>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="bento-stat-card mb-0 border-0 p-0" style="background: transparent;">
+                <div class="bento-icon-wrap mx-auto">
+                  <i class="bi bi-gem"></i>
+                </div>
+                <h3 class="stat-counter-number text-success mb-1 display-5 fw-bold" data-target="120" data-suffix="">0</h3>
+                <span class="outcome-lbl font-mono text-secondary">Brands Collaborated</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. CLIENTS & BRANDS -->
+    <section class="portfolio-clients-section" id="partner-brands">
+      <div class="container text-center mb-5">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">Trusted Globally</span>
+        <h2 class="h2-section text-gradient-primary" data-aos="fade-up">Elite Brands &amp; Co-authors</h2>
+      </div>
+
+      <!-- Infinite Logo Marquee Slider -->
+      <div class="marquee-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="marquee-track">
+          <!-- Marquee Cards (Duplicate of 8 to ensure infinite scroll) -->
+          <div class="marquee-logo-card">
+            <i class="bi bi-google"></i>
+            <span>Google Inc</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-stripe"></i>
+            <span>Stripe</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-apple"></i>
+            <span>Apple</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-nvidia"></i>
+            <span>NVIDIA</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-meta"></i>
+            <span>Meta Core</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-microsoft"></i>
+            <span>Microsoft</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-spotify"></i>
+            <span>Spotify</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-amazon"></i>
+            <span>Amazon</span>
+          </div>
+          
+          <!-- Duplicate set for wrapping -->
+          <div class="marquee-logo-card">
+            <i class="bi bi-google"></i>
+            <span>Google Inc</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-stripe"></i>
+            <span>Stripe</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-apple"></i>
+            <span>Apple</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-nvidia"></i>
+            <span>NVIDIA</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-meta"></i>
+            <span>Meta Core</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-microsoft"></i>
+            <span>Microsoft</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-spotify"></i>
+            <span>Spotify</span>
+          </div>
+          <div class="marquee-logo-card">
+            <i class="bi bi-amazon"></i>
+            <span>Amazon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. PORTFOLIO CTA -->
+    <section class="portfolio-cta-section" id="portfolio-final-cta">
+      <div class="container">
+        <div class="portfolio-cta-wrapper" data-aos="zoom-in">
+          <div class="portfolio-cta-mesh"></div>
+          <div class="portfolio-cta-particles"></div>
+          
+          <div class="row justify-content-center text-center portfolio-cta-content position-relative">
+            <div class="col-lg-8 col-12">
+              <span class="text-kicker text-uppercase tracking-wider mb-3 d-inline-block text-success">Partner With Us</span>
+              <h2 class="display-4 font-display fw-bold text-gradient-primary mb-4">Ready to Build Your Flagship Platform?</h2>
+              <p class="lead text-secondary mb-5" style="line-height: 1.7;">
+                Connect with our elite digital engineers and creative directors to craft high-fidelity, sub-100ms platforms that command high commercial authority.
+              </p>
+              
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <div class="magnetic-wrap">
+                  <a href="contact.html" class="btn-premium btn-premium-solid py-3 px-5 fs-6">
+                    Start a Project <i class="bi bi-arrow-right ms-2"></i>
+                  </a>
+                </div>
+                <div class="magnetic-wrap">
+                  <a href="contact.html" class="btn-premium btn-premium-outline py-3 px-5 fs-6">
+                    Speak to our Team <i class="bi bi-chat-dots-fill ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="logo-link mb-3">AVANT<span class="logo-dot"></span></a>
+          <p class="text-secondary small mb-4">A ThemeForest-ready premium digital agency template. Crafted with extreme typography discipline, flawless layouts, and fluid micro-interactions.</p>
+          <div class="d-flex gap-2">
+            <a href="contact.html" class="footer-social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="contact.html" class="footer-social-link"><i class="bi bi-dribbble"></i></a>
+            <a href="contact.html" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+            <a href="contact.html" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="team.html" class="footer-link-item">Our Team</a></li>
+            <li><a href="pricing.html" class="footer-link-item">Pricing Plans</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Our Services</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="services.html" class="footer-link-item">All Services</a></li>
+            <li><a href="service-details.html" class="footer-link-item">Service Detail Page</a></li>
+            <li><a href="portfolio.html" class="footer-link-item">Our Work</a></li>
+            <li><a href="portfolio-details.html" class="footer-link-item">Project Case Study</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Help & Learn</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="faq.html" class="footer-link-item">Frequently Asked Questions</a></li>
+            <li><a href="blog.html" class="footer-link-item">Our Journal</a></li>
+            <li><a href="blog-details.html" class="footer-link-item">Article Case Study</a></li>
+            <li><a href="services.html" class="footer-link-item">Custom 404 Error</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-copyright align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="mb-0 small text-muted">&copy; <span id="copyright-year"></span> AVANT. Studio. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0 small text-muted">Designed & Developed with Passion</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="/assets/js/pages/portfolio.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

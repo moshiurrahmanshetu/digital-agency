@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - AVANT. Studio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/pages/contact.css">
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("agency-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo-link">AVANT<span class="logo-dot"></span></a>
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links-container">
+          <li><a href="index.html" class="nav-link-item">Showcase</a></li>
+          <li><a href="about.html" class="nav-link-item">About</a></li>
+          <li><a href="services.html" class="nav-link-item">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link-item">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link-item">Pricing</a></li>
+          <li><a href="team.html" class="nav-link-item">Team</a></li>
+          <li><a href="faq.html" class="nav-link-item">FAQ</a></li>
+          <li><a href="blog.html" class="nav-link-item">Blog</a></li>
+          <li><a href="contact.html" class="nav-link-item active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <div class="magnetic-wrap">
+          <button class="theme-toggle-btn" aria-label="Toggle theme mode">
+            <i class="bi bi-sun-fill theme-toggle-icon theme-toggle-icon-sun"></i>
+            <i class="bi bi-moon-stars-fill theme-toggle-icon theme-toggle-icon-moon"></i>
+          </button>
+        </div>
+        <a href="contact.html" class="btn-premium btn-premium-solid header-action-btn d-none d-sm-inline-flex">
+          Get in Touch <i class="bi bi-arrow-right"></i>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Open mobile menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <button class="mobile-drawer-close" aria-label="Close mobile menu"><i class="bi bi-x-lg"></i></button>
+    <div class="mobile-drawer-nav">
+      <a href="index.html" class="mobile-drawer-nav-link">Showcase</a>
+      <a href="about.html" class="mobile-drawer-nav-link">About Us</a>
+      <a href="services.html" class="mobile-drawer-nav-link">Our Services</a>
+      <a href="portfolio.html" class="mobile-drawer-nav-link">Creative Portfolio</a>
+      <a href="pricing.html" class="mobile-drawer-nav-link">Plans & Pricing</a>
+      <a href="team.html" class="mobile-drawer-nav-link">Our Team</a>
+      <a href="faq.html" class="mobile-drawer-nav-link">FAQ</a>
+      <a href="blog.html" class="mobile-drawer-nav-link">Articles & News</a>
+      <a href="contact.html" class="mobile-drawer-nav-link active">Contact Us</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <p class="mb-3 small">Let's build something exceptional together.</p>
+      <a href="contact.html" class="btn-premium btn-premium-solid w-100 py-3">Get in Touch <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- CONTENT WRAPPER -->
+  <div class="page-shell-wrapper">
+    <div class="ambient-bg-lights">
+      <div class="floating-blob blob-1"></div>
+      <div class="floating-blob blob-2"></div>
+    </div>
+
+    <!-- ==========================================================
+         01. CONTACT HERO
+         ========================================================== -->
+    <section class="contact-hero-section d-flex align-items-center" id="contact-hero">
+      <div class="contact-hero-mesh"></div>
+      <div class="contact-background-text">Avant</div>
+      
+      <div class="container contact-hero-container">
+        <div class="row g-5 align-items-center">
+          <!-- Text details column -->
+          <div class="col-lg-7 col-12 text-start">
+            <nav aria-label="breadcrumb" class="mb-4" data-aos="fade-down">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+                <li class="breadcrumb-item active text-gradient-primary" aria-current="page">Contact Us</li>
+              </ol>
+            </nav>
+            
+            <h1 class="contact-hero-title mb-4" data-aos="fade-up">
+              Let's Build the <span class="contact-italic-span">Unthinkable</span>
+            </h1>
+            
+            <p class="contact-hero-lead mb-5" data-aos="fade-up" data-aos-delay="100">
+              Have a premium digital vision or groundbreaking initiative? Bridge the physical-digital divide with our high-end engineering, immersive couture design systems, and hyper-scalable architectures.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="150">
+              <a href="#avant-contact-form-section" class="btn-premium btn-premium-solid">
+                Start a Project <i class="bi bi-lightning-charge-fill ms-2"></i>
+              </a>
+              <a href="https://calendly.com" target="_blank" rel="noopener" class="btn-premium btn-premium-outline">
+                Schedule a Meeting <i class="bi bi-calendar-event ms-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Floating Cards Visual Column -->
+          <div class="col-lg-5 col-12 d-none d-lg-block" data-aos="zoom-in" data-aos-delay="200">
+            <div class="contact-hero-visual-wrap">
+              <div class="hero-orb-glowing"></div>
+
+              <!-- Floating glass card 1: Support status -->
+              <div class="hero-glass-floating-card floating-status-card d-flex align-items-center gap-3">
+                <div class="status-dot-pulse"></div>
+                <div>
+                  <h6 class="mb-0 fw-bold small text-gradient-primary">Direct Hotline</h6>
+                  <span class="text-muted" style="font-size: 0.65rem;">Active &amp; Online</span>
+                </div>
+              </div>
+
+              <!-- Floating glass card 2: Response metrics -->
+              <div class="hero-glass-floating-card floating-time-card d-flex align-items-center gap-3">
+                <div class="metric-icon-wrap text-secondary" style="font-size: 1.12rem;">
+                  <i class="bi bi-clock-history"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0 fw-bold small text-gradient-secondary">&lt; 2 Hours Response</h6>
+                  <span class="text-muted" style="font-size: 0.65rem;">Elite Support Tier</span>
+                </div>
+              </div>
+
+              <!-- Floating glass card 3: Client Satisfaction -->
+              <div class="hero-glass-floating-card floating-stats-card d-flex align-items-center gap-3">
+                <div class="metric-icon-wrap text-success" style="font-size: 1.12rem;">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0 fw-bold small text-success">99.4% CSAT</h6>
+                  <span class="text-muted" style="font-size: 0.65rem;">Global Client Audits</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         02. CONTACT INFORMATION
+         ========================================================== -->
+    <section class="contact-info-section" id="contact-info">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">Quick Channels</span>
+        <h2 class="font-display fw-bold text-gradient-primary h2-section mb-5" data-aos="fade-up">Connect Instantly</h2>
+
+        <div class="info-cards-grid" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- Card 1: Phone -->
+          <div class="info-card-premium">
+            <div class="info-icon-wrapper">
+              <i class="bi bi-telephone-outbound"></i>
+            </div>
+            <h3 class="info-title">Secure Voice Lines</h3>
+            <p class="info-description">Direct access to our flagship project management directors for rapid structural scoping consultations.</p>
+            <a href="tel:+18005550199" class="info-link-action">+1 (800) 555-0199 <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 2: Email -->
+          <div class="info-card-premium">
+            <div class="info-icon-wrapper">
+              <i class="bi bi-envelope-open"></i>
+            </div>
+            <h3 class="info-title">Electronic Inquiry</h3>
+            <p class="info-description">Drop us a line for general inquiries, career applications, brand handbook reviews, or press relations.</p>
+            <a href="mailto:hello@avantstudio.com" class="info-link-action">hello@avantstudio.com <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 3: Office Headquarters -->
+          <div class="info-card-premium">
+            <div class="info-icon-wrapper">
+              <i class="bi bi-building"></i>
+            </div>
+            <h3 class="info-title">Flagship Atelier</h3>
+            <p class="info-description">Come visit our ultra-premium collaborative spaces designed for sensory brainstorming and creative blueprints.</p>
+            <a href="#locations-grid" class="info-link-action">View Locations <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 4: Business Hours -->
+          <div class="info-card-premium">
+            <div class="info-icon-wrapper">
+              <i class="bi bi-calendar3"></i>
+            </div>
+            <h3 class="info-title">Atelier Working Hours</h3>
+            <p class="info-description">Our global team spans across timezones to maintain high continuous design and build cycles.</p>
+            <span class="info-link-action" style="cursor: default;">Mon - Fri: 9AM - 6PM <i class="bi bi-clock ms-1"></i></span>
+          </div>
+
+          <!-- Card 5: Emergency Support -->
+          <div class="info-card-premium">
+            <div class="info-icon-wrapper">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+            <h3 class="info-title">SLA Emergency Support</h3>
+            <p class="info-description">Dedicated 24/7 continuous engineering escalation pathways for active enterprise retainers and VIP accounts.</p>
+            <a href="mailto:critical@avantstudio.com" class="info-link-action">Contact SLA Team <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <!-- Card 6: WhatsApp -->
+          <div class="info-card-premium">
+            <div class="info-icon-wrapper">
+              <i class="bi bi-whatsapp"></i>
+            </div>
+            <h3 class="info-title">Secure Instant Chat</h3>
+            <p class="info-description">Prefer rapid text messaging? Jump straight into an encrypted channel with our chief brand coordinator.</p>
+            <a href="https://wa.me/18005550199" target="_blank" rel="noopener" class="info-link-action">WhatsApp Secure <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         03. CONTACT FORM
+         ========================================================== -->
+    <section class="contact-form-section" id="avant-contact-form-section">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">The Gateway</span>
+        <h2 class="font-display fw-bold text-gradient-primary h2-section mb-5" data-aos="fade-up">Onboarding Sequence</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-9 col-lg-11 col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-form-container-card">
+              <div class="form-glow-sphere"></div>
+
+              <!-- SUCCESS / ERROR STATE WRAPPERS -->
+              <div class="form-feedback-card" id="form-feedback-card">
+                <!-- Success State -->
+                <div id="feedback-success-state" class="d-none">
+                  <div class="feedback-icon-wrapper feedback-success-icon mx-auto">
+                    <i class="bi bi-check-lg"></i>
+                  </div>
+                  <h3 class="font-display fw-bold mb-3">Transmission Successful</h3>
+                  <p class="text-secondary max-w-xl mx-auto mb-5">
+                    Your luxury digital brand system inquiry has been dispatched securely to our Paris &amp; New York hubs. An elite agency lead will coordinate with you inside <span class="text-gradient-primary fw-bold">2 business hours</span> to align creative blueprints.
+                  </p>
+                  <button class="btn-premium btn-premium-solid feedback-reset-btn">
+                    Submit Another Inquiry <i class="bi bi-arrow-clockwise ms-2"></i>
+                  </button>
+                </div>
+
+                <!-- Error State Placeholder (Toggled programmatically if needed) -->
+                <div id="feedback-error-state" class="d-none">
+                  <div class="feedback-icon-wrapper feedback-error-icon mx-auto">
+                    <i class="bi bi-exclamation-triangle"></i>
+                  </div>
+                  <h3 class="font-display fw-bold mb-3">Gateway Timeout</h3>
+                  <p class="text-secondary max-w-xl mx-auto mb-5">
+                    We were unable to establish a secure link with our central coordination servers. Please verify your internet connection or reach out directly to hello@avantstudio.com.
+                  </p>
+                  <button class="btn-premium btn-premium-outline feedback-reset-btn">
+                    Retry Onboarding Sequence <i class="bi bi-arrow-clockwise ms-2"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- FORM CONTAINER -->
+              <div class="contact-form-inner text-start">
+                <form id="avant-premium-contact-form" novalidate>
+                  
+                  <div class="row g-4">
+                    <!-- Name -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-floating-custom form-group-validation">
+                        <input type="text" id="form-name" placeholder=" " required autocomplete="name">
+                        <label for="form-name">Full Name *</label>
+                        <span class="validation-error-msg">Please enter your full name</span>
+                      </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-floating-custom form-group-validation">
+                        <input type="email" id="form-email" placeholder=" " required autocomplete="email">
+                        <label for="form-email">Business Email Address *</label>
+                        <span class="validation-error-msg">Please enter a valid business email address</span>
+                      </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-floating-custom form-group-validation">
+                        <input type="tel" id="form-phone" placeholder=" " required autocomplete="tel">
+                        <label for="form-phone">Phone Number *</label>
+                        <span class="validation-error-msg">Please enter a valid phone number</span>
+                      </div>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-floating-custom form-group-validation">
+                        <input type="text" id="form-company" placeholder=" " required>
+                        <label for="form-company">Company / Organization *</label>
+                        <span class="validation-error-msg">Please enter your company name</span>
+                      </div>
+                    </div>
+
+                    <!-- Service Category -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-floating-custom form-group-validation">
+                        <select id="form-service" required value="">
+                          <option value="" disabled selected hidden></option>
+                          <option value="branding">Couture Brand Identity Systems</option>
+                          <option value="development">High-Performance Headless Web</option>
+                          <option value="ux-ui">Immersive UX/UI Design Blueprints</option>
+                          <option value="three-d">Bespoke 3D Graphics &amp; Spatial Arts</option>
+                          <option value="retainer">Full-Stack Continuous Innovation Retainer</option>
+                        </select>
+                        <label for="form-service">Required Service *</label>
+                        <span class="validation-error-msg">Please select a premium service category</span>
+                      </div>
+                    </div>
+
+                    <!-- Budget Tier -->
+                    <div class="col-md-6 col-12">
+                      <div class="form-floating-custom form-group-validation">
+                        <select id="form-budget" required value="">
+                          <option value="" disabled selected hidden></option>
+                          <option value="tier-1">$20,000 - $40,000</option>
+                          <option value="tier-2">$40,000 - $80,000</option>
+                          <option value="tier-3">$80,000 - $150,000</option>
+                          <option value="tier-4">$150,000+ (Enterprise Custom)</option>
+                        </select>
+                        <label for="form-budget">Target Budget Tier *</label>
+                        <span class="validation-error-msg">Please select an estimated budget range</span>
+                      </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="col-12">
+                      <div class="form-floating-custom form-group-validation">
+                        <input type="text" id="form-subject" placeholder=" " required>
+                        <label for="form-subject">Inquiry Subject *</label>
+                        <span class="validation-error-msg">Please enter a brief subject line</span>
+                      </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="col-12">
+                      <div class="form-floating-custom form-group-validation">
+                        <textarea id="form-message" placeholder=" " required></textarea>
+                        <label for="form-message">Brief Project Description / Scope *</label>
+                        <span class="validation-error-msg">Please share details of your project vision</span>
+                      </div>
+                    </div>
+
+                    <!-- Policy Checkbox -->
+                    <div class="col-12 mb-4">
+                      <label class="premium-checkbox-label">
+                        <input type="checkbox" id="gdpr-policy-consent" class="premium-checkbox-input" required>
+                        <span>I consent to the secure storage and processing of my project details in accordance with AVANT. Studio's strict luxury Privacy &amp; GDPR standards. *</span>
+                      </label>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="col-12">
+                      <div class="magnetic-wrap w-100">
+                        <button type="submit" class="btn-premium btn-premium-solid w-100 py-3 d-flex align-items-center justify-content-center">
+                          <span class="submit-btn-inner">
+                            <span class="btn-spinner"></span>
+                            <span class="submit-btn-text">Initiate Onboarding Sequence</span>
+                            <i class="bi bi-arrow-right"></i>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         04. OFFICE LOCATIONS
+         ========================================================== -->
+    <section class="office-locations-section" id="locations-grid">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">Global Presence</span>
+        <h2 class="font-display fw-bold text-gradient-primary h2-section mb-5" data-aos="fade-up">Our Flagship Hubs</h2>
+
+        <div class="office-cards-grid" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- Office 1: Paris -->
+          <div class="office-card-premium">
+            <div class="office-image-container">
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Paris France Atelier Office" loading="lazy">
+            </div>
+            <div class="office-card-content">
+              <span class="office-city-badge">Flagship Atelier</span>
+              <h3 class="office-name">Paris Hub</h3>
+              
+              <div class="office-detail-row">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span class="office-detail-text">14 Rue du Faubourg Saint-Honoré,<br>75008 Paris, France</span>
+              </div>
+              <div class="office-detail-row">
+                <i class="bi bi-clock-history"></i>
+                <span class="office-detail-text">9:00 AM - 6:00 PM CET<br>(Closed on weekends)</span>
+              </div>
+              <div class="office-detail-row">
+                <i class="bi bi-envelope-at-fill"></i>
+                <span class="office-detail-text">paris@avantstudio.com<br>+33 (1) 45 67 89 10</span>
+              </div>
+
+              <div class="magnetic-wrap mt-4 w-100">
+                <a href="https://maps.google.com/?q=14+Rue+du+Faubourg+Saint-Honoré+75008+Paris+France" target="_blank" rel="noopener" class="btn-premium btn-premium-outline w-100 text-center justify-content-center">
+                  Get Directions <i class="bi bi-arrow-up-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Office 2: New York -->
+          <div class="office-card-premium">
+            <div class="office-image-container">
+              <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=600&q=80" alt="New York USA Manhattan Office" loading="lazy">
+            </div>
+            <div class="office-card-content">
+              <span class="office-city-badge">Creative HQ</span>
+              <h3 class="office-name">New York Lab</h3>
+              
+              <div class="office-detail-row">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span class="office-detail-text">250 Hudson Street, Floor 12,<br>New York, NY 10013, USA</span>
+              </div>
+              <div class="office-detail-row">
+                <i class="bi bi-clock-history"></i>
+                <span class="office-detail-text">9:00 AM - 6:00 PM EST<br>(Closed on weekends)</span>
+              </div>
+              <div class="office-detail-row">
+                <i class="bi bi-envelope-at-fill"></i>
+                <span class="office-detail-text">nyc@avantstudio.com<br>+1 (212) 555-0144</span>
+              </div>
+
+              <div class="magnetic-wrap mt-4 w-100">
+                <a href="https://maps.google.com/?q=250+Hudson+Street+New+York+NY+10013" target="_blank" rel="noopener" class="btn-premium btn-premium-outline w-100 text-center justify-content-center">
+                  Get Directions <i class="bi bi-arrow-up-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Office 3: Tokyo -->
+          <div class="office-card-premium">
+            <div class="office-image-container">
+              <img src="https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?auto=format&fit=crop&w=600&q=80" alt="Tokyo Japan Shibuya Office" loading="lazy">
+            </div>
+            <div class="office-card-content">
+              <span class="office-city-badge">Technical Node</span>
+              <h3 class="office-name">Tokyo Core</h3>
+              
+              <div class="office-detail-row">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span class="office-detail-text">1-21-1 Shibuya, Shibuya-ku,<br>Tokyo 150-0002, Japan</span>
+              </div>
+              <div class="office-detail-row">
+                <i class="bi bi-clock-history"></i>
+                <span class="office-detail-text">9:00 AM - 6:00 PM JST<br>(Closed on weekends)</span>
+              </div>
+              <div class="office-detail-row">
+                <i class="bi bi-envelope-at-fill"></i>
+                <span class="office-detail-text">tokyo@avantstudio.com<br>+81 (3) 5555-0188</span>
+              </div>
+
+              <div class="magnetic-wrap mt-4 w-100">
+                <a href="https://maps.google.com/?q=1-21-1+Shibuya+Shibuya-ku+Tokyo+150-0002+Japan" target="_blank" rel="noopener" class="btn-premium btn-premium-outline w-100 text-center justify-content-center">
+                  Get Directions <i class="bi bi-arrow-up-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         05. INTERACTIVE MAP
+         ========================================================== -->
+    <section class="interactive-map-section" id="interactive-map">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">The Coordinates</span>
+        <h2 class="font-display fw-bold text-gradient-primary h2-section mb-5" data-aos="fade-up">Atelier Satellites</h2>
+
+        <div class="map-outer-container" data-aos="fade-up">
+          <div class="map-iframe-wrapper">
+            <!-- Dynamic elegant embedded map showing Paris, NY and Tokyo areas -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.223408092497!2d2.317585015674844!3d48.87293887928929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fcc48002a29%3A0x7d0799757f4955bd!2sRue%20du%20Faubourg%20Saint-Honor%C3%A9%2C%2075008%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div class="map-custom-overlay d-none d-md-block">
+              <span class="office-city-badge mb-3">Live Coordinates</span>
+              <h4 class="map-custom-overlay-title">Atelier Flagship</h4>
+              <p class="text-secondary small mb-0">Our map is pre-filtered for comfort. If you are accessing the dev preview in dark mode, the grid lines auto-invert to eye-save obsidian standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         06. FAQ PREVIEW
+         ========================================================== -->
+    <section class="contact-faq-section" id="contact-faq">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">Direct Answers</span>
+          <h2 class="font-display fw-bold text-gradient-primary h2-section" data-aos="fade-up">FAQ Preview</h2>
+        </div>
+
+        <div class="contact-faq-accordion" data-aos="fade-up">
+          
+          <!-- FAQ 1 -->
+          <div class="contact-faq-item">
+            <button class="contact-faq-header" aria-expanded="false">
+              <span class="contact-faq-question">What is your standard project onboarding timeline?</span>
+              <span class="contact-faq-icon-indicator"><i class="bi bi-chevron-down"></i></span>
+            </button>
+            <div class="contact-faq-collapse">
+              <div class="contact-faq-body">
+                Once you dispatch our luxury inquiry sequence, our brand directors coordinate internally. We arrange our first high-fidelity creative blueprint wireframe briefing within 48 business hours, targeting project kickoff inside 2 weeks.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="contact-faq-item">
+            <button class="contact-faq-header" aria-expanded="false">
+              <span class="contact-faq-question">Do you offer ongoing post-launch maintenance SLA packages?</span>
+              <span class="contact-faq-icon-indicator"><i class="bi bi-chevron-down"></i></span>
+            </button>
+            <div class="contact-faq-collapse">
+              <div class="contact-faq-body">
+                Absolutely. We operate a highly robust, multi-tier continuous innovation retainer program. This provides secure, 24/7/365 emergency developer escalations, continuous speed optimizations, responsive design modifications, and framework patch deployments.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="contact-faq-item">
+            <button class="contact-faq-header" aria-expanded="false">
+              <span class="contact-faq-question">Can you collaborate with our in-house engineering and design teams?</span>
+              <span class="contact-faq-icon-indicator"><i class="bi bi-chevron-down"></i></span>
+            </button>
+            <div class="contact-faq-collapse">
+              <div class="contact-faq-body">
+                Yes, our workflow is designed to integrate seamlessly. We frequently augment existing corporate teams by delivering specific design handbook elements, compiling custom React components, or managing full serverless architecture deployments.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="contact-faq-item">
+            <button class="contact-faq-header" aria-expanded="false">
+              <span class="contact-faq-question">How does dark theme styling map across custom platforms?</span>
+              <span class="contact-faq-icon-indicator"><i class="bi bi-chevron-down"></i></span>
+            </button>
+            <div class="contact-faq-collapse">
+              <div class="contact-faq-body">
+                We develop with structural variable overrides using CSS Custom Properties. This guarantees that asset contrasts, ambient canvas glows, text fills, and interactive state triggers adapt seamlessly to the user's localized operating system preferences.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="contact-faq-item">
+            <button class="contact-faq-header" aria-expanded="false">
+              <span class="contact-faq-question">Do you support international custom localization?</span>
+              <span class="contact-faq-icon-indicator"><i class="bi bi-chevron-down"></i></span>
+            </button>
+            <div class="contact-faq-collapse">
+              <div class="contact-faq-body">
+                Yes. Our headless architectures are designed from the ground up for global reach. We leverage global CDN edge caches to deliver sub-100ms response times globally, including multilingual routing and localized geographical assets.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up">
+          <div class="magnetic-wrap">
+            <a href="faq.html" class="btn-premium btn-premium-solid">
+              View All FAQs <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         07. SOCIAL CONNECT
+         ========================================================== -->
+    <section class="social-connect-section" id="social-connect">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">The Net</span>
+        <h2 class="font-display fw-bold text-gradient-primary h2-section mb-5" data-aos="fade-up">Social Satellites</h2>
+
+        <div class="social-cards-grid" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-card-premium" style="--social-hover-color: #0a66c2; --social-hover-shadow: rgba(10, 102, 194, 0.15);">
+            <div class="social-glow-overlay"></div>
+            <div class="social-icon-box"><i class="bi bi-linkedin"></i></div>
+            <span class="social-label-mono">LinkedIn</span>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-card-premium" style="--social-hover-color: #e1306c; --social-hover-shadow: rgba(225, 48, 108, 0.15);">
+            <div class="social-glow-overlay"></div>
+            <div class="social-icon-box"><i class="bi bi-instagram"></i></div>
+            <span class="social-label-mono">Instagram</span>
+          </a>
+
+          <!-- Facebook -->
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-card-premium" style="--social-hover-color: #1877f2; --social-hover-shadow: rgba(24, 119, 242, 0.15);">
+            <div class="social-glow-overlay"></div>
+            <div class="social-icon-box"><i class="bi bi-facebook"></i></div>
+            <span class="social-label-mono">Facebook</span>
+          </a>
+
+          <!-- Behance -->
+          <a href="https://behance.net" target="_blank" rel="noopener" class="social-card-premium" style="--social-hover-color: #0057ff; --social-hover-shadow: rgba(0, 87, 255, 0.15);">
+            <div class="social-glow-overlay"></div>
+            <div class="social-icon-box"><i class="bi bi-behance"></i></div>
+            <span class="social-label-mono">Behance</span>
+          </a>
+
+          <!-- Dribbble -->
+          <a href="https://dribbble.com" target="_blank" rel="noopener" class="social-card-premium" style="--social-hover-color: #ea4c89; --social-hover-shadow: rgba(234, 76, 137, 0.15);">
+            <div class="social-glow-overlay"></div>
+            <div class="social-icon-box"><i class="bi bi-dribbble"></i></div>
+            <span class="social-label-mono">Dribbble</span>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com" target="_blank" rel="noopener" class="social-card-premium" style="--social-hover-color: #24292e; --social-hover-shadow: rgba(36, 41, 46, 0.15);">
+            <div class="social-glow-overlay"></div>
+            <div class="social-icon-box"><i class="bi bi-github"></i></div>
+            <span class="social-label-mono">GitHub</span>
+          </a>
+
+          <!-- YouTube -->
+          <a href="https://youtube.com" target="_blank" rel="noopener" class="social-card-premium" style="--social-hover-color: #ff0000; --social-hover-shadow: rgba(255, 0, 0, 0.15);">
+            <div class="social-glow-overlay"></div>
+            <div class="social-icon-box"><i class="bi bi-youtube"></i></div>
+            <span class="social-label-mono">YouTube</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         08. FINAL CTA
+         ========================================================== -->
+    <section class="contact-final-cta-section" id="contact-final-cta">
+      <div class="contact-final-cta-mesh"></div>
+      <div class="container">
+        <div class="cta-glass-card text-center" data-aos="zoom-in">
+          <div class="cta-glow-blob"></div>
+
+          <div class="position-relative" style="z-index: 2;">
+            <span class="text-kicker text-uppercase tracking-wider mb-3 d-inline-block text-success">Collaborate</span>
+            <h2 class="display-4 font-display fw-bold text-gradient-primary mb-4" style="max-width: 700px; margin: 0 auto 1.5rem;">
+              Ready to Formulate Your Masterpiece?
+            </h2>
+            <p class="lead text-secondary mb-5" style="max-width: 650px; margin: 0 auto 2.5rem; line-height: 1.75;">
+              Connect with our world-class directors to engineer custom layouts, fast systems, and memorable couture aesthetics that establish absolute market authority.
+            </p>
+
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <div class="magnetic-wrap">
+                <a href="#avant-contact-form-section" class="btn-premium btn-premium-solid py-3 px-5 fs-6">
+                  Initiate Sequence <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+              <div class="magnetic-wrap">
+                <a href="mailto:hello@avantstudio.com" class="btn-premium btn-premium-outline py-3 px-5 fs-6">
+                  Email directly <i class="bi bi-envelope ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="logo-link mb-3">AVANT<span class="logo-dot"></span></a>
+          <p class="text-secondary small mb-4">A ThemeForest-ready premium digital agency template. Crafted with extreme typography discipline, flawless layouts, and fluid micro-interactions.</p>
+          <div class="d-flex gap-2">
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener" class="footer-social-link"><i class="bi bi-dribbble"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="team.html" class="footer-link-item">Our Team</a></li>
+            <li><a href="pricing.html" class="footer-link-item">Pricing Plans</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Our Services</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="services.html" class="footer-link-item">All Services</a></li>
+            <li><a href="service-details.html" class="footer-link-item">Service Detail Page</a></li>
+            <li><a href="portfolio.html" class="footer-link-item">Our Work</a></li>
+            <li><a href="portfolio-details.html" class="footer-link-item">Project Case Study</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Help & Learn</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="faq.html" class="footer-link-item">Frequently Asked Questions</a></li>
+            <li><a href="blog.html" class="footer-link-item">Our Journal</a></li>
+            <li><a href="blog-details.html" class="footer-link-item">Article Case Study</a></li>
+            <li><a href="404.html" class="footer-link-item">Custom 404 Error</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-copyright align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="mb-0 small text-muted">&copy; <span id="copyright-year"></span> AVANT. Studio. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0 small text-muted">Designed & Developed with Passion</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/pages/contact.js"></script>
+</body>
+</html>

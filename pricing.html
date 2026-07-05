@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans & Estimator - AVANT. Studio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/pages/pricing.css">
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("agency-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo-link">AVANT<span class="logo-dot"></span></a>
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links-container">
+          <li><a href="index.html" class="nav-link-item">Showcase</a></li>
+          <li><a href="about.html" class="nav-link-item">About</a></li>
+          <li><a href="services.html" class="nav-link-item">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link-item">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link-item active">Pricing</a></li>
+          <li><a href="team.html" class="nav-link-item">Team</a></li>
+          <li><a href="faq.html" class="nav-link-item">FAQ</a></li>
+          <li><a href="blog.html" class="nav-link-item">Blog</a></li>
+          <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <div class="magnetic-wrap">
+          <button class="theme-toggle-btn" aria-label="Toggle theme mode">
+            <i class="bi bi-sun-fill theme-toggle-icon theme-toggle-icon-sun"></i>
+            <i class="bi bi-moon-stars-fill theme-toggle-icon theme-toggle-icon-moon"></i>
+          </button>
+        </div>
+        <a href="contact.html" class="btn-premium btn-premium-solid header-action-btn d-none d-sm-inline-flex">
+          Get in Touch <i class="bi bi-arrow-right"></i>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Open mobile menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <button class="mobile-drawer-close" aria-label="Close mobile menu"><i class="bi bi-x-lg"></i></button>
+    <div class="mobile-drawer-nav">
+      <a href="index.html" class="mobile-drawer-nav-link">Showcase</a>
+      <a href="about.html" class="mobile-drawer-nav-link">About Us</a>
+      <a href="services.html" class="mobile-drawer-nav-link">Our Services</a>
+      <a href="portfolio.html" class="mobile-drawer-nav-link">Creative Portfolio</a>
+      <a href="pricing.html" class="mobile-drawer-nav-link active">Plans & Pricing</a>
+      <a href="team.html" class="mobile-drawer-nav-link">Our Team</a>
+      <a href="faq.html" class="mobile-drawer-nav-link">FAQ</a>
+      <a href="blog.html" class="mobile-drawer-nav-link">Articles & News</a>
+      <a href="contact.html" class="mobile-drawer-nav-link">Contact Us</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <p class="mb-3 small">Let's build something exceptional together.</p>
+      <a href="contact.html" class="btn-premium btn-premium-solid w-100 py-3">Get in Touch <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- CONTENT WRAPPER -->
+  <div class="page-shell-wrapper">
+    
+    <!-- 1. PRICING HERO -->
+    <section class="pricing-hero-section" id="pricing-hero">
+      <div class="pricing-hero-mesh"></div>
+      <div class="pricing-background-text">AVANT</div>
+      
+      <div class="container pricing-hero-container">
+        <div class="row align-items-center">
+          <div class="col-lg-7" data-aos="fade-right">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="mb-4">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted small">Showcase</a></li>
+                <li class="breadcrumb-item active text-muted small" aria-current="page">Pricing & Plans</li>
+              </ol>
+            </nav>
+            
+            <h1 class="pricing-hero-title mb-4">
+              Honest tiers. <br>
+              <span class="pricing-italic-span">Pristine execution.</span>
+            </h1>
+            
+            <p class="pricing-hero-lead mb-5">
+              Transparent, scalable structures and dedicated project retainer definitions designed to align with your digital ambitions. No hidden overheads, pure design and development craft.
+            </p>
+            
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#pricing-plans" class="btn-premium btn-premium-solid py-3 px-4">
+                Explore Core Plans <i class="bi bi-arrow-down-short"></i>
+              </a>
+              <a href="#pricing-calculator" class="btn-premium btn-premium-outline py-3 px-4">
+                Budget Estimator <i class="bi bi-sliders"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+            <div class="pricing-hero-visual-wrap">
+              <div class="pricing-orb-glowing"></div>
+              
+              <!-- Floating Card 1: Value -->
+              <div class="pricing-hero-floating-card floating-value-card">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <span class="fs-4 text-primary"><i class="bi bi-gem"></i></span>
+                  <h6 class="mb-0 fw-bold">Uncompromising Quality</h6>
+                </div>
+                <p class="mb-0 text-secondary small">Vite + React modern code standards with luxury aesthetics.</p>
+              </div>
+              
+              <!-- Floating Card 2: Guarantee -->
+              <div class="pricing-hero-floating-card floating-guarantee-card">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <span class="fs-4 text-primary"><i class="bi bi-shield-check"></i></span>
+                  <h6 class="mb-0 fw-bold">100% IP Ownership</h6>
+                </div>
+                <p class="mb-0 text-secondary small">Full source rights and continuous deployment guarantee.</p>
+              </div>
+              
+              <!-- Floating Card 3: Transparency -->
+              <div class="pricing-hero-floating-card floating-transparency-card">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <span class="text-success"><i class="bi bi-lightning-charge-fill"></i></span>
+                  <span class="font-mono text-uppercase fw-bold text-success" style="font-size: 0.65rem;">ActiveRetainer</span>
+                </div>
+                <p class="mb-0 text-secondary small">Zero long-term contracts. Pause or cancel anytime.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PRICING PLANS -->
+    <section class="pricing-plans-section text-center" id="pricing-plans">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="text-kicker mb-3">Flexible Models</span>
+            <h2 class="h2-section text-gradient-primary mb-3">Our Transparent Plans</h2>
+            <p class="text-secondary mb-4">
+              Select an ongoing collaboration standard tailored to your agency project scope and delivery velocity requirements.
+            </p>
+            
+            <!-- Toggle Switch -->
+            <div class="pricing-toggle-wrap">
+              <button class="pricing-toggle-btn active" data-period="monthly" aria-label="Select Monthly Billing">Monthly</button>
+              <button class="pricing-toggle-btn" data-period="yearly" aria-label="Select Yearly Billing">Yearly</button>
+              <span class="pricing-toggle-save-tag">Save 20%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plans Grid -->
+        <div class="pricing-cards-grid">
+          
+          <!-- Starter Plan -->
+          <div class="pricing-card-premium" data-aos="fade-up" data-aos-delay="100">
+            <div class="plan-header">
+              <span class="plan-kicker">Essential</span>
+              <h3 class="plan-title">Starter</h3>
+              <p class="plan-description">For startups looking to construct high-quality standard MVPs and interactive landing experiences.</p>
+            </div>
+            
+            <div>
+              <div class="plan-price-wrap">
+                <span class="plan-price-currency">$</span>
+                <span class="plan-price-amount" data-monthly-price="1,499" data-yearly-price="1,199">1,499</span>
+                <span class="plan-price-period">/ Month, Billed Monthly</span>
+              </div>
+              
+              <ul class="plan-features-list">
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> 1 Active project at a time</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Fully custom interactive UX/UI</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> High fidelity responsive HTML/Vite</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Regular weekly iteration updates</li>
+                <li class="plan-feature-item muted-feature"><i class="bi bi-check-circle-fill"></i> Priority support helpline</li>
+                <li class="plan-feature-item muted-feature"><i class="bi bi-check-circle-fill"></i> Dedicated brand lead designer</li>
+              </ul>
+              
+              <a href="contact.html?plan=starter" class="btn-premium btn-premium-outline w-100 py-3 text-center">Get Started</a>
+            </div>
+          </div>
+
+          <!-- Growth Plan -->
+          <div class="pricing-card-premium" data-aos="fade-up" data-aos-delay="200">
+            <div class="plan-header">
+              <span class="plan-kicker">Scale Up</span>
+              <h3 class="plan-title">Growth</h3>
+              <p class="plan-description">For mid-market enterprises looking for accelerated interactive design and complete structural scaling.</p>
+            </div>
+            
+            <div>
+              <div class="plan-price-wrap">
+                <span class="plan-price-currency">$</span>
+                <span class="plan-price-amount" data-monthly-price="3,499" data-yearly-price="2,999">3,499</span>
+                <span class="plan-price-period">/ Month, Billed Monthly</span>
+              </div>
+              
+              <ul class="plan-features-list">
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> 2 Active concurrent projects</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Bespoke animated visual concepts</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Unlimited iteration & revision rounds</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> 48-Hour delivery turnarounds</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Priority Slack hotline connection</li>
+                <li class="plan-feature-item muted-feature"><i class="bi bi-check-circle-fill"></i> Dedicated brand lead designer</li>
+              </ul>
+              
+              <a href="contact.html?plan=growth" class="btn-premium btn-premium-outline w-100 py-3 text-center">Accelerate Now</a>
+            </div>
+          </div>
+
+          <!-- Business Plan (Popular) -->
+          <div class="pricing-card-premium popular-card" data-aos="fade-up" data-aos-delay="300">
+            <span class="popular-ribbon-tag">Most Popular</span>
+            <div class="plan-header">
+              <span class="plan-kicker">Cohesive Team</span>
+              <h3 class="plan-title">Business</h3>
+              <p class="plan-description">For scaling brands requiring comprehensive design resources, regular features, and continuous support.</p>
+            </div>
+            
+            <div>
+              <div class="plan-price-wrap">
+                <span class="plan-price-currency">$</span>
+                <span class="plan-price-amount" data-monthly-price="6,999" data-yearly-price="5,599">6,999</span>
+                <span class="plan-price-period">/ Month, Billed Monthly</span>
+              </div>
+              
+              <ul class="plan-features-list">
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> 3 Active concurrent projects</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Premium visual branding assets</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Complete full-stack React integration</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> 24-Hour delivery priority turnarounds</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Dedicated channel manager contact</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> 1 Dedicated brand lead designer</li>
+              </ul>
+              
+              <a href="contact.html?plan=business" class="btn-premium btn-premium-solid w-100 py-3 text-center">Acquire Retainer</a>
+            </div>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="pricing-card-premium" data-aos="fade-up" data-aos-delay="400">
+            <div class="plan-header">
+              <span class="plan-kicker">Custom Architecture</span>
+              <h3 class="plan-title">Enterprise</h3>
+              <p class="plan-description">For multinational giants needing high-volume enterprise software, custom infrastructure, and dedicated resources.</p>
+            </div>
+            
+            <div>
+              <div class="plan-price-wrap">
+                <span class="plan-price-amount" data-monthly-price="Custom" data-yearly-price="Custom">Custom</span>
+                <span class="plan-price-period">Contact For Proposal</span>
+              </div>
+              
+              <ul class="plan-features-list">
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Unlimited concurrent project pipeline</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Enterprise security audits & compliance</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Dedicated full-stack squad resources</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Custom SLA agreement definitions</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> 24/7 Phone hotline support SLA</li>
+                <li class="plan-feature-item"><i class="bi bi-check-circle-fill"></i> Full brand & tech lead architect</li>
+              </ul>
+              
+              <a href="contact.html?plan=enterprise" class="btn-premium btn-premium-outline w-100 py-3 text-center">Initiate Proposal</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FEATURE COMPARISON -->
+    <section class="feature-comparison-section" id="feature-comparison">
+      <div class="container">
+        <div class="row justify-content-center mb-5 text-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="text-kicker mb-3">Feature Table</span>
+            <h2 class="h2-section text-gradient-primary">Compare the Tiers</h2>
+            <p class="text-secondary mt-2">
+              Review every single capability, limit, SLA, and custom resource structure to align perfectly with your organizational workflow.
+            </p>
+          </div>
+        </div>
+
+        <div class="table-outer-wrapper" data-aos="fade-up">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Core Features</th>
+                <th>Starter</th>
+                <th>Growth</th>
+                <th>Business</th>
+                <th>Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Category: Project Scope -->
+              <tr class="table-category-row">
+                <td colspan="5">Project Scope & Scale</td>
+              </tr>
+              <tr>
+                <td>Concurrent Projects</td>
+                <td>1 Active</td>
+                <td>2 Active</td>
+                <td>3 Active</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>Monthly Dev Hours</td>
+                <td>Up to 40h</td>
+                <td>Up to 90h</td>
+                <td>Up to 180h</td>
+                <td>Uncapped / Squad</td>
+              </tr>
+              <tr>
+                <td>Subdomains / Brand Units</td>
+                <td>1 Brand</td>
+                <td>2 Brands</td>
+                <td>5 Brands</td>
+                <td>Unlimited</td>
+              </tr>
+
+              <!-- Category: Design & Engineering -->
+              <tr class="table-category-row">
+                <td colspan="5">Design & Engineering Standards</td>
+              </tr>
+              <tr>
+                <td>Custom Figma UI/UX Layouts</td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+              </tr>
+              <tr>
+                <td>React / Vite Source Code</td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+              </tr>
+              <tr>
+                <td>AOS Motion Animations</td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+              </tr>
+              <tr>
+                <td>Full Stack Integrations</td>
+                <td><i class="bi bi-x-circle"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+              </tr>
+              
+              <!-- Category: Reassurance & Support -->
+              <tr class="table-category-row">
+                <td colspan="5">SLA & Account Management</td>
+              </tr>
+              <tr>
+                <td>Delivery Turnaround Time</td>
+                <td>Weekly</td>
+                <td>48 Hours</td>
+                <td>24 Hours</td>
+                <td>Custom SLA Priority</td>
+              </tr>
+              <tr>
+                <td>Figma Live Collaboration</td>
+                <td><i class="bi bi-x-circle"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+              </tr>
+              <tr>
+                <td>Dedicated Account Architect</td>
+                <td><i class="bi bi-x-circle"></i></td>
+                <td><i class="bi bi-x-circle"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+                <td><i class="bi bi-check-circle-fill"></i></td>
+              </tr>
+              <tr>
+                <td>Support Communication Channel</td>
+                <td>E-mail only</td>
+                <td>Slack & Email</td>
+                <td>24/7 Slack Connect</td>
+                <td>Slack + Direct Phone Line</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PRICING CALCULATOR -->
+    <section class="pricing-calculator-section" id="pricing-calculator">
+      <div class="container">
+        <div class="row justify-content-center mb-5 text-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="text-kicker mb-3">Cost Estimator</span>
+            <h2 class="h2-section text-gradient-primary">Build Your Retainer</h2>
+            <p class="text-secondary mt-2">
+              Adjust sliders below to tailor the design resources, team integration requirements, and SLA speeds you need in real-time.
+            </p>
+          </div>
+        </div>
+
+        <div class="calculator-container-card" id="avant-pricing-calculator" data-aos="fade-up">
+          <div class="row g-5 calculator-inner">
+            <div class="col-lg-7">
+              
+              <!-- Slider 1: Active Projects -->
+              <div class="mb-5">
+                <div class="calc-label-wrap">
+                  <label for="calc-projects" class="calc-title-small">Active Parallel Projects</label>
+                  <span class="calc-output-val" id="calc-projects-output">1 Project</span>
+                </div>
+                <input type="range" class="calc-slider-custom" id="calc-projects" min="1" max="10" value="2" step="1">
+                <div class="d-flex justify-content-between text-muted small font-mono" style="font-size: 0.68rem; margin-top: -1.5rem;">
+                  <span>1 Project</span>
+                  <span>5 Projects</span>
+                  <span>10+ Projects</span>
+                </div>
+              </div>
+
+              <!-- Slider 2: Team Size -->
+              <div class="mb-5">
+                <div class="calc-label-wrap">
+                  <label for="calc-team" class="calc-title-small">Integrated Slack Team Members</label>
+                  <span class="calc-output-val" id="calc-team-output">5 Members</span>
+                </div>
+                <input type="range" class="calc-slider-custom" id="calc-team" min="1" max="30" value="5" step="1">
+                <div class="d-flex justify-content-between text-muted small font-mono" style="font-size: 0.68rem; margin-top: -1.5rem;">
+                  <span>1 Member</span>
+                  <span>15 Members</span>
+                  <span>30+ Members</span>
+                </div>
+              </div>
+
+              <!-- Checkbox Group: Add-ons -->
+              <div>
+                <h5 class="calc-title-small mb-4">Premium Project Add-ons</h5>
+                <div class="addons-grid">
+                  
+                  <!-- Addon 1 -->
+                  <label class="calc-addon-box">
+                    <input type="checkbox" id="calc-sla" class="form-check-input flex-shrink-0" style="width: 20px; height: 20px; cursor: none;">
+                    <span class="calc-addon-info">
+                      <span class="calc-addon-title">24/7 SLA Hotline Support</span>
+                      <span class="calc-addon-desc">Immediate weekend response (+$499/mo)</span>
+                    </span>
+                  </label>
+
+                  <!-- Addon 2 -->
+                  <label class="calc-addon-box">
+                    <input type="checkbox" id="calc-brand" class="form-check-input flex-shrink-0" style="width: 20px; height: 20px; cursor: none;">
+                    <span class="calc-addon-info">
+                      <span class="calc-addon-title">Dedicated Brand Architect</span>
+                      <span class="calc-addon-desc">Design lead for all brand updates (+$1,199/mo)</span>
+                    </span>
+                  </label>
+
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Result Panel -->
+            <div class="col-lg-5">
+              <div class="calc-result-panel">
+                <div>
+                  <span class="text-kicker mb-3">Estimated Budget</span>
+                  <h4 class="fw-bold mb-4" style="font-size: 1.5rem; font-family: var(--font-display);">Your Retainer Total</h4>
+                  
+                  <div class="mb-4">
+                    <span class="calc-total-currency">$</span>
+                    <span class="calc-total-amount" id="calc-total-val">2,250</span>
+                    <div class="calc-total-period" id="calc-period-label">/ Month, Billed Monthly</div>
+                  </div>
+                  
+                  <div class="d-flex justify-content-center gap-2 mb-4">
+                    <button class="btn btn-sm btn-outline-dark calc-period-btn active" data-calc-period="monthly" style="font-size: 0.72rem; border-radius: 100px; padding: 6px 14px; font-family: var(--font-mono); cursor: none;">Monthly</button>
+                    <button class="btn btn-sm btn-outline-dark calc-period-btn" data-calc-period="yearly" style="font-size: 0.72rem; border-radius: 100px; padding: 6px 14px; font-family: var(--font-mono); cursor: none;">Yearly (-20%)</button>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="text-secondary small mb-4">
+                    Includes full design IP ownership, continuous deployment pipelines, and active Slack channel integrations.
+                  </p>
+                  <a href="contact.html?type=custom-retainer" class="btn-premium btn-premium-solid w-100 py-3 text-center d-block">
+                    Inquire Custom Proposal <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FAQ PREVIEW -->
+    <section class="pricing-faq-section" id="pricing-faq">
+      <div class="container">
+        <div class="row justify-content-center mb-5 text-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="text-kicker mb-3">Reassurance</span>
+            <h2 class="h2-section text-gradient-primary">Frequently Answered</h2>
+            <p class="text-secondary mt-2">
+              Clarifications regarding our active billing structures, custom retainers, and agency integration workflows.
+            </p>
+          </div>
+        </div>
+
+        <div class="pricing-faq-accordion">
+          
+          <div class="pricing-faq-item" data-aos="fade-up" data-aos-delay="100">
+            <button class="pricing-faq-header" aria-expanded="false" aria-label="Toggle answer">
+              <h4 class="pricing-faq-question">What exactly does "active concurrent projects" mean?</h4>
+              <span class="pricing-faq-icon-indicator"><i class="bi bi-chevron-down"></i></span>
+            </button>
+            <div class="pricing-faq-collapse">
+              <div class="pricing-faq-body">
+                This indicates how many different design or development deliverables can be actively in production simultaneously. For instance, in our <strong>Growth</strong> plan, our team can work on your mobile UX concept and web coding phase concurrently.
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-faq-item" data-aos="fade-up" data-aos-delay="150">
+            <button class="pricing-faq-header" aria-expanded="false" aria-label="Toggle answer">
+              <h4 class="pricing-faq-question">Can we really pause or cancel our active plans anytime?</h4>
+              <span class="pricing-faq-icon-indicator"><i class="bi bi-chevron-down"></i></span>
+            </button>
+            <div class="pricing-faq-collapse">
+              <div class="pricing-faq-body">
+                Absolutely. We believe in sincere partnerships. If your design pipeline runs dry or you are taking a launch recess, simply pause your retainer before your next billing cycle. No hidden cancellation penalties.
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-faq-item" data-aos="fade-up" data-aos-delay="200">
+            <button class="pricing-faq-header" aria-expanded="false" aria-label="Toggle answer">
+              <h4 class="pricing-faq-question">Is all design and code IP owned entirely by us?</h4>
+              <span class="pricing-faq-icon-indicator"><i class="bi bi-chevron-down"></i></span>
+            </button>
+            <div class="pricing-faq-collapse">
+              <div class="pricing-faq-body">
+                Yes. The moment any asset is delivered or code is pushed to your dedicated repository, complete intellectual property ownership transitions entirely to you. You maintain full rights forever.
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-faq-item" data-aos="fade-up" data-aos-delay="250">
+            <button class="pricing-faq-header" aria-expanded="false" aria-label="Toggle answer">
+              <h4 class="pricing-faq-question">How does the 48-hour delivery SLA work?</h4>
+              <span class="pricing-faq-icon-indicator"><i class="bi bi-chevron-down"></i></span>
+            </button>
+            <div class="pricing-faq-collapse">
+              <div class="pricing-faq-body">
+                Our design and engineering sprints operate continuously. Standard requests (like UI component mockups, simple page animations, or bug fixes) are compiled and pushed to active channels inside 48 hours. Larger structural epics are broken down into discrete 48-hour milestones.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TRUSTED BY -->
+    <section class="pricing-trusted-section text-center" id="pricing-trusted">
+      <div class="container">
+        <span class="text-kicker mb-4 d-block">Elite Clients & Partnerships</span>
+        
+        <div class="trusted-logos-grid" data-aos="fade-up">
+          <div class="trusted-logo-item">Vellum<span class="trusted-logo-dot"></span></div>
+          <div class="trusted-logo-item">Lumina<span class="trusted-logo-dot"></span></div>
+          <div class="trusted-logo-item">Symmetry<span class="trusted-logo-dot"></span></div>
+          <div class="trusted-logo-item">Onyx<span class="trusted-logo-dot"></span></div>
+          <div class="trusted-logo-item">Krypton<span class="trusted-logo-dot"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FINAL CTA -->
+    <section class="pricing-final-cta-section text-center animate-trigger" id="pricing-final-cta">
+      <div class="pricing-final-cta-mesh"></div>
+      
+      <div class="container">
+        <div class="pricing-cta-glass-card" data-aos="zoom-in">
+          <div class="pricing-cta-glow-blob"></div>
+          
+          <div style="position: relative; z-index: 2;">
+            <span class="text-kicker mb-3">Initiate Today</span>
+            <h2 class="h2-section text-gradient-primary mb-3">Ready to build something <br><span class="pricing-italic-span">extraordinary?</span></h2>
+            <p class="text-secondary max-w-2xl mx-auto mb-5">
+              Secure an active retainer slot with AVANT. Studio today. Our creative squads are ready to align with your next digital masterpiece.
+            </p>
+            
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="contact.html" class="btn-premium btn-premium-solid py-3 px-5">
+                Book A Discovery Call <i class="bi bi-telephone-outbound-fill"></i>
+              </a>
+              <a href="portfolio.html" class="btn-premium btn-premium-outline py-3 px-5">
+                View Creative Work <i class="bi bi-briefcase"></i>
+              </a>
+            </div>
+            
+            <p class="mb-0 text-muted small mt-4">
+              <i class="bi bi-shield-lock-fill text-success me-1"></i> No initial commitment required. 15-minute alignment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="logo-link mb-3">AVANT<span class="logo-dot"></span></a>
+          <p class="text-secondary small mb-4">A ThemeForest-ready premium digital agency template. Crafted with extreme typography discipline, flawless layouts, and fluid micro-interactions.</p>
+          <div class="d-flex gap-2">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-dribbble"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="team.html" class="footer-link-item">Our Team</a></li>
+            <li><a href="pricing.html" class="footer-link-item">Pricing Plans</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Our Services</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="services.html" class="footer-link-item">All Services</a></li>
+            <li><a href="service-details.html" class="footer-link-item">Service Detail Page</a></li>
+            <li><a href="portfolio.html" class="footer-link-item">Our Work</a></li>
+            <li><a href="portfolio-details.html" class="footer-link-item">Project Case Study</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Help & Learn</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="faq.html" class="footer-link-item">Frequently Asked Questions</a></li>
+            <li><a href="blog.html" class="footer-link-item">Our Journal</a></li>
+            <li><a href="blog-details.html" class="footer-link-item">Article Case Study</a></li>
+            <li><a href="404.html" class="footer-link-item">Custom 404 Error</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-copyright align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="mb-0 small text-muted">&copy; <span id="copyright-year"></span> AVANT. Studio. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0 small text-muted">Designed & Developed with Passion</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/pages/pricing.js"></script>
+</body>
+</html>

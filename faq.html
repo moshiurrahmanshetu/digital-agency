@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions - AVANT. Studio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/pages/faq.css">
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("agency-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo-link">AVANT<span class="logo-dot"></span></a>
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links-container">
+          <li><a href="index.html" class="nav-link-item">Showcase</a></li>
+          <li><a href="about.html" class="nav-link-item">About</a></li>
+          <li><a href="services.html" class="nav-link-item">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link-item">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link-item">Pricing</a></li>
+          <li><a href="team.html" class="nav-link-item">Team</a></li>
+          <li><a href="faq.html" class="nav-link-item active">FAQ</a></li>
+          <li><a href="blog.html" class="nav-link-item">Blog</a></li>
+          <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <div class="magnetic-wrap">
+          <button class="theme-toggle-btn" aria-label="Toggle theme mode">
+            <i class="bi bi-sun-fill theme-toggle-icon theme-toggle-icon-sun"></i>
+            <i class="bi bi-moon-stars-fill theme-toggle-icon theme-toggle-icon-moon"></i>
+          </button>
+        </div>
+        <a href="contact.html" class="btn-premium btn-premium-solid header-action-btn d-none d-sm-inline-flex">
+          Get in Touch <i class="bi bi-arrow-right"></i>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Open mobile menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <button class="mobile-drawer-close" aria-label="Close mobile menu"><i class="bi bi-x-lg"></i></button>
+    <div class="mobile-drawer-nav">
+      <a href="index.html" class="mobile-drawer-nav-link">Showcase</a>
+      <a href="about.html" class="mobile-drawer-nav-link">About Us</a>
+      <a href="services.html" class="mobile-drawer-nav-link">Our Services</a>
+      <a href="portfolio.html" class="mobile-drawer-nav-link">Creative Portfolio</a>
+      <a href="pricing.html" class="mobile-drawer-nav-link">Plans & Pricing</a>
+      <a href="team.html" class="mobile-drawer-nav-link">Our Team</a>
+      <a href="faq.html" class="mobile-drawer-nav-link active">FAQ</a>
+      <a href="blog.html" class="mobile-drawer-nav-link">Articles & News</a>
+      <a href="contact.html" class="mobile-drawer-nav-link">Contact Us</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <p class="mb-3 small">Let's build something exceptional together.</p>
+      <a href="contact.html" class="btn-premium btn-premium-solid w-100 py-3">Get in Touch <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- CONTENT WRAPPER -->
+  <div class="page-shell-wrapper">
+    
+    <!-- 01. FAQ HERO -->
+    <section class="faq-hero-section" id="faq-hero">
+      <div class="faq-hero-mesh"></div>
+      <div class="faq-background-text">ANSWERS</div>
+      
+      <div class="container faq-hero-container">
+        <div class="row align-items-center">
+          <div class="col-lg-7" data-aos="fade-right">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="mb-4">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted small">Showcase</a></li>
+                <li class="breadcrumb-item active text-muted small" aria-current="page">Knowledge Center</li>
+              </ol>
+            </nav>
+            
+            <span class="text-kicker mb-3">Reassurance Centre</span>
+            <h1 class="faq-hero-title mb-4">
+              Bespoke answers. <br>
+              <span class="faq-italic-span">Zero guesswork.</span>
+            </h1>
+            
+            <p class="faq-hero-lead mb-5">
+              Clear, honest, and meticulous answers regarding our active project sprints, transparent flat-rate subscriptions, creative design standards, and source-code delivery protocols.
+            </p>
+            
+            <div class="d-flex flex-wrap gap-3">
+              <button onclick="document.getElementById('faq-search-input').focus(); window.scrollTo({top: document.getElementById('faq-search-section').offsetTop - 120, behavior: 'smooth'});" class="btn-premium btn-premium-solid py-3 px-4">
+                Smart Search <i class="bi bi-search ms-1"></i>
+              </button>
+              <a href="#faq-popular" class="btn-premium btn-premium-outline py-3 px-4">
+                Popular Inquiries <i class="bi bi-fire ms-1"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+            <div class="faq-hero-visual-wrap">
+              <div class="faq-orb-glowing"></div>
+              
+              <!-- Floating Card 1: Live Chat Link -->
+              <div class="faq-hero-floating-card faq-floating-card-1">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <span class="fs-4 text-primary"><i class="bi bi-chat-heart-fill"></i></span>
+                  <h6 class="mb-0 fw-bold">Active Support SLA</h6>
+                </div>
+                <p class="mb-0 text-secondary small">Real-time team communication and weekend priority support.</p>
+              </div>
+              
+              <!-- Floating Card 2: Knowledge Base -->
+              <div class="faq-hero-floating-card faq-floating-card-2">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <span class="fs-4 text-primary"><i class="bi bi-journal-text"></i></span>
+                  <h6 class="mb-0 fw-bold">Pure Code IP</h6>
+                </div>
+                <p class="mb-0 text-secondary small">Complete intellectual property and source repository ownership.</p>
+              </div>
+              
+              <!-- Floating Card 3: Instant Sync -->
+              <div class="faq-hero-floating-card faq-floating-card-3">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <span class="text-success"><i class="bi bi-lightning-charge-fill"></i></span>
+                  <span class="font-mono text-uppercase fw-bold text-success" style="font-size: 0.65rem;">SlackConnect</span>
+                </div>
+                <p class="mb-0 text-secondary small">Real-time dedicated dashboard and transparent sprint tracking.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. SMART SEARCH -->
+    <section class="faq-search-section" id="faq-search-section">
+      <div class="container">
+        <div class="faq-search-container" data-aos="fade-up">
+          <div class="faq-search-box-wrapper">
+            <i class="bi bi-search faq-search-input-icon"></i>
+            <input type="text" class="faq-search-input-field" id="faq-search-input" placeholder="Type your inquiry here (e.g. billing, React, Slack)..." aria-label="Search FAQ database">
+            <button class="faq-clear-search-btn" id="faq-clear-search" aria-label="Clear search input">
+              <i class="bi bi-x-lg"></i>
+            </button>
+            <span class="faq-search-key-hint d-none d-sm-inline-block">Press / to search</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. FAQ CATEGORIES -->
+    <section class="faq-categories-section">
+      <div class="container">
+        <div class="faq-categories-flex" data-aos="fade-up">
+          <button class="faq-category-tab active" data-category="all" aria-label="All Categories">
+            All <span class="count-badge">21</span>
+          </button>
+          <button class="faq-category-tab" data-category="general" aria-label="General category">
+            General <span class="count-badge">0</span>
+          </button>
+          <button class="faq-category-tab" data-category="services" aria-label="Services category">
+            Services <span class="count-badge">0</span>
+          </button>
+          <button class="faq-category-tab" data-category="pricing" aria-label="Pricing category">
+            Pricing <span class="count-badge">0</span>
+          </button>
+          <button class="faq-category-tab" data-category="projects" aria-label="Projects category">
+            Projects <span class="count-badge">0</span>
+          </button>
+          <button class="faq-category-tab" data-category="technical" aria-label="Technical category">
+            Technical <span class="count-badge">0</span>
+          </button>
+          <button class="faq-category-tab" data-category="support" aria-label="Support category">
+            Support <span class="count-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. FAQ ACCORDION -->
+    <section class="faq-accordion-section" id="faq-accordion-view">
+      <div class="container">
+        <div class="faq-accordion-container">
+          
+          <!-- Controls Header -->
+          <div class="faq-accordion-controls" data-aos="fade-up">
+            <span class="faq-accordion-count-summary" id="faq-active-count">Showing 21 of 21 entries</span>
+            <div class="faq-accordion-buttons-wrap">
+              <button class="faq-control-btn" id="faq-expand-all" aria-label="Expand all accordions">Expand All</button>
+              <button class="faq-control-btn" id="faq-collapse-all" aria-label="Collapse all accordions">Collapse All</button>
+            </div>
+          </div>
+
+          <!-- Empty search results placeholder -->
+          <div class="faq-empty-state" id="faq-search-empty-state">
+            <i class="bi bi-search-heart"></i>
+            <h3 class="faq-empty-state-title">No matching inquiries found</h3>
+            <p class="text-secondary max-w-md mx-auto">
+              We couldn't find matches for that query. Try refining your keywords or reach our direct assistance channels below.
+            </p>
+            <button onclick="document.getElementById('faq-search-input').value = ''; document.getElementById('faq-clear-search').click();" class="btn-premium btn-premium-outline mt-3 py-2 px-4">
+              Reset Filters
+            </button>
+          </div>
+
+          <!-- The List (21 Items) -->
+          <div class="faq-accordion-list">
+            
+            <!-- --- GENERAL CATEGORY --- -->
+            
+            <!-- Item 1 -->
+            <div class="faq-list-item-wrapper" id="faq-item-1" data-item-category="general" data-aos="fade-up" data-aos-delay="50">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">General</span>
+                  <h4 class="faq-item-question">What is AVANT. Studio?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  AVANT. Studio is an elite creative engineering agency delivering top-tier UI/UX design architectures, custom high-performance web products, and modern full-stack systems. We collaborate with ambitious startups and enterprises to shape products with premium aesthetics and solid, compiled code frameworks.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="faq-list-item-wrapper" id="faq-item-2" data-item-category="general" data-aos="fade-up" data-aos-delay="100">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">General</span>
+                  <h4 class="faq-item-question">How does a monthly retainer compare to traditional agencies?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Traditional agencies bill on fluctuating hourly estimates with lengthy, over-engineered scoping processes. AVANT provides flat-rate monthly retainer subscriptions that grant you direct access to our visual and engineering squad. There are no surprise overheads, you can scale resources up or down, pause anytime, and maintain continuous launch momentum.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="faq-list-item-wrapper" id="faq-item-3" data-item-category="general" data-aos="fade-up" data-aos-delay="150">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">General</span>
+                  <h4 class="faq-item-question">Where is the AVANT team based?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  We operate as a highly focused, globally synchronized collective of principal designers and engineers. Our structure is anchored in major strategic time zones, allowing us to maintain smooth 24-hour asynchronous delivery and continuous coverage for our active retainer clients.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="faq-list-item-wrapper" id="faq-item-4" data-item-category="general" data-aos="fade-up" data-aos-delay="200">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">General</span>
+                  <h4 class="faq-item-question">How do we initiate our onboarding with AVANT?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Our onboarding process is frictionless and immediate. Upon choosing your subscription tier, we establish your dedicated Slack connect channel, share a collaborative Figma whiteboard, configure your sprint tracking board, and link to your private repositories within 24 hours. We then proceed with our first active briefing immediately.
+                </div>
+              </div>
+            </div>
+
+
+            <!-- --- SERVICES CATEGORY --- -->
+
+            <!-- Item 5 -->
+            <div class="faq-list-item-wrapper" id="faq-item-5" data-item-category="services" data-aos="fade-up" data-aos-delay="50">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Services</span>
+                  <h4 class="faq-item-question">What frameworks and languages do you specialize in?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  We specialize in high-performance modern web technologies. Our typical tech stack centers around React 18+, TypeScript, Vite, Next.js, Tailwind CSS, Express, Node.js, and clean databases like Drizzle-managed PostgreSQL and Firebase Firestore. We write typed, clean, scalable architectures with native speed optimizations.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="faq-list-item-wrapper" id="faq-item-6" data-item-category="services" data-aos="fade-up" data-aos-delay="100">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Services</span>
+                  <h4 class="faq-item-question">Do you design custom brand identities, or only interfaces?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  We construct complete, premium digital ecosystems. This includes full corporate identity suites, creative typography pairings, vector style guides, design token setups, and iconography systems, in addition to high-fidelity user interface layouts in Figma.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="faq-list-item-wrapper" id="faq-item-7" data-item-category="services" data-aos="fade-up" data-aos-delay="150">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Services</span>
+                  <h4 class="faq-item-question">Can you integrate advanced AI and LLM models?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Yes. We specialize in server-safe artificial intelligence integrations. We have expert competencies in implementing Google Gemini API, OpenAI APIs, vector databases, search grounding engines, and custom streaming pipelines, ensuring your API credentials remain securely hidden from the browser.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="faq-list-item-wrapper" id="faq-item-8" data-item-category="services" data-aos="fade-up" data-aos-delay="200">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Services</span>
+                  <h4 class="faq-item-question">Do you handle high-fidelity motion graphics and web animations?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Visual physics is in our core DNA. We utilize modern motion engines, CSS transitions, AOS triggers, and lightweight canvas layers to construct fluid, organic micro-interactions. Every transition is designed to reinforce user context and feel tangibly responsive.
+                </div>
+              </div>
+            </div>
+
+
+            <!-- --- PRICING CATEGORY --- -->
+
+            <!-- Item 9 -->
+            <div class="faq-list-item-wrapper" id="faq-item-9" data-item-category="pricing" data-aos="fade-up" data-aos-delay="50">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Pricing</span>
+                  <h4 class="faq-item-question">Can we really pause or cancel our subscription plan at any moment?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Absolutely. If your design pipeline runs dry or you are taking a launch recess, simply toggle your subscription to "Paused" before your next billing cycle. We freeze your remaining cycle days, preserving them exactly until you are ready to resume work.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="faq-list-item-wrapper" id="faq-item-10" data-item-category="pricing" data-aos="fade-up" data-aos-delay="100">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Pricing</span>
+                  <h4 class="faq-item-question">Are there any hidden setup fees or onboarding overheads?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  No. The pricing tier you choose is flat-rate and fully transparent. We do not charge separate setup fees, onboarding costs, Slack connection taxes, or repo configuration overheads.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="faq-list-item-wrapper" id="faq-item-11" data-item-category="pricing" data-aos="fade-up" data-aos-delay="150">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Pricing</span>
+                  <h4 class="faq-item-question">What forms of payment do you support?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  All transactions are handled securely through Stripe. We support major credit cards (Visa, MasterCard, American Express), automated bank ACH transfers, wire transfers, and regional enterprise invoice flows depending on your corporate agreements.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="faq-list-item-wrapper" id="faq-item-12" data-item-category="pricing" data-aos="fade-up" data-aos-delay="200">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Pricing</span>
+                  <h4 class="faq-item-question">Do you offer refunds if our design goals change?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Due to the priority reservation of our human creative talent and active developer resources, we do not issue refunds for active periods. However, we offer full flexibility to instantly pause your cycle, reserving all remaining days to be utilized at any point in the future.
+                </div>
+              </div>
+            </div>
+
+
+            <!-- --- PROJECTS CATEGORY --- -->
+
+            <!-- Item 13 -->
+            <div class="faq-list-item-wrapper" id="faq-item-13" data-item-category="projects" data-aos="fade-up" data-aos-delay="50">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Projects</span>
+                  <h4 class="faq-item-question">How many design or engineering deliverables can we request at a time?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  You can input unlimited items into your project queue backlog. Our dedicated squad processes and compiles your tasks sequentially, working on 1 to 3 active concurrent deliverables depending on your chosen subscription tier.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 14 -->
+            <div class="faq-list-item-wrapper" id="faq-item-14" data-item-category="projects" data-aos="fade-up" data-aos-delay="100">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Projects</span>
+                  <h4 class="faq-item-question">How do you manage task prioritization and tracking?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  We keep tracking straightforward. We construct a bespoke Notion whiteboard or corporate Trello workspace linked directly to your Slack channel. You can drag cards, edit requirements, add feedback, and set priority sequences with absolute transparency.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 15 -->
+            <div class="faq-list-item-wrapper" id="faq-item-15" data-item-category="projects" data-aos="fade-up" data-aos-delay="150">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Projects</span>
+                  <h4 class="faq-item-question">What is the average turnaround time for standard requests?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Standard items such as UI asset mockups, functional forms, and motion animations are pushed and verified within 48 hours. Complex architectural epics are divided into logical, iterative 48-hour delivery sprints.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 16 -->
+            <div class="faq-list-item-wrapper" id="faq-item-16" data-item-category="projects" data-aos="fade-up" data-aos-delay="200">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Projects</span>
+                  <h4 class="faq-item-question">How do we collaborate with the AVANT team on a daily basis?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Daily collaboration is fast and asynchronous. We utilize dedicated Slack channels for swift updates, comments, and file transfers. Higher subscription tiers include weekly face-to-face review calls (Zoom/Meet) for closer alignment on active sprint progress.
+                </div>
+              </div>
+            </div>
+
+
+            <!-- --- TECHNICAL CATEGORY --- -->
+
+            <!-- Item 17 -->
+            <div class="faq-list-item-wrapper" id="faq-item-17" data-item-category="technical" data-aos="fade-up" data-aos-delay="50">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Technical</span>
+                  <h4 class="faq-item-question">Is the source code and design IP entirely ours?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Absolutely. Upon delivery and billing completion, 100% of intellectual property, design source files, and software codes transfer permanently to you. Code is committed directly to your private corporate repositories.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 18 -->
+            <div class="faq-list-item-wrapper" id="faq-item-18" data-item-category="technical" data-aos="fade-up" data-aos-delay="100">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Technical</span>
+                  <h4 class="faq-item-question">How do you guarantee the security of our proprietary systems?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Security is baked into our engineering lifecycle. We implement secure server-side API proxies, protect environment variables, enforce Strict Transport Security protocols, and conduct routine dependency audits to ensure zero vulnerabilities in production code.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 19 -->
+            <div class="faq-list-item-wrapper" id="faq-item-19" data-item-category="technical" data-aos="fade-up" data-aos-delay="150">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Technical</span>
+                  <h4 class="faq-item-question">Can you host and deploy our completed web products?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Yes. We engineer with modern deployment standards. We regularly build Dockerized architectures and configure automated pipelines on Google Cloud Run, Vercel, Netlify, or AWS, including secure DNS binding and Global CDN setups.
+                </div>
+              </div>
+            </div>
+
+
+            <!-- --- SUPPORT CATEGORY --- -->
+
+            <!-- Item 20 -->
+            <div class="faq-list-item-wrapper" id="faq-item-20" data-item-category="support" data-aos="fade-up" data-aos-delay="50">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Support</span>
+                  <h4 class="faq-item-question">What happens if a critical bug occurs over the weekend?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  Our Business and Enterprise subscriptions feature our 24/7 priority hotline SLA. In the event of a weekend emergency, our standby engineering squad is triggered immediately to patch, verify, and restore services to ensure absolute business integrity.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 21 -->
+            <div class="faq-list-item-wrapper" id="faq-item-21" data-item-category="support" data-aos="fade-up" data-aos-delay="100">
+              <button class="faq-item-header-btn" aria-expanded="false" aria-label="Toggle answer">
+                <span class="faq-item-title-wrap">
+                  <span class="faq-item-category-tag">Support</span>
+                  <h4 class="faq-item-question">Can we hire your team for specialized, one-off consulting engagements?</h4>
+                </span>
+                <span class="faq-item-arrow-indicator"><i class="bi bi-chevron-down"></i></span>
+              </button>
+              <div class="faq-item-collapse-pane">
+                <div class="faq-item-body-content">
+                  While our model primarily targets long-term retainer partnerships, we do accept short-term consultancies for high-stakes enterprise projects, custom cloud migrations, and full-scale product audit cycles. Contact our advisory lead below to initiate scoping.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. POPULAR QUESTIONS -->
+    <section class="faq-popular-section" id="faq-popular">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="text-kicker mb-3">Instant Hotlinks</span>
+            <h2 class="h2-section text-gradient-primary">Frequently Explored</h2>
+            <p class="text-secondary mt-2">
+              Bypass the list and jump directly to answers for our most widely requested technical, pricing, and project-workflow insights.
+            </p>
+          </div>
+        </div>
+
+        <div class="popular-faq-grid" data-aos="fade-up">
+          
+          <!-- Card 1 (Links to Item 9) -->
+          <div class="popular-faq-card" data-target-question="faq-item-9">
+            <div class="popular-card-top">
+              <span class="popular-card-category">Pricing</span>
+              <h4 class="popular-card-question">Can we pause or cancel our subscription anytime?</h4>
+            </div>
+            <a href="#faq-item-9" class="popular-card-link-action">
+              Read Answer <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 2 (Links to Item 5) -->
+          <div class="popular-faq-card" data-target-question="faq-item-5">
+            <div class="popular-card-top">
+              <span class="popular-card-category">Services</span>
+              <h4 class="popular-card-question">What core frameworks and languages do you specialize in?</h4>
+            </div>
+            <a href="#faq-item-5" class="popular-card-link-action">
+              Read Answer <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 3 (Links to Item 17) -->
+          <div class="popular-faq-card" data-target-question="faq-item-17">
+            <div class="popular-card-top">
+              <span class="popular-card-category">Technical</span>
+              <h4 class="popular-card-question">Do we maintain 100% ownership of source code?</h4>
+            </div>
+            <a href="#faq-item-17" class="popular-card-link-action">
+              Read Answer <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 4 (Links to Item 2) -->
+          <div class="popular-faq-card" data-target-question="faq-item-2">
+            <div class="popular-card-top">
+              <span class="popular-card-category">General</span>
+              <h4 class="popular-card-question">How does a flat-rate retainer compare to hourly rates?</h4>
+            </div>
+            <a href="#faq-item-2" class="popular-card-link-action">
+              Read Answer <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 5 (Links to Item 15) -->
+          <div class="popular-faq-card" data-target-question="faq-item-15">
+            <div class="popular-card-top">
+              <span class="popular-card-category">Projects</span>
+              <h4 class="popular-card-question">What is the average turnaround time for sprint requests?</h4>
+            </div>
+            <a href="#faq-item-15" class="popular-card-link-action">
+              Read Answer <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 6 (Links to Item 20) -->
+          <div class="popular-faq-card" data-target-question="faq-item-20">
+            <div class="popular-card-top">
+              <span class="popular-card-category">Support</span>
+              <h4 class="popular-card-question">What happens if a critical bug occurs over weekends?</h4>
+            </div>
+            <a href="#faq-item-20" class="popular-card-link-action">
+              Read Answer <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. KNOWLEDGE BASE PREVIEW -->
+    <section class="faq-knowledge-section" id="faq-knowledge">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="text-kicker mb-3">Knowledge Base</span>
+            <h2 class="h2-section text-gradient-primary">Deepen Your Insights</h2>
+            <p class="text-secondary">
+              Expand your conceptual framework and review our design methodologies, technical research, or consult direct onboarding guides.
+            </p>
+          </div>
+        </div>
+
+        <div class="knowledge-grid" data-aos="fade-up">
+          
+          <!-- Card 1 (Blog) -->
+          <div class="knowledge-preview-card">
+            <div>
+              <div class="knowledge-card-icon-box">
+                <i class="bi bi-journal-text"></i>
+              </div>
+              <h3 class="knowledge-card-title">Our Journal</h3>
+              <p class="knowledge-card-desc">
+                In-depth research papers on modern UX physics, compiled CSS guidelines, Tailwind standards, and Gemini AI middleware.
+              </p>
+            </div>
+            <a href="blog.html" class="btn-premium btn-premium-solid py-3 text-center">Visit Articles</a>
+          </div>
+
+          <!-- Card 2 (Services) -->
+          <div class="knowledge-preview-card">
+            <div>
+              <div class="knowledge-card-icon-box">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h3 class="knowledge-card-title">Core Services</h3>
+              <p class="knowledge-card-desc">
+                Review our comprehensive visual, digital, engineering, and branding capabilities in meticulous technical detail.
+              </p>
+            </div>
+            <a href="services.html" class="btn-premium btn-premium-solid py-3 text-center">Explore Capabilities</a>
+          </div>
+
+          <!-- Card 3 (Contact) -->
+          <div class="knowledge-preview-card">
+            <div>
+              <div class="knowledge-card-icon-box">
+                <i class="bi bi-envelope-open"></i>
+              </div>
+              <h3 class="knowledge-card-title">Custom Inquiry</h3>
+              <p class="knowledge-card-desc">
+                Have an enterprise-tier deployment or compliance audit requirements? Connect directly with an architectural lead.
+              </p>
+            </div>
+            <a href="contact.html" class="btn-premium btn-premium-solid py-3 text-center">Submit Brief</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. CONTACT SUPPORT SECTOR -->
+    <section class="faq-support-section" id="faq-support">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="text-kicker mb-3">Direct Channels</span>
+            <h2 class="h2-section text-gradient-primary">Connect with Support</h2>
+            <p class="text-secondary mt-2">
+              If your question isn't answered above, reach out directly. Our global squad is standing by to resolve any issue.
+            </p>
+          </div>
+        </div>
+
+        <div class="support-channels-grid" data-aos="fade-up">
+          
+          <!-- Channel 1: Email -->
+          <div class="support-channel-card">
+            <div class="support-channel-icon"><i class="bi bi-envelope"></i></div>
+            <h4 class="support-channel-title">Email Direct</h4>
+            <span class="support-channel-meta">2hr Turnaround</span>
+            <a href="mailto:support@avant.studio" class="support-channel-action">Send Mail <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+
+          <!-- Channel 2: Phone -->
+          <div class="support-channel-card">
+            <div class="support-channel-icon"><i class="bi bi-telephone"></i></div>
+            <h4 class="support-channel-title">Phone Hotline</h4>
+            <span class="support-channel-meta">Mon-Fri (9am-5pm)</span>
+            <a href="tel:+18005550199" class="support-channel-action">Call Us <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+
+          <!-- Channel 3: WhatsApp -->
+          <div class="support-channel-card">
+            <div class="support-channel-icon"><i class="bi bi-whatsapp"></i></div>
+            <h4 class="support-channel-title">WhatsApp Business</h4>
+            <span class="support-channel-meta">Instant Messaging</span>
+            <a href="https://wa.me/18005550199" target="_blank" rel="noopener noreferrer" class="support-channel-action">Chat Now <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+
+          <!-- Channel 4: Schedule Call -->
+          <div class="support-channel-card">
+            <div class="support-channel-icon"><i class="bi bi-calendar-event"></i></div>
+            <h4 class="support-channel-title">Schedule Zoom</h4>
+            <span class="support-channel-meta">15-Min Meeting</span>
+            <a href="contact.html?action=schedule" class="support-channel-action">Book Slot <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+
+          <!-- Channel 5: Live Chat (UI Only Launcher) -->
+          <div class="support-channel-card">
+            <div class="support-channel-icon"><i class="bi bi-chat-dots"></i></div>
+            <h4 class="support-channel-title">Live Chat</h4>
+            <span class="support-channel-meta">Standby Agent</span>
+            <a href="contact.html?action=chat" onclick="if (window.showPremiumToast) { window.showPremiumToast('Our Live Chat is currently simulating offline. Please use our Contact Form or schedule a call.'); return false; }" class="support-channel-action">Launch Chat <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. FINAL CTA -->
+    <section class="faq-final-cta-section text-center animate-trigger" id="faq-final-cta">
+      <div class="faq-final-cta-mesh"></div>
+      
+      <div class="container">
+        <div class="faq-cta-glass-card" data-aos="zoom-in">
+          <div class="faq-cta-glow-blob"></div>
+          
+          <div style="position: relative; z-index: 2;">
+            <span class="text-kicker mb-3">Unprecedented Alliance</span>
+            <h2 class="h2-section text-gradient-primary mb-3">Ready to accelerate your next <br><span class="faq-italic-span">digital masterpiece?</span></h2>
+            <p class="text-secondary max-w-2xl mx-auto mb-5">
+              Secure a principal retainer slot with AVANT. Studio today. Our creative squads are ready to deliver outstanding design and high-performance frontend code.
+            </p>
+            
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="contact.html" class="btn-premium btn-premium-solid py-3 px-5">
+                Book Alignment Call <i class="bi bi-telephone-outbound-fill ms-2"></i>
+              </a>
+              <a href="portfolio.html" class="btn-premium btn-premium-outline py-3 px-5">
+                Browse Creative Case Studies <i class="bi bi-briefcase ms-2"></i>
+              </a>
+            </div>
+            
+            <p class="mb-0 text-muted small mt-4">
+              <i class="bi bi-shield-lock-fill text-success me-1"></i> Transparent month-to-month contracts. 100% intellectual property guarantee.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="logo-link mb-3">AVANT<span class="logo-dot"></span></a>
+          <p class="text-secondary small mb-4">A ThemeForest-ready premium digital agency template. Crafted with extreme typography discipline, flawless layouts, and fluid micro-interactions.</p>
+          <div class="d-flex gap-2">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-dribbble"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="team.html" class="footer-link-item">Our Team</a></li>
+            <li><a href="pricing.html" class="footer-link-item">Pricing Plans</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Our Services</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="services.html" class="footer-link-item">All Services</a></li>
+            <li><a href="service-details.html" class="footer-link-item">Service Detail Page</a></li>
+            <li><a href="portfolio.html" class="footer-link-item">Our Work</a></li>
+            <li><a href="portfolio-details.html" class="footer-link-item">Project Case Study</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Help & Learn</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="faq.html" class="footer-link-item">Frequently Asked Questions</a></li>
+            <li><a href="blog.html" class="footer-link-item">Our Journal</a></li>
+            <li><a href="blog-details.html" class="footer-link-item">Article Case Study</a></li>
+            <li><a href="404.html" class="footer-link-item">Custom 404 Error</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-copyright align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="mb-0 small text-muted">&copy; <span id="copyright-year"></span> AVANT. Studio. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0 small text-muted">Designed & Developed with Passion</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/pages/faq.js"></script>
+</body>
+</html>

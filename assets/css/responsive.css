@@ -1,0 +1,1062 @@
+/* 
+ * ===================================================================
+ * PREMIUM DIGITAL AGENCY HTML TEMPLATE - RESPONSIVE STYLES
+ * ===================================================================
+ */
+
+/* Extra Large Screens / Monitors */
+@media (min-width: 1400px) {
+  :root {
+    --space-unit: 1.15rem; /* Slightly larger base spacing for 4K / Ultra-wide monitors */
+  }
+}
+
+/* Laptops and Desktops (Under 1200px) */
+@media (max-width: 1199.98px) {
+  :root {
+    --space-unit: 0.95rem;
+  }
+  
+  .h1-hero {
+    font-size: 4.5rem;
+  }
+}
+
+/* Tablets and small laptops (Under 992px) */
+@media (max-width: 991.98px) {
+  :root {
+    --space-unit: 0.9rem;
+    --blur-amount: 8px; /* Softer blurs on tablets to optimize GPU rendering */
+  }
+
+  body {
+    /* Enable standard touch cursor on tablet */
+    cursor: auto !important;
+  }
+
+  .custom-cursor, .custom-cursor-follower {
+    display: none !important; /* Hide custom cursor on touch screens */
+  }
+
+  .main-header {
+    padding: 1rem 0;
+    background: var(--bg-glass);
+    backdrop-filter: blur(var(--blur-amount));
+    -webkit-backdrop-filter: blur(var(--blur-amount));
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .page-shell-wrapper {
+    padding-top: 80px; /* Adjust header offset for mobile */
+  }
+
+  .shell-hero-section {
+    padding: var(--space-2xl) 0 var(--space-xl) 0;
+  }
+
+  /* Adjust spacing for asymmetric cards on smaller screens to prevent overflow */
+  .card-asymmetric, .card-asymmetric-alt {
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: var(--space-lg);
+  }
+}
+
+/* Landscape Phones / Mobile Devices (Under 768px) */
+@media (max-width: 767.98px) {
+  .h1-hero {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.85rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn-premium {
+    width: 100%; /* Full width buttons on small mobile for better touch targets */
+    padding: 0.9rem 2rem;
+  }
+
+  .form-control-premium {
+    padding: 0.95rem 1.1rem;
+  }
+
+  .form-label-premium {
+    top: 0.95rem;
+    left: 1.1rem;
+  }
+
+  .form-control-premium:focus ~ .form-label-premium,
+  .form-control-premium:not(:placeholder-shown) ~ .form-label-premium {
+    transform: translateY(-2.1rem) scale(0.85);
+  }
+  
+  /* Stack column margins and reduce spacing */
+  .main-footer {
+    padding: var(--space-2xl) 0 var(--space-lg) 0;
+  }
+}
+
+/* Small Portrait Phones (Under 480px) */
+@media (max-width: 479.98px) {
+  .h1-hero {
+    font-size: 2.5rem;
+  }
+
+  .mobile-drawer {
+    max-width: 100%; /* Full screen overlay on tiny devices */
+    padding: 7rem 1.5rem 2rem 1.5rem;
+  }
+
+  .card-premium {
+    padding: var(--space-lg);
+    border-radius: 16px;
+  }
+
+  /* Reset Asymmetry on small mobile to maximize grid efficiency */
+  .card-asymmetric, .card-asymmetric-alt {
+    border-radius: 16px !important;
+  }
+}
+
+/* Responsive Composition Layouts */
+@media (max-width: 991.98px) {
+  .hero-premium-section {
+    padding: 100px 0 60px 0;
+    min-height: auto;
+  }
+  .hero-image-composition {
+    height: 380px;
+    margin-top: 4rem;
+  }
+  .main-concept-card {
+    width: 80%;
+    left: 10%;
+  }
+  .main-concept-card img {
+    height: 220px;
+  }
+  .floating-card-growth {
+    width: 170px;
+    padding: 0.85rem;
+    bottom: 5%;
+    left: 2%;
+  }
+  .floating-card-projects {
+    width: 190px;
+    padding: 0.85rem;
+    top: 10%;
+    right: 2%;
+  }
+  .floating-card-notification {
+    width: 210px;
+    padding: 0.75rem;
+    bottom: -8%;
+    right: 5%;
+  }
+  .floating-card-dashboard {
+    width: 120px;
+    top: -10%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-image-composition {
+    height: 280px;
+    margin-top: 3rem;
+  }
+  .main-concept-card {
+    width: 90%;
+    left: 5%;
+  }
+  .main-concept-card img {
+    height: 160px;
+  }
+  .floating-card-growth {
+    width: 130px;
+    padding: 0.5rem;
+    bottom: 2%;
+    border-radius: 12px;
+  }
+  .floating-card-growth .h4 {
+    font-size: 1rem;
+  }
+  .floating-card-projects {
+    display: none; /* Hide project card on tiny mobile to avoid overlap clutter */
+  }
+  .floating-card-notification {
+    width: 180px;
+    padding: 0.5rem;
+    bottom: -15%;
+    right: 2%;
+    border-radius: 12px;
+  }
+  .floating-card-notification .noti-icon-container {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+  .floating-card-dashboard {
+    width: 80px;
+  }
+  .hero-trust-indicators {
+    flex-wrap: wrap;
+    gap: 1.5rem !important;
+  }
+}
+
+/* Premium Sections Responsive Configurations */
+@media (max-width: 1199.98px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about-preview-section,
+  .services-preview-section {
+    padding: 80px 0;
+  }
+  .about-layered-wrapper {
+    height: 480px;
+    margin-bottom: 4rem;
+  }
+  .about-main-image {
+    width: 75%;
+    height: 75%;
+  }
+  .about-secondary-image {
+    width: 45%;
+    height: 45%;
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-preview-section,
+  .services-preview-section {
+    padding: 60px 0;
+  }
+  .about-layered-wrapper {
+    height: 380px;
+    margin-bottom: 3rem;
+  }
+  .about-badge-experience {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 12px;
+  }
+  .about-card-awards,
+  .about-card-metrics {
+    padding: 0.5rem 0.85rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+  }
+  .about-card-awards img,
+  .about-card-metrics img {
+    display: none;
+  }
+  .client-logos-section {
+    padding: 40px 0;
+  }
+  .marquee-track {
+    gap: 1.5rem;
+  }
+  .marquee-logo-card {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Premium Featured Portfolio & Work Process Responsive Rules */
+@media (max-width: 1199.98px) {
+  .portfolio-grid {
+    gap: 4rem 2.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .portfolio-preview-section,
+  .work-process-section {
+    padding: 80px 0;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-top: 3.5rem;
+  }
+  .portfolio-grid .portfolio-col:nth-child(even) {
+    margin-top: 0;
+  }
+  .portfolio-image-wrapper {
+    aspect-ratio: 16 / 10 !important;
+  }
+  
+  /* Work process vertical responsive timeline & card layout */
+  .process-timeline-line {
+    top: 2rem;
+    bottom: 2rem;
+    left: 48px;
+    right: auto;
+    width: 2px;
+    height: calc(100% - 4rem);
+  }
+  .process-timeline-progress {
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top center;
+  }
+  .process-card {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem 2rem 2.5rem 6.5rem;
+  }
+  .process-icon-container {
+    position: absolute;
+    top: 2.25rem;
+    left: 1.5rem;
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .process-number-wrap {
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .portfolio-preview-section,
+  .work-process-section {
+    padding: 60px 0;
+  }
+  .portfolio-hover-details {
+    padding: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  .portfolio-hover-title {
+    font-size: 1.1rem;
+  }
+  .portfolio-hover-desc {
+    display: none; /* Hide descriptions to prevent screen overflow on micro-phones */
+  }
+  .process-card {
+    padding: 5.5rem 1.5rem 2rem 1.5rem;
+    text-align: center;
+    align-items: center;
+  }
+  .process-icon-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto 1.5rem auto;
+  }
+  .process-timeline-line {
+    display: none; /* Hide connecting line completely on tiny phones */
+  }
+}
+
+/* ===================================================================
+   NEW HOMEPAGE SECTIONS RESPONSIVE RULES
+   =================================================================== */
+@media (max-width: 1199.98px) {
+  .stats-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .tech-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+  .why-choose-composition {
+    height: 460px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .why-choose-section,
+  .agency-stats-section,
+  .tech-expertise-section,
+  .awards-section {
+    padding: 80px 0;
+  }
+  
+  .why-choose-composition {
+    margin-bottom: 3.5rem;
+    height: 420px;
+  }
+  
+  .choose-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .stats-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .award-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .why-choose-section,
+  .agency-stats-section,
+  .tech-expertise-section,
+  .awards-section {
+    padding: 60px 0;
+  }
+  
+  .why-choose-composition {
+    height: 320px;
+    margin-bottom: 2.5rem;
+  }
+  
+  .composition-image-card {
+    width: 85%;
+  }
+  
+  .floating-dashboard-card {
+    width: 150px;
+    padding: 0.75rem;
+    top: 5%;
+    right: -4%;
+  }
+  
+  .floating-success-card {
+    width: 140px;
+    padding: 0.75rem;
+    bottom: 5%;
+    left: -4%;
+  }
+  
+  .floating-card-metric {
+    font-size: 1.15rem;
+  }
+  
+  .floating-card-bar-chart {
+    height: 20px;
+  }
+  
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .tech-card {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .tech-icon-wrapper {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tech-card-title {
+    font-size: 0.85rem;
+  }
+}
+
+/* Responsive configurations for Testimonials, Pricing & CTA */
+@media (max-width: 991.98px) {
+  .testimonials-section,
+  .pricing-preview-section,
+  .cta-banner-section {
+    padding: 80px 0;
+  }
+  
+  .cta-glass-card {
+    padding: 4.5rem 2.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .swiper-controls-wrap {
+    margin-bottom: 1.5rem;
+  }
+  
+  .pricing-card {
+    padding: 2.5rem 1.75rem;
+  }
+  
+  .cta-glass-card {
+    padding: 3.5rem 1.5rem;
+  }
+}
+
+/* ===================================================================
+   RESPONSIVE OVERRIDES FOR CINEMATIC SHOWREEL, BLOG, NEWSLETTER & FOOTER
+   =================================================================== */
+@media (max-width: 991.98px) {
+  .showreel-section,
+  .latest-blog-section,
+  .newsletter-section {
+    padding: 80px 0;
+  }
+
+  .newsletter-glass-box {
+    padding: 4rem 2.5rem;
+  }
+
+  .video-modal-close {
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .showreel-preview-card {
+    aspect-ratio: 4/3; /* Better ratio on portrait mobile screens */
+  }
+
+  .showreel-play-btn {
+    width: 72px;
+    height: 72px;
+    font-size: 1.4rem;
+  }
+
+  .showreel-content {
+    padding: 1rem;
+  }
+
+  .latest-blog-section .btn-premium {
+    width: auto; /* Preserve solid button styling on mobile view for view all articles */
+  }
+
+  .newsletter-glass-box {
+    padding: 3rem 1.5rem;
+  }
+
+  .newsletter-form {
+    gap: 1rem;
+  }
+  
+  .back-to-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .back-to-top-icon {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .showreel-section,
+  .latest-blog-section,
+  .newsletter-section {
+    padding: 60px 0;
+  }
+
+  .showreel-preview-card {
+    aspect-ratio: 1; /* Square video preview on tiny mobile devices */
+    border-radius: 20px;
+  }
+
+  .showreel-preview-wrap {
+    border-radius: 20px;
+  }
+
+  .newsletter-glass-box {
+    border-radius: 20px;
+  }
+
+  .blog-card-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .stats-card-grid {
+    grid-template-columns: 1fr;
+  }
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===================================================================
+   RESPONSIVE OVERRIDES FOR ABOUT HERO, COMPANY STORY & MISSION/VISION
+   =================================================================== */
+@media (max-width: 1199.98px) {
+  .about-hero-metric-card.float-card-1 {
+    left: -4%;
+  }
+  .about-hero-metric-card.float-card-2 {
+    right: -4%;
+  }
+  .story-experience-badge {
+    left: -2%;
+  }
+  .story-quote-card {
+    right: -2%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about-hero-section {
+    padding: 120px 0 80px;
+  }
+  
+  .about-hero-visual-wrap {
+    margin-top: 4rem;
+  }
+  
+  .company-story-section {
+    padding: 80px 0;
+  }
+  
+  .story-image-collage-wrap {
+    height: 480px;
+    margin-bottom: 4rem;
+  }
+  
+  .mission-vision-section {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-hero-metric-card {
+    padding: 1rem 1.25rem;
+  }
+  
+  .metric-icon-wrap {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .metric-val {
+    font-size: 1rem;
+  }
+  
+  .about-hero-metric-card.float-card-1 {
+    top: 5%;
+    left: 0;
+  }
+  
+  .about-hero-metric-card.float-card-2 {
+    bottom: 5%;
+    right: 0;
+  }
+  
+  .story-image-collage-wrap {
+    height: 380px;
+  }
+  
+  .story-experience-badge {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .badge-number {
+    font-size: 1.8rem;
+  }
+  
+  .badge-text {
+    font-size: 0.5rem;
+  }
+  
+  .story-quote-card {
+    width: 220px;
+    padding: 1.25rem;
+  }
+  
+  .quote-text {
+    font-size: 0.8rem;
+  }
+  
+  .story-achievement-card {
+    display: none; /* Hide to avoid clutter on smaller portrait views */
+  }
+  
+  .mission-vision-card {
+    padding: 2.5rem 1.75rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-hero-section {
+    padding: 100px 0 60px;
+  }
+  
+  .about-hero-visual-wrap {
+    margin-top: 3rem;
+  }
+  
+  .about-hero-metric-card {
+    display: none; /* Clear overlapping items on tiny screens for accessibility */
+  }
+  
+  .story-image-collage-wrap {
+    height: 300px;
+  }
+  
+  .story-experience-badge,
+  .story-quote-card {
+    display: none; /* Simplify collage for phone screens to retain content legibility */
+  }
+  
+  .story-img-container.container-main {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .story-img-container.container-sub {
+    display: none;
+  }
+  
+  .story-feature-item {
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* ===================================================================
+   RESPONSIVE OVERRIDES FOR TIMELINE, CORE VALUES, TEAM, & AWARDS
+   =================================================================== */
+@media (max-width: 991.98px) {
+  /* Timeline Horizontal Slider on Mobile */
+  .timeline-progress-line {
+    display: none; /* Hide vertical progress line on mobile */
+  }
+  
+  .timeline-items-wrapper {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    gap: 20px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .timeline-items-wrapper::-webkit-scrollbar {
+    height: 5px;
+  }
+  
+  .timeline-items-wrapper::-webkit-scrollbar-track {
+    background: rgba(var(--accent-primary-rgb), 0.05);
+    border-radius: 10px;
+  }
+  
+  .timeline-items-wrapper::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+    border-radius: 10px;
+  }
+  
+  .timeline-item-row {
+    flex: 0 0 85%;
+    max-width: 380px;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    scroll-snap-align: center;
+    padding: 0 5px;
+  }
+  
+  .timeline-col-content {
+    width: 100% !important;
+  }
+  
+  .timeline-col-spacer,
+  .timeline-col-center {
+    display: none !important;
+  }
+  
+  .timeline-card {
+    padding: 1.75rem !important;
+    border-radius: 20px;
+  }
+  
+  .timeline-year {
+    font-size: 2.2rem !important;
+  }
+  
+  /* Core Values adjustments */
+  .value-card {
+    padding: 2.5rem 1.75rem !important;
+    border-radius: 20px;
+  }
+  
+  /* Team card padding adjust */
+  .team-content-card {
+    padding: 1.5rem 1.25rem !important;
+  }
+  
+  /* Awards card responsiveness */
+  .award-glow-card {
+    padding: 2.25rem 1.75rem !important;
+    gap: 1.5rem;
+  }
+  
+  .award-info {
+    padding-right: 0 !important;
+  }
+  
+  .award-year-badge {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .timeline-items-wrapper {
+    padding-bottom: 30px;
+  }
+  
+  .timeline-item-row {
+    flex: 0 0 92%;
+    max-width: 310px;
+  }
+  
+  .award-glow-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .award-icon-container {
+    width: 52px;
+    height: 52px;
+    font-size: 1.5rem;
+    border-radius: 14px;
+  }
+}
+
+
+/* --- COMPLETE SERVICES RESPONSIVE OVERRIDES --- */
+@media (max-width: 1199.98px) {
+  .tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .services-hero-visual-wrap {
+    height: 400px;
+    margin-top: 3rem;
+  }
+  .services-hero-image-container {
+    width: 100%;
+    height: 100%;
+  }
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .services-cta-wrapper {
+    padding: 4rem 2.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .why-stats-panel {
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .services-hero-visual-wrap {
+    height: 300px;
+  }
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-cta-wrapper {
+    padding: 3rem 1.5rem;
+    border-radius: 28px;
+  }
+}
+
+/* ===================================================================
+   SERVICE DETAILS RESPONSIVE LAYOUTS
+   =================================================================== */
+@media (max-width: 1199.98px) {
+  .benefit-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .deliverables-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .details-hero-visual-wrap {
+    height: 450px;
+    margin-top: 3rem;
+  }
+  .mock-browser-container {
+    width: 100%;
+    height: 100%;
+  }
+  .details-hero-section .float-card-1 {
+    left: 2%;
+    top: 5%;
+  }
+  .details-hero-section .float-card-2 {
+    right: 2%;
+    bottom: 5%;
+  }
+  .workflow-timeline-line {
+    top: 0;
+    left: 35px;
+    width: 4px;
+    height: calc(100% - 70px);
+  }
+  .workflow-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .workflow-step-card {
+    text-align: start;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .workflow-icon-wrap {
+    margin: 0;
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    font-size: 1.35rem;
+  }
+  .workflow-step-badge {
+    width: 24px;
+    height: 24px;
+    font-size: 0.65rem;
+  }
+  .bento-stat-card::after {
+    display: none;
+  }
+  .bento-stat-card {
+    border-bottom: 1px solid var(--border-color-light);
+    padding: 1.5rem 0;
+  }
+  .bento-stat-col:last-child .bento-stat-card {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .benefit-card-grid {
+    grid-template-columns: 1fr;
+  }
+  .deliverables-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-bento-wrapper {
+    padding: 2.5rem 1.5rem;
+    border-radius: 30px;
+  }
+  .overview-checklist {
+    grid-template-columns: 1fr;
+  }
+  .details-cta-wrapper {
+    padding: 5rem 2rem;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .details-hero-visual-wrap {
+    height: 350px;
+  }
+  .details-hero-section .float-card-1,
+  .details-hero-section .float-card-2 {
+    display: none;
+  }
+  .overview-overlay-card {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 1.5rem;
+  }
+}
+
+
+/* Accessibility & Performance Optimizations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .floating-blob {
+    animation: none !important;
+  }
+  
+  .logo-dot {
+    animation: none !important;
+  }
+}

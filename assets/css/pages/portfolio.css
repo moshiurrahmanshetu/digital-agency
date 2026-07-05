@@ -1,0 +1,436 @@
+/* ===================================================================
+   PORTFOLIO PAGE CUSTOM STYLES
+   =================================================================== */
+
+/* --- PORTFOLIO HERO --- */
+.portfolio-hero-section {
+  position: relative;
+  padding: 180px 0 120px;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.portfolio-hero-mesh {
+  position: absolute;
+  inset: -10%;
+  background: radial-gradient(circle at 10% 20%, rgba(var(--accent-primary-rgb), 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 90% 80%, rgba(var(--accent-secondary-rgb), 0.1) 0%, transparent 50%);
+  filter: blur(60px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.portfolio-hero-composition {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.hero-editorial-image-wrap {
+  position: relative;
+  width: 75%;
+  height: 85%;
+  border-radius: 32px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg), 0 30px 60px rgba(0, 0, 0, 0.25);
+  transition: transform 0.6s var(--transition-cubic);
+}
+
+.hero-editorial-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.portfolio-hero-composition:hover .hero-editorial-image-wrap img {
+  transform: scale(1.05);
+}
+
+/* Floating Glass Cards in Hero */
+.portfolio-hero-section .float-glass-card {
+  position: absolute;
+  background: var(--bg-glass);
+  backdrop-filter: blur(var(--blur-amount));
+  -webkit-backdrop-filter: blur(var(--blur-amount));
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 1.25rem 1.75rem;
+  box-shadow: var(--shadow-md);
+  z-index: 4;
+}
+
+.portfolio-hero-section .card-top-right {
+  top: 10%;
+  right: -5%;
+  animation: float-soft-1 7s ease-in-out infinite alternate;
+}
+
+.portfolio-hero-section .card-bottom-left {
+  bottom: 15%;
+  left: -5%;
+  animation: float-soft-2 6s ease-in-out infinite alternate;
+}
+
+.composition-grid-accent {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(var(--border-color-light) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  opacity: 0.45;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* --- FILTER NAVIGATION --- */
+.portfolio-filter-container {
+  padding: 60px 0;
+  background-color: var(--bg-primary);
+  position: relative;
+  z-index: 10;
+}
+
+.filter-nav-scroller {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.filter-nav-scroller::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.portfolio-filter-nav {
+  position: relative;
+  display: inline-flex;
+  background-color: rgba(var(--bg-secondary-rgb), 0.6);
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  padding: 6px;
+  gap: 4px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.filter-btn {
+  position: relative;
+  z-index: 2;
+  border: none;
+  background: none;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0.75rem 1.75rem;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: color 0.4s ease;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  color: var(--text-primary);
+}
+
+.filter-btn.active {
+  color: #ffffff !important;
+}
+
+/* Sliding underlay indicator */
+.filter-sliding-indicator {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  height: calc(100% - 12px);
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 100px;
+  z-index: 1;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 4px 15px rgba(var(--accent-primary-rgb), 0.35);
+  pointer-events: none;
+}
+
+/* --- PORTFOLIO GRID MASONRY --- */
+.portfolio-grid-section {
+  padding: 0 0 120px 0;
+  background-color: var(--bg-primary);
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid layout adjustments for portfolio page */
+.portfolio-grid-page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 3rem;
+  position: relative;
+}
+
+/* Custom editorial heights for 12 masonry items */
+.portfolio-aspect-tall .portfolio-image-wrapper {
+  aspect-ratio: 4 / 5;
+}
+
+.portfolio-aspect-square .portfolio-image-wrapper {
+  aspect-ratio: 1 / 1;
+}
+
+.portfolio-aspect-wide .portfolio-image-wrapper {
+  aspect-ratio: 4 / 3;
+}
+
+/* Filtering Animations with transitions */
+.portfolio-col {
+  transition: opacity 0.5s var(--transition-cubic), transform 0.5s var(--transition-cubic), visibility 0.5s;
+  will-change: transform, opacity;
+}
+
+.portfolio-col.filtered-out {
+  opacity: 0;
+  transform: scale(0.9) translateY(20px);
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  border: none;
+}
+
+/* Border Glow and Mouse follow effects */
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-item::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 29px;
+  padding: 1.5px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary), transparent, transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.portfolio-item:hover::before {
+  opacity: 0.85;
+}
+
+/* Year indicator */
+.portfolio-year-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color-light);
+  padding: 2px 10px;
+  border-radius: 100px;
+  background-color: rgba(var(--bg-secondary-rgb), 0.4);
+}
+
+.portfolio-meta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+/* --- INTERACTIVE CASE STUDIES --- */
+.case-studies-section {
+  padding: 120px 0;
+  background-color: var(--bg-secondary);
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.case-study-showcase {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  border-radius: 40px;
+  padding: 4.5rem;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 5rem;
+  overflow: hidden;
+  transition: all 0.5s var(--transition-cubic);
+}
+
+.case-study-showcase:last-child {
+  margin-bottom: 0;
+}
+
+.case-study-showcase:hover {
+  border-color: rgba(var(--accent-primary-rgb), 0.25);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.case-study-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  background: rgba(var(--accent-primary-rgb), 0.08);
+  padding: 4px 14px;
+  border-radius: 100px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(var(--accent-primary-rgb), 0.15);
+}
+
+.case-study-meta-metric {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background: rgba(var(--bg-primary-rgb), 0.4);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 1.25rem 1.75rem;
+  margin-top: 2rem;
+}
+
+.case-study-metric-val {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.case-study-metric-lbl {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.case-study-img-panel {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4 / 3;
+}
+
+.case-study-img-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--transition-cubic);
+}
+
+.case-study-showcase:hover .case-study-img-panel img {
+  transform: scale(1.04);
+}
+
+/* Technology badges inside case studies */
+.case-study-tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+.case-study-tech-pill {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: rgba(var(--text-muted-rgb), 0.1);
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+
+/* --- PROJECT STATISTICS --- */
+.portfolio-stats-section {
+  padding: 120px 0;
+  background-color: var(--bg-primary);
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-stats-wrap {
+  background: radial-gradient(120% 120% at 50% 0%, rgba(var(--accent-secondary-rgb), 0.04) 0%, transparent 80%), var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 40px;
+  padding: 5rem;
+  box-shadow: var(--shadow-md);
+}
+
+/* --- CLIENTS MARQUEE WRAPPER --- */
+.portfolio-clients-section {
+  padding: 100px 0;
+  background-color: var(--bg-secondary);
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* --- FINAL CTA --- */
+.portfolio-cta-section {
+  position: relative;
+  padding: 140px 0;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio-cta-wrapper {
+  position: relative;
+  border-radius: 44px;
+  padding: 7.5rem 5rem;
+  background: radial-gradient(100% 200% at 0% 0%, rgba(var(--accent-primary-rgb), 0.08) 0%, rgba(var(--accent-secondary-rgb), 0.05) 100%), var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.portfolio-cta-mesh {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(at 20% 30%, rgba(var(--accent-primary-rgb), 0.16) 0px, transparent 50%),
+    radial-gradient(at 80% 70%, rgba(var(--accent-secondary-rgb), 0.16) 0px, transparent 50%);
+  filter: blur(55px);
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.portfolio-cta-content {
+  position: relative;
+  z-index: 3;
+}
+
+.portfolio-cta-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aether Brand System - AVANT. Studio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/pages/portfolio-details.css">
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("agency-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo-link">AVANT<span class="logo-dot"></span></a>
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links-container">
+          <li><a href="index.html" class="nav-link-item">Showcase</a></li>
+          <li><a href="about.html" class="nav-link-item">About</a></li>
+          <li><a href="services.html" class="nav-link-item">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link-item active">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link-item">Pricing</a></li>
+          <li><a href="team.html" class="nav-link-item">Team</a></li>
+          <li><a href="faq.html" class="nav-link-item">FAQ</a></li>
+          <li><a href="blog.html" class="nav-link-item">Blog</a></li>
+          <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <div class="magnetic-wrap">
+          <button class="theme-toggle-btn" aria-label="Toggle theme mode">
+            <i class="bi bi-sun-fill theme-toggle-icon theme-toggle-icon-sun"></i>
+            <i class="bi bi-moon-stars-fill theme-toggle-icon theme-toggle-icon-moon"></i>
+          </button>
+        </div>
+        <a href="contact.html" class="btn-premium btn-premium-solid header-action-btn d-none d-sm-inline-flex">
+          Get in Touch <i class="bi bi-arrow-right"></i>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Open mobile menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <button class="mobile-drawer-close" aria-label="Close mobile menu"><i class="bi bi-x-lg"></i></button>
+    <div class="mobile-drawer-nav">
+      <a href="index.html" class="mobile-drawer-nav-link">Showcase</a>
+      <a href="about.html" class="mobile-drawer-nav-link">About Us</a>
+      <a href="services.html" class="mobile-drawer-nav-link">Our Services</a>
+      <a href="portfolio.html" class="mobile-drawer-nav-link active">Creative Portfolio</a>
+      <a href="pricing.html" class="mobile-drawer-nav-link">Plans & Pricing</a>
+      <a href="team.html" class="mobile-drawer-nav-link">Our Team</a>
+      <a href="faq.html" class="mobile-drawer-nav-link">FAQ</a>
+      <a href="blog.html" class="mobile-drawer-nav-link">Articles & News</a>
+      <a href="contact.html" class="mobile-drawer-nav-link">Contact Us</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <p class="mb-3 small">Let's build something exceptional together.</p>
+      <a href="contact.html" class="btn-premium btn-premium-solid w-100 py-3">Get in Touch <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- CONTENT WRAPPER -->
+  <div class="page-shell-wrapper">
+    <div class="ambient-bg-lights">
+      <div class="floating-blob blob-1"></div>
+      <div class="floating-blob blob-2"></div>
+    </div>
+
+    <!-- ==========================================================
+         01. PROJECT HERO (EDITORIAL DUAL-FRAME SPLIT)
+         ========================================================== -->
+    <section class="project-hero-section d-flex align-items-center" id="project-hero">
+      <div class="project-hero-mesh"></div>
+      <div class="background-text-outline">Aether</div>
+      
+      <div class="container project-hero-container">
+        <div class="row g-5 align-items-stretch">
+          
+          <!-- Column 1: Editorial Vertical Meta Sidebar (Unique to details page) -->
+          <div class="col-lg-3 col-md-4 d-none d-md-flex align-items-stretch" data-aos="fade-right">
+            <div class="editorial-meta-column">
+              <div class="meta-index-item">
+                <span class="meta-index-num">01 / BRAND</span>
+                <h6 class="meta-index-label">Client</h6>
+                <p class="meta-index-value">Aether Atelier</p>
+              </div>
+              <div class="meta-index-item">
+                <span class="meta-index-num">02 / MARKET</span>
+                <h6 class="meta-index-label">Industry</h6>
+                <p class="meta-index-value">Luxury Fashion</p>
+              </div>
+              <div class="meta-index-item">
+                <span class="meta-index-num">03 / FOCUS</span>
+                <h6 class="meta-index-label">Services</h6>
+                <p class="meta-index-value">Identity, UX/UI, 3D</p>
+              </div>
+              <div class="meta-index-item">
+                <span class="meta-index-num">04 / ORIGIN</span>
+                <h6 class="meta-index-label">Location</h6>
+                <p class="meta-index-value">Paris, France</p>
+              </div>
+              <div class="meta-index-item">
+                <span class="meta-index-num">05 / PERIOD</span>
+                <h6 class="meta-index-label">Completion</h6>
+                <p class="meta-index-value">Year 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2 & 3: Master Editorial Content Block -->
+          <div class="col-lg-9 col-md-8 col-12 text-start d-flex flex-column justify-content-between">
+            
+            <!-- Top Row: Breadcrumbs and Category -->
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-4" data-aos="fade-down">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+                  <li class="breadcrumb-item"><a href="portfolio.html" class="text-decoration-none text-muted">Portfolio</a></li>
+                  <li class="breadcrumb-item active text-gradient-primary" aria-current="page">Aether Case Study</li>
+                </ol>
+              </nav>
+              <span class="project-category-badge mt-2 mt-sm-0" style="font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700; color: var(--accent-primary); letter-spacing: 0.05em; background: rgba(var(--accent-primary-rgb), 0.06); padding: 4px 12px; border-radius: 100px; border: 1px solid rgba(var(--accent-primary-rgb), 0.12);">Luxury Atelier Handbook</span>
+            </div>
+
+            <!-- Header and Action CTA -->
+            <div class="row g-4 mb-5 align-items-end">
+              <div class="col-lg-8 col-12">
+                <h1 class="editorial-hero-title mb-3" data-aos="fade-up">
+                  Aether Brand <span class="editorial-italic-span">System</span>
+                </h1>
+                <p class="editorial-hero-lead mb-0" data-aos="fade-up" data-aos-delay="100">
+                  Crafting a sensory couture brand guidelines handbook and sub-100ms global commerce experience for Paris's leading luxury atelier.
+                </p>
+              </div>
+              <div class="col-lg-4 col-12 text-start text-lg-end" data-aos="fade-up" data-aos-delay="150">
+                <a href="contact.html" class="btn-premium btn-premium-solid d-inline-flex align-items-center">
+                  Launch Live Experience <i class="bi bi-arrow-up-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Asymmetric Composition Frame -->
+            <div class="dual-image-composition" data-aos="zoom-in" data-aos-delay="200">
+              
+              <!-- Blueprint Corner Crosshairs -->
+              <div class="blueprint-crosshair cross-top-left"></div>
+              <div class="blueprint-crosshair cross-top-right"></div>
+              <div class="blueprint-crosshair cross-bottom-left"></div>
+              <div class="blueprint-crosshair cross-bottom-right"></div>
+
+              <!-- Main Background Landscape Image -->
+              <div class="main-landscape-frame">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80" alt="Aether Atelier Minimalist Cover" loading="lazy">
+              </div>
+
+              <!-- Offset Overlapping Portrait Image -->
+              <div class="portrait-offset-frame">
+                <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=600&q=80" alt="Couture Brand Specimen Detail" loading="lazy">
+              </div>
+
+              <!-- Floating Interactive Spec Badges -->
+              <div class="hero-glass-floating floating-perf-score d-none d-md-flex align-items-center gap-3">
+                <div class="metric-icon-wrap bg-primary-glow text-primary" style="width: 38px; height: 38px; border-radius: 10px; display:flex; align-items:center; justify-content:center;">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0 text-gradient-primary small fw-bold" style="font-size:0.72rem;">Sub-100ms Core</h6>
+                  <span class="text-muted" style="font-size: 0.6rem;">Global Edge Cache</span>
+                </div>
+              </div>
+
+              <div class="hero-glass-floating floating-conversion-growth d-none d-md-flex align-items-center gap-3">
+                <div class="metric-icon-wrap bg-secondary-glow text-secondary" style="width: 38px; height: 38px; border-radius: 10px; display:flex; align-items:center; justify-content:center;">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <div>
+                  <h6 class="mb-0 text-gradient-secondary small fw-bold" style="font-size:0.72rem;">+320% Conversions</h6>
+                  <span class="text-muted" style="font-size: 0.6rem;">Optimized VIP Flow</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Responsive Mobile-only Meta Sidebar Replacement -->
+            <div class="d-flex d-md-none flex-wrap gap-4 mt-4 pt-4 border-top" style="border-color: var(--border-color) !important;">
+              <div style="flex: 1 1 120px;">
+                <span class="meta-index-num">01 / BRAND</span>
+                <p class="mb-0 fw-bold small text-muted">Aether Atelier</p>
+              </div>
+              <div style="flex: 1 1 120px;">
+                <span class="meta-index-num">02 / SERVICES</span>
+                <p class="mb-0 fw-bold small text-muted">Identity &amp; UX/UI</p>
+              </div>
+              <div style="flex: 1 1 120px;">
+                <span class="meta-index-num">03 / YEAR</span>
+                <p class="mb-0 fw-bold small text-muted">2026 Paris</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         02. PROJECT OVERVIEW
+         ========================================================== -->
+    <section class="overview-section" id="project-overview">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-8 col-12 text-start">
+            <div class="editorial-divider" data-aos="fade-right"></div>
+            <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-up">The Narrative</span>
+            <h2 class="font-display fw-bold text-gradient-primary h2-section mb-4" data-aos="fade-up">
+              Reimagining Haute Couture Online
+            </h2>
+            <p class="text-secondary mb-4" data-aos="fade-up" data-aos-delay="50" style="font-size: 1.12rem; line-height: 1.8;">
+              Aether Atelier has defined standard-setting sensory craftsmanship in physical textiles for over a century. However, as luxury acquisition shifted to global mobile platforms, the existing brand architecture failed to replicate that premium tactile physical relationship in digital environments.
+            </p>
+            <p class="text-secondary mb-0" data-aos="fade-up" data-aos-delay="100" style="font-size: 1.12rem; line-height: 1.8;">
+              Our strategic goal was to bridge this divide. We developed a unified, physics-based digital design vocabulary called the "Kinetic Ribbon" alongside a completely custom typography standard, high-contrast assets, and a headless architectural storefront that registers load speeds under 100 milliseconds worldwide.
+            </p>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="overview-objectives-card" data-aos="fade-left" data-aos-delay="150">
+              <h4 class="font-display fw-bold mb-4" style="font-size: 1.15rem;">Core Objectives</h4>
+              <div class="objective-item">
+                <div class="objective-bullet"></div>
+                <p class="text-secondary small mb-0">Codify a consistent visual system for both digital web environments and luxury physical packaging.</p>
+              </div>
+              <div class="objective-item">
+                <div class="objective-bullet"></div>
+                <p class="text-secondary small mb-0">Build an ultra-fast global headless checkout platform resolving under 100ms.</p>
+              </div>
+              <div class="objective-item">
+                <div class="objective-bullet"></div>
+                <p class="text-secondary small mb-0">Establish high organic visibility and media coverage with gorgeous interactive layout structures.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         03. THE CHALLENGE
+         ========================================================== -->
+    <section class="challenge-section" id="project-challenge">
+      <div class="container">
+        <div class="challenge-box" data-aos="fade-up">
+          <div class="row g-5">
+            <div class="col-lg-5 col-12 text-start">
+              <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block text-danger">The Problem</span>
+              <h2 class="font-display fw-bold text-gradient-primary mb-4" style="font-size: 2rem;">
+                Fragmented Brand Guidelines &amp; Bloated Infrastructure
+              </h2>
+              <p class="text-secondary mb-4" style="line-height: 1.7;">
+                The client was operating with disjointed guidelines across global hubs. A high-fashion print ad in Tokyo looked completely disconnected from an online campaign in New York.
+              </p>
+              <p class="text-secondary mb-0" style="line-height: 1.7;">
+                At the same time, their legacy commerce platform relied on heavy visual scripts that choked mobile checkout funnels, leading to a massive 64% cart abandonment rate among VIP buyers.
+              </p>
+            </div>
+            
+            <div class="col-lg-7 col-12">
+              <div class="row g-4">
+                <!-- Challenge 1 -->
+                <div class="col-sm-6 col-12 text-start">
+                  <div class="challenge-point">
+                    <div class="challenge-icon-wrap">
+                      <i class="bi bi-clock-history"></i>
+                    </div>
+                    <div class="challenge-metric">3.8s</div>
+                    <h5 class="font-display fw-bold mb-2" style="font-size: 1rem;">Average Loading Time</h5>
+                    <p class="text-muted small mb-0">Caused extreme mobile dropout rates on 3G/4G global cellular networks.</p>
+                  </div>
+                </div>
+
+                <!-- Challenge 2 -->
+                <div class="col-sm-6 col-12 text-start">
+                  <div class="challenge-point">
+                    <div class="challenge-icon-wrap text-danger" style="background: rgba(220,53,69,0.08); color: #dc3545; border-color: rgba(220,53,69,0.15);">
+                      <i class="bi bi-cart-x"></i>
+                    </div>
+                    <div class="challenge-metric">64%</div>
+                    <h5 class="font-display fw-bold mb-2" style="font-size: 1rem;">Cart Abandonment</h5>
+                    <p class="text-muted small mb-0">High-end consumers dropped out due to visual lagging and complex billing loops.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         04. STRATEGY & SOLUTION
+         ========================================================== -->
+    <section class="strategy-section" id="project-strategy">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Column 1: Image -->
+          <div class="col-lg-6 col-12" data-aos="fade-right">
+            <div class="strategy-showcase-image-panel">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Engineered strategy layout code" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Column 2: Details & Process Cards -->
+          <div class="col-lg-6 col-12 text-start">
+            <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block">The Solution</span>
+            <h2 class="font-display fw-bold text-gradient-primary h2-section mb-4" data-aos="fade-up">
+              A Unified Ecosystem: Headless Speed &amp; Fluid Grid Systems
+            </h2>
+            <p class="text-secondary mb-5" data-aos="fade-up" data-aos-delay="50" style="line-height: 1.7;">
+              Our strategic engineering team decoupled their commerce platform, migrating state engines entirely to global edge networks. We paired this with an asymmetric editorial visual grid that fluidly scales across screens, preserving typographic discipline.
+            </p>
+
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+              <!-- Step 1 -->
+              <div class="col-md-6 col-12">
+                <div class="solution-process-card">
+                  <span class="solution-step-num">Avenue 01</span>
+                  <h4 class="font-display fw-bold mb-2" style="font-size: 1rem;">The Kinetic Ribbon</h4>
+                  <p class="text-muted small mb-0">A physics-driven web canvas layout simulating silk folds on scrolling, adding sensory value.</p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="col-md-6 col-12">
+                <div class="solution-process-card">
+                  <span class="solution-step-num">Avenue 02</span>
+                  <h4 class="font-display fw-bold mb-2" style="font-size: 1rem;">Headless Architecture</h4>
+                  <p class="text-muted small mb-0">Compiled on React &amp; Vite to completely bypass traditional bloated servers and speed up page load.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         05. CREATIVE PROCESS (TIMELINE)
+         ========================================================== -->
+    <section class="creative-process-section" id="creative-process">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">The Journey</span>
+        <h2 class="font-display fw-bold text-gradient-primary h2-section mb-5" data-aos="fade-up">Our Design &amp; Build Blueprint</h2>
+
+        <div class="process-timeline-container mt-5">
+          <!-- Center lines -->
+          <div class="process-timeline-line"></div>
+          <div class="process-timeline-progress"></div>
+
+          <!-- Phase 1 -->
+          <div class="process-timeline-node">
+            <div class="process-timeline-badge">01</div>
+            <div class="process-content-panel">
+              <div class="process-content-card" data-aos="fade-right">
+                <span class="process-content-phase">Phase 01: Research</span>
+                <h4 class="font-display fw-bold mb-2" style="font-size: 1.15rem;">Couture Audit &amp; Interviews</h4>
+                <p class="text-secondary small mb-0">We spent 3 weeks in Aether's Paris archives, interviewing design directors and examining centuries-old textile weave standards to map brand roots.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="process-timeline-node">
+            <div class="process-timeline-badge">02</div>
+            <div class="process-content-panel">
+              <div class="process-content-card" data-aos="fade-left">
+                <span class="process-content-phase">Phase 02: Wireframe</span>
+                <h4 class="font-display fw-bold mb-2" style="font-size: 1.15rem;">Structural Layout Mapping</h4>
+                <p class="text-secondary small mb-0">Developing responsive, asymmetrical editorial wireframes in Figma to verify grid readability and conversion paths across all screen sizes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="process-timeline-node">
+            <div class="process-timeline-badge">03</div>
+            <div class="process-content-panel">
+              <div class="process-content-card" data-aos="fade-right">
+                <span class="process-content-phase">Phase 03: UI Design</span>
+                <h4 class="font-display fw-bold mb-2" style="font-size: 1.15rem;">The Kinetic Ribbon Design</h4>
+                <p class="text-secondary small mb-0">Designing high-fidelity screens utilizing Inter &amp; JetBrains Mono pairing, beautiful glassmorphism assets, and vector geometry guidelines.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="process-timeline-node">
+            <div class="process-timeline-badge">04</div>
+            <div class="process-content-panel">
+              <div class="process-content-card" data-aos="fade-left">
+                <span class="process-content-phase">Phase 04: Development</span>
+                <h4 class="font-display fw-bold mb-2" style="font-size: 1.15rem;">Headless React &amp; Vite Assembly</h4>
+                <p class="text-secondary small mb-0">Wired the front-end to a blazing fast headless engine, hosting compiling nodes at CDN edges for instant regional asset delivery.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 5 -->
+          <div class="process-timeline-node">
+            <div class="process-timeline-badge">05</div>
+            <div class="process-content-panel">
+              <div class="process-content-card" data-aos="fade-right">
+                <span class="process-content-phase">Phase 05: Testing</span>
+                <h4 class="font-display fw-bold mb-2" style="font-size: 1.15rem;">Stress &amp; Lighthouse Checks</h4>
+                <p class="text-secondary small mb-0">We conducted thousands of concurrent stress checks and Lighthouse speed benchmarks, ensuring flawless performance across 3G mobile devices.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 6 -->
+          <div class="process-timeline-node">
+            <div class="process-timeline-badge">06</div>
+            <div class="process-content-panel">
+              <div class="process-content-card" data-aos="fade-left">
+                <span class="process-content-phase">Phase 06: Launch</span>
+                <h4 class="font-display fw-bold mb-2" style="font-size: 1.15rem;">Global Deployment Activation</h4>
+                <p class="text-secondary small mb-0">Smooth deployment to secure servers, synchronizing Aether Atelier's global logistics hubs and instantly boosting VIP mobile conversions.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         06. FULL PROJECT GALLERY
+         ========================================================== -->
+    <section class="project-gallery-section" id="project-gallery">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">Exhibition</span>
+        <h2 class="font-display fw-bold text-gradient-primary h2-section mb-5" data-aos="fade-up">Bespoke Brand Assets &amp; Mockups</h2>
+
+        <!-- Interactive Masonry Gallery -->
+        <div class="gallery-grid-masonry" data-aos="fade-up">
+          
+          <!-- Item 1 - Tall (Packaging Concept) -->
+          <div class="gallery-grid-item gallery-tall" 
+               data-img-src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" 
+               data-img-title="Aether Minimalist Packaging Mockup" 
+               data-img-category="Branding &amp; Sustainable Package">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Minimalist Packaging" loading="lazy">
+            <div class="gallery-overlay-hover">
+              <span class="gallery-overlay-category">Branding</span>
+              <h4 class="gallery-overlay-title">Sustainable Packaging</h4>
+              <span class="gallery-overlay-magnify"><i class="bi bi-fullscreen"></i></span>
+            </div>
+          </div>
+
+          <!-- Item 2 - Wide (Digital Portal) -->
+          <div class="gallery-grid-item gallery-wide" 
+               data-img-src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" 
+               data-img-title="Aether Storefront Live Interface" 
+               data-img-category="Web Design &amp; UI/UX">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="E-commerce Portal" loading="lazy">
+            <div class="gallery-overlay-hover">
+              <span class="gallery-overlay-category">Web Design</span>
+              <h4 class="gallery-overlay-title">Headless Storefront</h4>
+              <span class="gallery-overlay-magnify"><i class="bi bi-fullscreen"></i></span>
+            </div>
+          </div>
+
+          <!-- Item 3 - Square (Stationery Suite) -->
+          <div class="gallery-grid-item gallery-square" 
+               data-img-src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" 
+               data-img-title="Couture Brand Identity Suite" 
+               data-img-category="Creative Direction">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Stationery Suite" loading="lazy">
+            <div class="gallery-overlay-hover">
+              <span class="gallery-overlay-category">Branding</span>
+              <h4 class="gallery-overlay-title">Stationery Suite</h4>
+              <span class="gallery-overlay-magnify"><i class="bi bi-fullscreen"></i></span>
+            </div>
+          </div>
+
+          <!-- Item 4 - Square (Typography Specimen) -->
+          <div class="gallery-grid-item gallery-square" 
+               data-img-src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=800&q=80" 
+               data-img-title="Aether Custom Monospace Typography Spec" 
+               data-img-category="Typography Specimen">
+            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=800&q=80" alt="Custom Typography" loading="lazy">
+            <div class="gallery-overlay-hover">
+              <span class="gallery-overlay-category">Typography</span>
+              <h4 class="gallery-overlay-title">Custom Typography spec</h4>
+              <span class="gallery-overlay-magnify"><i class="bi bi-fullscreen"></i></span>
+            </div>
+          </div>
+
+          <!-- Item 5 - Tall (Mobile Companion App) -->
+          <div class="gallery-grid-item gallery-tall" 
+               data-img-src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" 
+               data-img-title="Aether Mobile VIP Companion Portal" 
+               data-img-category="Mobile App UI/UX Design">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Mobile App" loading="lazy">
+            <div class="gallery-overlay-hover">
+              <span class="gallery-overlay-category">UI/UX Design</span>
+              <h4 class="gallery-overlay-title">VIP Mobile Companion</h4>
+              <span class="gallery-overlay-magnify"><i class="bi bi-fullscreen"></i></span>
+            </div>
+          </div>
+
+          <!-- Item 6 - Wide (Brand Guideline Book) -->
+          <div class="gallery-grid-item gallery-wide" 
+               data-img-src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" 
+               data-img-title="Physical Brand Guidelines &amp; Style Book" 
+               data-img-category="Brand Strategy Guidelines">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="Brand Guidelines Book" loading="lazy">
+            <div class="gallery-overlay-hover">
+              <span class="gallery-overlay-category">Brand Strategy</span>
+              <h4 class="gallery-overlay-title">Physical Guidelines Book</h4>
+              <span class="gallery-overlay-magnify"><i class="bi bi-fullscreen"></i></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         VANILLA JAVASCRIPT LIGHTBOX MODAL CONTAINER
+         ========================================================== -->
+    <div class="lightbox-container" id="lightbox-gallery" aria-hidden="true">
+      <button class="lightbox-close-btn" aria-label="Close lightbox"><i class="bi bi-x-lg"></i></button>
+      <button class="lightbox-nav-btn lightbox-prev" aria-label="Previous image"><i class="bi bi-chevron-left"></i></button>
+      <button class="lightbox-nav-btn lightbox-next" aria-label="Next image"><i class="bi bi-chevron-right"></i></button>
+      
+      <div class="lightbox-stage">
+        <img src="" alt="" class="lightbox-img">
+      </div>
+      
+      <div class="lightbox-caption-panel">
+        <div class="lightbox-caption-title">Image Title</div>
+        <div class="lightbox-caption-category">Category</div>
+      </div>
+    </div>
+
+    <!-- ==========================================================
+         07. TECHNOLOGIES USED
+         ========================================================== -->
+    <section class="tech-section" id="project-technologies">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">The Stack</span>
+        <h2 class="font-display fw-bold text-gradient-primary h2-section mb-5" data-aos="fade-up">Technological Core</h2>
+
+        <div class="tech-grid" data-aos="fade-up" data-aos-delay="100">
+          <!-- Tech 1 -->
+          <div class="tech-card">
+            <div class="tech-icon-wrap">
+              <i class="bi bi-brush"></i>
+            </div>
+            <div class="tech-name">Figma</div>
+            <div class="tech-role">UX/UI Blueprint</div>
+          </div>
+
+          <!-- Tech 2 -->
+          <div class="tech-card">
+            <div class="tech-icon-wrap">
+              <i class="bi bi-vector-pen"></i>
+            </div>
+            <div class="tech-name">Illustrator</div>
+            <div class="tech-role">Vector Identity</div>
+          </div>
+
+          <!-- Tech 3 -->
+          <div class="tech-card">
+            <div class="tech-icon-wrap">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <div class="tech-name">React</div>
+            <div class="tech-role">Headless Client</div>
+          </div>
+
+          <!-- Tech 4 -->
+          <div class="tech-card">
+            <div class="tech-icon-wrap">
+              <i class="bi bi-lightning"></i>
+            </div>
+            <div class="tech-name">Vite</div>
+            <div class="tech-role">Bundler Engine</div>
+          </div>
+
+          <!-- Tech 5 -->
+          <div class="tech-card">
+            <div class="tech-icon-wrap">
+              <i class="bi bi-window-sidebar"></i>
+            </div>
+            <div class="tech-name">Tailwind CSS</div>
+            <div class="tech-role">Layout System</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         08. PROJECT RESULTS
+         ========================================================== -->
+    <section class="results-section" id="project-results">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">The Impact</span>
+        <h2 class="font-display fw-bold text-gradient-primary h2-section mb-5" data-aos="fade-up">Commercial Performance</h2>
+
+        <div class="results-bento-grid" data-aos="fade-up" data-aos-delay="100">
+          <!-- Result 1 -->
+          <div class="results-bento-card">
+            <div class="result-icon-circle">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <div class="result-metric-val text-gradient-primary">
+              <span class="result-counter-num" data-target="240" data-suffix="%">+0%</span>
+            </div>
+            <div class="result-metric-label">Organic Traffic Growth</div>
+            <p class="text-muted small mb-0">Massive boost in globally indexed luxury search keywords.</p>
+          </div>
+
+          <!-- Result 2 -->
+          <div class="results-bento-card">
+            <div class="result-icon-circle">
+              <i class="bi bi-cart-check-fill"></i>
+            </div>
+            <div class="result-metric-val text-gradient-secondary">
+              <span class="result-counter-num" data-target="180" data-suffix="%">+0%</span>
+            </div>
+            <div class="result-metric-label">Conversion Rate Lift</div>
+            <p class="text-muted small mb-0">Smoothed out mobile checkout friction paths for elite customers.</p>
+          </div>
+
+          <!-- Result 3 -->
+          <div class="results-bento-card">
+            <div class="result-icon-circle">
+              <i class="bi bi-lightning-charge"></i>
+            </div>
+            <div class="result-metric-val text-success">
+              <span class="result-counter-num" data-target="1.1" data-suffix="s" data-is-float="true">3.8s</span>
+            </div>
+            <div class="result-metric-label">Load Time Resolved</div>
+            <p class="text-muted small mb-0">From 3.8s down to a lighting-quick 1.1s worldwide server response.</p>
+          </div>
+
+          <!-- Result 4 -->
+          <div class="results-bento-card">
+            <div class="result-icon-circle">
+              <i class="bi bi-emoji-smile"></i>
+            </div>
+            <div class="result-metric-val text-gradient-primary">
+              <span class="result-counter-num" data-target="98" data-suffix="%">0%</span>
+            </div>
+            <div class="result-metric-label">Client Satisfaction</div>
+            <p class="text-muted small mb-0">Absolute alignment with global luxury design standards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         09. CLIENT TESTIMONIAL
+         ========================================================== -->
+    <section class="testimonial-section" id="project-testimonial">
+      <div class="container">
+        <div class="testimonial-glass-card" data-aos="zoom-in">
+          <div class="testimonial-glow-blob"></div>
+          
+          <div class="testimonial-card-content text-start position-relative">
+            <!-- Quote Icon -->
+            <div class="quote-icon-wrap">
+              <i class="bi bi-quote"></i>
+            </div>
+
+            <!-- Five Stars Rating -->
+            <div class="testimonial-rating-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+
+            <!-- Testimonial Text -->
+            <p class="testimonial-text">
+              "AVANT. Studio has translated our complex haute couture philosophy into an absolute masterpiece of digital art. The sensory cohesion, detail precision, and lightning-fast load speeds are completely unmatched in the luxury space."
+            </p>
+
+            <hr class="my-4" style="border-color: var(--border-color);">
+
+            <!-- Client Info Row -->
+            <div class="d-flex align-items-center gap-3">
+              <div class="testimonial-avatar-wrap">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Aurélia de Montaigne" loading="lazy">
+              </div>
+              <div>
+                <h5 class="font-display fw-bold mb-1" style="font-size: 1rem; color: var(--text-primary);">Aurélia de Montaigne</h5>
+                <span class="font-mono text-muted uppercase tracking-wider" style="font-size: 0.7rem;">Creative Director, Aether Atelier</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         10. RELATED PROJECTS
+         ========================================================== -->
+    <section class="related-projects-section" id="related-projects">
+      <div class="container">
+        <div class="text-start mb-5">
+          <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block">Exhibition Roll</span>
+          <h2 class="font-display fw-bold text-gradient-primary h2-section" data-aos="fade-up">Related Cases</h2>
+        </div>
+
+        <div class="related-projects-grid" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- Related 1 -->
+          <div class="related-project-card">
+            <div class="related-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Nova Energy Console" loading="lazy">
+              <div class="related-hover-overlay">
+                <a href="portfolio-details.html" class="related-view-btn"><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="related-body text-start">
+              <div class="related-meta">
+                <span class="related-category">UI/UX Design</span>
+                <span class="related-year">2026</span>
+              </div>
+              <h4 class="related-title"><a href="portfolio-details.html" class="text-decoration-none text-primary-hover">Nova Energy Console</a></h4>
+              <p class="related-desc text-secondary">Real-time solar telemetry and power grid monitoring interface.</p>
+            </div>
+          </div>
+
+          <!-- Related 2 -->
+          <div class="related-project-card">
+            <div class="related-img-wrap">
+              <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" alt="Sonder Luxury Editorial" loading="lazy">
+              <div class="related-hover-overlay">
+                <a href="portfolio-details.html" class="related-view-btn"><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="related-body text-start">
+              <div class="related-meta">
+                <span class="related-category">Web Design</span>
+                <span class="related-year">2026</span>
+              </div>
+              <h4 class="related-title"><a href="portfolio-details.html" class="text-decoration-none text-primary-hover">Sonder Editorial</a></h4>
+              <p class="related-desc text-secondary">Immersive digital exhibition catalogue supporting flagship releases.</p>
+            </div>
+          </div>
+
+          <!-- Related 3 -->
+          <div class="related-project-card">
+            <div class="related-img-wrap">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Helios SaaS Platform" loading="lazy">
+              <div class="related-hover-overlay">
+                <a href="portfolio-details.html" class="related-view-btn"><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="related-body text-start">
+              <div class="related-meta">
+                <span class="related-category">Development</span>
+                <span class="related-year">2025</span>
+              </div>
+              <h4 class="related-title"><a href="portfolio-details.html" class="text-decoration-none text-primary-hover">Helios Platform</a></h4>
+              <p class="related-desc text-secondary">Scale-invariant serverless dashboard for cloud orchestration.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         11. PROJECT NAVIGATION
+         ========================================================== -->
+    <section class="project-navigation-section" id="project-navigation">
+      <div class="container">
+        <div class="nav-grid">
+          
+          <!-- Previous Project Card -->
+          <a href="portfolio-details.html" class="nav-card-link text-start" data-aos="fade-right">
+            <div class="nav-panel-card">
+              <div class="nav-arrow-circle">
+                <i class="bi bi-chevron-left"></i>
+              </div>
+              <div>
+                <span class="nav-content-meta">Previous Case</span>
+                <h4 class="nav-content-title">Nova Energy Console</h4>
+              </div>
+            </div>
+          </a>
+
+          <!-- Back to Gallery (Middle Link) -->
+          <a href="portfolio.html" class="nav-back-portfolio-btn" aria-label="Back to Portfolio Gallery" data-aos="zoom-in">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+          </a>
+
+          <!-- Next Project Card -->
+          <a href="portfolio-details.html" class="nav-card-link text-end" data-aos="fade-left">
+            <div class="nav-panel-card nav-next">
+              <div class="nav-arrow-circle">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+              <div>
+                <span class="nav-content-meta">Next Case</span>
+                <h4 class="nav-content-title">Sonder Luxury Editorial</h4>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         12. FINAL CTA
+         ========================================================== -->
+    <section class="portfolio-details-cta" id="portfolio-details-cta">
+      <div class="cta-mesh-radial"></div>
+      <div class="container">
+        <div class="portfolio-details-cta-wrap text-center" data-aos="zoom-in">
+          
+          <span class="text-kicker text-uppercase tracking-wider mb-3 d-inline-block text-success">Collaborate</span>
+          <h2 class="display-4 font-display fw-bold text-gradient-primary mb-4" style="max-width: 700px; margin: 0 auto 1.5rem;">
+            Ready to Build Your Flagship Platform?
+          </h2>
+          <p class="lead text-secondary mb-5" style="max-width: 650px; margin: 0 auto 2.5rem; line-height: 1.75;">
+            Connect with our creative engineers and elite designers to build a tailored high-fidelity experience that drives serious market authority.
+          </p>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <div class="magnetic-wrap">
+              <a href="contact.html" class="btn-premium btn-premium-solid py-3 px-5 fs-6">
+                Start a Project <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+            <div class="magnetic-wrap">
+              <a href="contact.html" class="btn-premium btn-premium-outline py-3 px-5 fs-6">
+                Speak to our Team <i class="bi bi-chat-dots ms-2"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="logo-link mb-3">AVANT<span class="logo-dot"></span></a>
+          <p class="text-secondary small mb-4">A ThemeForest-ready premium digital agency template. Crafted with extreme typography discipline, flawless layouts, and fluid micro-interactions.</p>
+          <div class="d-flex gap-2">
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener" class="footer-social-link"><i class="bi bi-dribbble"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="team.html" class="footer-link-item">Our Team</a></li>
+            <li><a href="pricing.html" class="footer-link-item">Pricing Plans</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Our Services</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="services.html" class="footer-link-item">All Services</a></li>
+            <li><a href="service-details.html" class="footer-link-item">Service Detail Page</a></li>
+            <li><a href="portfolio.html" class="footer-link-item">Our Work</a></li>
+            <li><a href="portfolio-details.html" class="footer-link-item">Project Case Study</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Help & Learn</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="faq.html" class="footer-link-item">Frequently Asked Questions</a></li>
+            <li><a href="blog.html" class="footer-link-item">Our Journal</a></li>
+            <li><a href="blog-details.html" class="footer-link-item">Article Case Study</a></li>
+            <li><a href="404.html" class="footer-link-item">Custom 404 Error</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-copyright align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="mb-0 small text-muted">&copy; <span id="copyright-year"></span> AVANT. Studio. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0 small text-muted">Designed & Developed with Passion</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/pages/portfolio-details.js"></script>
+</body>
+</html>

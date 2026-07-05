@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers & Alliance - AVANT. Studio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/pages/careers.css">
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("agency-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo-link">AVANT<span class="logo-dot"></span></a>
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links-container">
+          <li><a href="index.html" class="nav-link-item">Showcase</a></li>
+          <li><a href="about.html" class="nav-link-item">About</a></li>
+          <li><a href="services.html" class="nav-link-item">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link-item">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link-item">Pricing</a></li>
+          <li><a href="team.html" class="nav-link-item">Team</a></li>
+          <li><a href="faq.html" class="nav-link-item">FAQ</a></li>
+          <li><a href="blog.html" class="nav-link-item">Blog</a></li>
+          <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <div class="magnetic-wrap">
+          <button class="theme-toggle-btn" aria-label="Toggle theme mode">
+            <i class="bi bi-sun-fill theme-toggle-icon theme-toggle-icon-sun"></i>
+            <i class="bi bi-moon-stars-fill theme-toggle-icon theme-toggle-icon-moon"></i>
+          </button>
+        </div>
+        <a href="contact.html" class="btn-premium btn-premium-solid header-action-btn d-none d-sm-inline-flex">
+          Get in Touch <i class="bi bi-arrow-right"></i>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Open mobile menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <button class="mobile-drawer-close" aria-label="Close mobile menu"><i class="bi bi-x-lg"></i></button>
+    <div class="mobile-drawer-nav">
+      <a href="index.html" class="mobile-drawer-nav-link">Showcase</a>
+      <a href="about.html" class="mobile-drawer-nav-link">About Us</a>
+      <a href="services.html" class="mobile-drawer-nav-link">Our Services</a>
+      <a href="portfolio.html" class="mobile-drawer-nav-link">Creative Portfolio</a>
+      <a href="pricing.html" class="mobile-drawer-nav-link">Plans & Pricing</a>
+      <a href="team.html" class="mobile-drawer-nav-link">Our Team</a>
+      <a href="faq.html" class="mobile-drawer-nav-link">FAQ</a>
+      <a href="blog.html" class="mobile-drawer-nav-link">Articles & News</a>
+      <a href="contact.html" class="mobile-drawer-nav-link">Contact Us</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <p class="mb-3 small">Let's build something exceptional together.</p>
+      <a href="contact.html" class="btn-premium btn-premium-solid w-100 py-3">Get in Touch <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- CONTENT WRAPPER -->
+  <div class="page-shell-wrapper">
+    <div class="ambient-bg-lights">
+      <div class="floating-blob blob-1"></div>
+      <div class="floating-blob blob-2"></div>
+    </div>
+
+    <!-- ===================================================================
+         1. CAREERS HERO SECTION
+         =================================================================== -->
+    <section class="careers-hero-section" id="careers-hero" data-parallax-container="true">
+      <div class="careers-hero-mesh"></div>
+      <div class="careers-background-text">TALENTS</div>
+      
+      <div class="container relative z-3">
+        <div class="row align-items-center g-5">
+          <!-- Left Column: Text & CTA -->
+          <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1200">
+            <nav aria-label="breadcrumb" class="premium-breadcrumb mb-4">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Showcase</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Careers</li>
+              </ol>
+            </nav>
+            
+            <span class="text-kicker mb-3">Join The Alliance</span>
+            <h1 class="careers-hero-title mb-4">
+              We build legends. <br>
+              <span class="careers-italic-span">Join the alliance.</span>
+            </h1>
+            
+            <p class="careers-hero-lead mb-5">
+              We reject corporate bloat, pointless meetings, and creative compromises. We are a distributed studio of high-craft engineers, pixel-obsessed designers, and strategic thinkers building elite software.
+            </p>
+            
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#open-positions" class="btn-premium btn-premium-solid py-3 px-4" id="btn-hero-jobs">
+                Explore Openings <i class="bi bi-arrow-down-short ms-1"></i>
+              </a>
+              <a href="#why-work-with-us" class="btn-premium btn-premium-outline py-3 px-4">
+                Our Values <i class="bi bi-shield-check ms-1"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Right Column: Animated Glass Cards & Widgets -->
+          <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+            <div class="careers-hero-visual-wrap">
+              <div class="careers-orb-glowing"></div>
+              
+              <!-- Floater 1: Active Team Stats -->
+              <div class="careers-floater-card floater-1 glass benefit-card" data-tilt="true">
+                <div class="floater-icon-wrap"><i class="bi bi-globe-americas"></i></div>
+                <div>
+                  <h4 class="floater-title mb-0">32+ Global Crafters</h4>
+                  <p class="floater-desc mb-0">100% Remote, async & cohesive</p>
+                </div>
+              </div>
+              
+              <!-- Floater 2: Core Overlaps -->
+              <div class="careers-floater-card floater-2 glass benefit-card" data-tilt="true">
+                <div class="floater-icon-wrap"><i class="bi bi-clock-history"></i></div>
+                <div>
+                  <h4 class="floater-title mb-0">No Set Hours</h4>
+                  <p class="floater-desc mb-0">We measure output, not seat-time</p>
+                </div>
+                <div class="glow-edge"></div>
+              </div>
+              
+              <!-- Floater 3: Craftsmanship Rating -->
+              <div class="careers-floater-card floater-3 glass benefit-card" data-tilt="true">
+                <div class="floater-icon-wrap"><i class="bi bi-vector-pen"></i></div>
+                <div>
+                  <h4 class="floater-title mb-0">Uncompromising Craft</h4>
+                  <p class="floater-desc mb-0">Designing for 2026 and beyond</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         2. WHY WORK WITH US SECTION
+         =================================================================== -->
+    <section class="careers-why-section" id="why-work-with-us">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Text Column -->
+          <div class="col-lg-5" data-aos="fade-up" data-aos-duration="1000">
+            <span class="text-kicker mb-3">Our Core Convictions</span>
+            <h2 class="h2-section text-gradient-primary mb-4">Craft-driven culture <br>for autonomous souls.</h2>
+            <p class="text-secondary mb-4">
+              We do not hire "resources" to plug into a spreadsheet. We partner with expert artisans who demand high agency, take absolute ownership of their code/designs, and do their best work without managers breathing down their necks.
+            </p>
+            <p class="text-secondary mb-4">
+              At AVANT, you will work on premium products for top-tier clients, using cutting-edge design paradigms and hyper-optimized tech stacks.
+            </p>
+            <div class="mt-5 pt-3 border-top border-secondary-subtle">
+              <div class="d-flex align-items-center gap-3">
+                <div class="founder-sig-avatar font-mono">AV</div>
+                <div>
+                  <h5 class="mb-0 small font-mono text-uppercase text-primary">Founder's Pledge</h5>
+                  <p class="mb-0 text-muted small">"Zero bureaucracy. Pure creative adrenaline."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cards Column (2x2 Asymmetric Grid) -->
+          <div class="col-lg-7">
+            <div class="row g-4 why-cards-grid">
+              <!-- Card 1 -->
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="why-feature-box benefit-card glass p-4 h-100">
+                  <div class="why-box-icon mb-4"><i class="bi bi-rocket-takeoff"></i></div>
+                  <h3 class="why-box-title h4 mb-3">High Agency</h3>
+                  <p class="why-box-desc mb-0 text-secondary">
+                    You decide how to approach problems. No hand-holding, no micro-management. Absolute operational freedom.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Card 2 -->
+              <div class="col-sm-6 mt-sm-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="why-feature-box benefit-card glass p-4 h-100">
+                  <div class="why-box-icon mb-4"><i class="bi bi-shield-check"></i></div>
+                  <h3 class="why-box-title h4 mb-3">Extreme Trust</h3>
+                  <p class="why-box-desc mb-0 text-secondary">
+                    We assume competence. Your word is your contract, and we support you unconditionally to get things across the line.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Card 3 -->
+              <div class="col-sm-6 mt-sm-n5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="why-feature-box benefit-card glass p-4 h-100">
+                  <div class="why-box-icon mb-4"><i class="bi bi-award"></i></div>
+                  <h3 class="why-box-title h4 mb-3">Artisanal Pride</h3>
+                  <p class="why-box-desc mb-0 text-secondary">
+                    We push envelopes. If a component can be 10ms faster, or a transition smoother, we take the time to refine it.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Card 4 -->
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="why-feature-box benefit-card glass p-4 h-100">
+                  <div class="why-box-icon mb-4"><i class="bi bi-cash-stack"></i></div>
+                  <h3 class="why-box-title h4 mb-3">Fair Equity</h3>
+                  <p class="why-box-desc mb-0 text-secondary">
+                    Excellent talent deserves exceptional rewards. We pay top market rates and offer robust profit-sharing structures.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         3. COMPANY CULTURE SECTION (ASYNCHRONOUS EDITORIAL COMPOSITION)
+         =================================================================== -->
+    <section class="careers-culture-section" id="company-culture">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Visual Column -->
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+            <div class="culture-visual-bento">
+              <div class="culture-bento-grid">
+                <!-- Large Item 1 -->
+                <div class="bento-item bento-hero-item glass">
+                  <span class="bento-badge">METHODOLOGY</span>
+                  <h4 class="bento-headline mb-3 text-gradient-primary">Async-First.</h4>
+                  <p class="bento-text mb-0">We document extensively, record screen walkthroughs, and collaborate asynchronously. This respects your flow state and eliminates interruption.</p>
+                </div>
+                
+                <!-- Tiny Item 2 -->
+                <div class="bento-item bento-stat-item glass text-center">
+                  <div class="bento-stat-val text-gradient-primary">90%</div>
+                  <div class="bento-stat-lbl">FEWER MEETINGS</div>
+                </div>
+                
+                <!-- Tiny Item 3 -->
+                <div class="bento-item bento-icon-item glass">
+                  <div class="bento-icon-box"><i class="bi bi-lightning-charge-fill text-warning"></i></div>
+                  <span class="font-mono text-uppercase small text-muted">Deep Work Focus</span>
+                </div>
+                
+                <!-- Wide Item 4 -->
+                <div class="bento-item bento-footer-item glass">
+                  <h5 class="mb-2 font-mono text-uppercase text-primary small">Tools of our Alliance</h5>
+                  <p class="mb-0 text-muted small">Slack, Notion, Figma, GitHub, Linear, Google Workspace, and Loom.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Copy Column -->
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+            <span class="text-kicker mb-3">Aesthetic Discipline</span>
+            <h2 class="h2-section text-gradient-primary mb-4">Outcome-obsessed, process-light.</h2>
+            <p class="text-secondary mb-4 leading-text">
+              We replace useless synchronization calls with crisp written specifications and collaborative pull requests.
+            </p>
+            <p class="text-secondary mb-4">
+              We run on <strong>Radial Focus Cycles</strong>: we operate in highly aligned 6-week product cycles, followed by a full 1-week cooldown cycle dedicated exclusively to research, technical debt paydown, and learning budgets.
+            </p>
+            
+            <ul class="culture-list list-unstyled mt-5 d-flex flex-column gap-3">
+              <li class="d-flex gap-3 align-items-start">
+                <span class="culture-list-bullet"><i class="bi bi-check-lg"></i></span>
+                <div>
+                  <h4 class="h5 mb-1">Deep Work is Sacred</h4>
+                  <p class="mb-0 text-muted small">We enforce "Silent Wednesdays" where internal notifications are forbidden. Deep flow is the holy grail.</p>
+                </div>
+              </li>
+              <li class="d-flex gap-3 align-items-start">
+                <span class="culture-list-bullet"><i class="bi bi-check-lg"></i></span>
+                <div>
+                  <h4 class="h5 mb-1">Peerless Code Reviews</h4>
+                  <p class="mb-0 text-muted small">We maintain rigorous engineering review standards. Every line of code is an opportunity for mentorship and excellence.</p>
+                </div>
+              </li>
+              <li class="d-flex gap-3 align-items-start">
+                <span class="culture-list-bullet"><i class="bi bi-check-lg"></i></span>
+                <div>
+                  <h4 class="h5 mb-1">Direct Founder Exposure</h4>
+                  <p class="mb-0 text-muted small">Zero bureaucratic layers. Flat hierarchies mean ideas compete strictly on merit, never on titles.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         4. EMPLOYEE BENEFITS SECTION
+         =================================================================== -->
+    <section class="careers-benefits-section" id="employee-benefits">
+      <div class="container">
+        <div class="row mb-5 justify-content-between align-items-end">
+          <div class="col-lg-6" data-aos="fade-up">
+            <span class="text-kicker mb-3">Premium Infrastructure</span>
+            <h2 class="h2-section text-gradient-primary mb-0">Engineered for your <br>unrestricted peak performance.</h2>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-secondary mb-0 leading-text">
+              We invest heavily in our members. From ergonomics and continuous education to mental wellbeing, we provide absolute security.
+            </p>
+          </div>
+        </div>
+        
+        <div class="row g-4 benefits-cards-container">
+          <!-- Benefit 1: Learning Budget -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="benefit-card glass p-4 d-flex flex-column justify-content-between">
+              <div class="benefit-top">
+                <div class="benefit-icon"><i class="bi bi-journal-code"></i></div>
+                <h3 class="benefit-title h4 mb-3">Unlimited Learning</h3>
+                <p class="benefit-desc text-secondary">
+                  $3,000 annual budget for workshops, books, courses, and design/dev conferences. Grow as rapidly as the industry moves.
+                </p>
+              </div>
+              <div class="benefit-meta font-mono">ANNUAL RENEWAL</div>
+            </div>
+          </div>
+          
+          <!-- Benefit 2: Remote Friendly -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="benefit-card glass p-4 d-flex flex-column justify-content-between">
+              <div class="benefit-top">
+                <div class="benefit-icon"><i class="bi bi-house-gear"></i></div>
+                <h3 class="benefit-title h4 mb-3">Fully Remote / Nomadic</h3>
+                <p class="benefit-desc text-secondary">
+                  Work from anywhere. We provide full compliance setup, accounting counseling, and hardware budgets globally.
+                </p>
+              </div>
+              <div class="benefit-meta font-mono">GLOBAL FREEDOM</div>
+            </div>
+          </div>
+          
+          <!-- Benefit 3: Flexible Hours -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="benefit-card glass p-4 d-flex flex-column justify-content-between">
+              <div class="benefit-top">
+                <div class="benefit-icon"><i class="bi bi-calendar-range"></i></div>
+                <h3 class="benefit-title h4 mb-3">Flexible Schedules</h3>
+                <p class="benefit-desc text-secondary">
+                  No artificial "9-to-5" boundaries. Plan your hours around your peak focus states and personal biological clock.
+                </p>
+              </div>
+              <div class="benefit-meta font-mono">ASYNC COHESION</div>
+            </div>
+          </div>
+          
+          <!-- Benefit 4: Health Benefits -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="benefit-card glass p-4 d-flex flex-column justify-content-between">
+              <div class="benefit-top">
+                <div class="benefit-icon"><i class="bi bi-heart-pulse"></i></div>
+                <h3 class="benefit-title h4 mb-3">Elite Health Care</h3>
+                <p class="benefit-desc text-secondary">
+                  Premium private medical, dental, and vision insurance for you and your dependents. Dedicated mental health subscriptions.
+                </p>
+              </div>
+              <div class="benefit-meta font-mono">100% COVERED</div>
+            </div>
+          </div>
+          
+          <!-- Benefit 5: Performance Bonus -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="benefit-card glass p-4 d-flex flex-column justify-content-between">
+              <div class="benefit-top">
+                <div class="benefit-icon"><i class="bi bi-coin"></i></div>
+                <h3 class="benefit-title h4 mb-3">Profit Sharing & Bonus</h3>
+                <p class="benefit-desc text-secondary">
+                  Twice-a-year cash bonuses structured relative to company-wide target successes. Direct stake in our collective growth.
+                </p>
+              </div>
+              <div class="benefit-meta font-mono">SEMI-ANNUAL PAYOUT</div>
+            </div>
+          </div>
+          
+          <!-- Benefit 6: Modern Workspace -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="benefit-card glass p-4 d-flex flex-column justify-content-between">
+              <div class="benefit-top">
+                <div class="benefit-icon"><i class="bi bi-laptop"></i></div>
+                <h3 class="benefit-title h4 mb-3">Top-Tier Workstation</h3>
+                <p class="benefit-desc text-secondary">
+                  Any Apple MacBook Pro M-series, high-definition monitor, premium ergonomic chair, and local coworking stipend.
+                </p>
+              </div>
+              <div class="benefit-meta font-mono">$4,000 HARDWARE STIPEND</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         5. OPEN POSITIONS SECTION (DYNAMIC JOB BOARD)
+         =================================================================== -->
+    <section class="careers-positions-section" id="open-positions">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row mb-5 justify-content-between align-items-end">
+          <div class="col-lg-6" data-aos="fade-up">
+            <span class="text-kicker mb-3">Immediate Vacancies</span>
+            <h2 class="h2-section text-gradient-primary mb-0">Join our active lines. <br>Assemble masterpieces.</h2>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-secondary mb-0 leading-text">
+              We look for specialists. Generalists are great, but deep, meticulous domain expertise is what makes our client platforms legendary.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Job Filters -->
+        <div class="job-filters-wrap mb-5" data-aos="fade-up" data-aos-duration="800">
+          <div class="job-filters-container d-flex flex-wrap gap-2">
+            <button class="filter-btn active" data-filter="all">All Disciplines <span class="badge-count">5</span></button>
+            <button class="filter-btn" data-filter="engineering">Engineering <span class="badge-count">2</span></button>
+            <button class="filter-btn" data-filter="design">Design <span class="badge-count">1</span></button>
+            <button class="filter-btn" data-filter="strategy">Strategy & Product <span class="badge-count">1</span></button>
+            <button class="filter-btn" data-filter="operations">Operations <span class="badge-count">1</span></button>
+          </div>
+        </div>
+        
+        <!-- Jobs Container -->
+        <div class="jobs-list-container d-flex flex-column gap-4">
+          
+          <!-- Job 1: Senior Full-Stack Engineer -->
+          <div class="job-card glass value-card" data-department="engineering" data-aos="fade-up">
+            <div class="job-header-row d-flex flex-wrap justify-content-between align-items-center gap-4">
+              <div class="job-title-group">
+                <span class="job-dept-tag font-mono text-uppercase">Engineering</span>
+                <h3 class="job-title h4 mt-2 mb-2">Senior Full-Stack Engineer (Node.js & React)</h3>
+                <div class="job-meta-row d-flex flex-wrap gap-3 font-mono text-muted small">
+                  <span><i class="bi bi-geo-alt me-1"></i> Remote (Global)</span>
+                  <span><i class="bi bi-briefcase me-1"></i> Full-Time</span>
+                  <span><i class="bi bi-speedometer2 me-1"></i> Senior / Lead</span>
+                </div>
+              </div>
+              <div class="job-action-group d-flex align-items-center gap-3">
+                <div class="job-salary font-mono text-primary">$110k - $150k</div>
+                <button class="btn-premium btn-premium-outline py-2.5 px-4 font-mono text-uppercase small job-details-toggle-btn">Details</button>
+                <a href="contact.html?apply=fullstack-engineer" class="btn-premium btn-premium-solid py-2.5 px-4 font-mono text-uppercase small">Apply Now</a>
+              </div>
+            </div>
+            <div class="job-summary mt-4 pt-3 border-top border-secondary-subtle">
+              <p class="mb-3 text-secondary small">
+                We are looking for a senior systems crafter to own scaling our cloud runtime operations, build complex interactive React canvases, and integrate server-side Gemini API workflows with extreme reliability and flawless performance benchmarks.
+              </p>
+              
+              <!-- Expanded details block -->
+              <div class="job-expanded-details" style="max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+                <div class="row pt-3 pb-2 border-top border-secondary-subtle mt-3">
+                  <div class="col-md-6 mb-3">
+                    <h5 class="text-xs font-mono text-uppercase text-gradient-primary mb-2">Key Responsibilities</h5>
+                    <ul class="text-secondary small ps-3 mb-0 d-flex flex-column gap-1">
+                      <li>Design & scale Node.js & React-based high-performance web applications.</li>
+                      <li>Develop modular, highly optimized component structures using Tailwind CSS.</li>
+                      <li>Integrate server-side Gemini AI models for real-time analytics orchestration.</li>
+                      <li>Conduct security audits, performance profiling, and dependency health checks.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <h5 class="text-xs font-mono text-uppercase text-gradient-primary mb-2">Requirements & Perks</h5>
+                    <ul class="text-secondary small ps-3 mb-0 d-flex flex-column gap-1">
+                      <li>5+ years experience building polished responsive user interfaces.</li>
+                      <li>Flawless typescript discipline, ESM path mechanics, and clean code hygiene.</li>
+                      <li><strong>Perk:</strong> 100% remote workspace setup, health benefits, and tech stipend.</li>
+                      <li><strong>Perk:</strong> Flexible working hours and unlimited paid time off.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Job 2: Lead Product Designer -->
+          <div class="job-card glass value-card" data-department="design" data-aos="fade-up">
+            <div class="job-header-row d-flex flex-wrap justify-content-between align-items-center gap-4">
+              <div class="job-title-group">
+                <span class="job-dept-tag font-mono text-uppercase">Design</span>
+                <h3 class="job-title h4 mt-2 mb-2">Lead Product Designer (Figma & UI Motion)</h3>
+                <div class="job-meta-row d-flex flex-wrap gap-3 font-mono text-muted small">
+                  <span><i class="bi bi-geo-alt me-1"></i> London Hub / Hybrid</span>
+                  <span><i class="bi bi-briefcase me-1"></i> Full-Time</span>
+                  <span><i class="bi bi-speedometer2 me-1"></i> Principal / Lead</span>
+                </div>
+              </div>
+              <div class="job-action-group d-flex align-items-center gap-3">
+                <div class="job-salary font-mono text-primary">£95k - £125k</div>
+                <button class="btn-premium btn-premium-outline py-2.5 px-4 font-mono text-uppercase small job-details-toggle-btn">Details</button>
+                <a href="contact.html?apply=product-designer" class="btn-premium btn-premium-solid py-2.5 px-4 font-mono text-uppercase small">Apply Now</a>
+              </div>
+            </div>
+            <div class="job-summary mt-4 pt-3 border-top border-secondary-subtle">
+              <p class="mb-3 text-secondary small">
+                Join our pixel team to establish cutting-edge design systems. You must have outstanding spatial typography instincts, complete mastery of Figma auto-layouts, and a portfolio showcasing fluid web animations that convey genuine mood and rhythm.
+              </p>
+              
+              <!-- Expanded details block -->
+              <div class="job-expanded-details" style="max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+                <div class="row pt-3 pb-2 border-top border-secondary-subtle mt-3">
+                  <div class="col-md-6 mb-3">
+                    <h5 class="text-xs font-mono text-uppercase text-gradient-primary mb-2">Key Responsibilities</h5>
+                    <ul class="text-secondary small ps-3 mb-0 d-flex flex-column gap-1">
+                      <li>Translate complex workflow challenges into flawless interface wireframes and high-fidelity layouts.</li>
+                      <li>Direct spatial styling, design grid metrics, and customized visual branding rules.</li>
+                      <li>Partner with development teams to verify accurate typographic rendering and motion transitions.</li>
+                      <li>Produce gorgeous visual assets, vector logos, and custom structural patterns.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <h5 class="text-xs font-mono text-uppercase text-gradient-primary mb-2">Requirements & Perks</h5>
+                    <ul class="text-secondary small ps-3 mb-0 d-flex flex-column gap-1">
+                      <li>Deep mastery of Figma, advanced layout engines, styles, variables, and prototype components.</li>
+                      <li>Proven record designing award-winning web platforms or premium application suites.</li>
+                      <li><strong>Perk:</strong> Dedicated creative studio access, co-working budgets, and travel stipends.</li>
+                      <li><strong>Perk:</strong> Complete hardware allowances (M-series MacBook, Studio Display, tablet).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 3: Technical Product Manager -->
+          <div class="job-card glass value-card" data-department="strategy" data-aos="fade-up">
+            <div class="job-header-row d-flex flex-wrap justify-content-between align-items-center gap-4">
+              <div class="job-title-group">
+                <span class="job-dept-tag font-mono text-uppercase">Strategy</span>
+                <h3 class="job-title h4 mt-2 mb-2">Technical Product Manager (API & Infrastructure)</h3>
+                <div class="job-meta-row d-flex flex-wrap gap-3 font-mono text-muted small">
+                  <span><i class="bi bi-geo-alt me-1"></i> Remote (US/EU Timezones)</span>
+                  <span><i class="bi bi-briefcase me-1"></i> Full-Time</span>
+                  <span><i class="bi bi-speedometer2 me-1"></i> Senior (5+ yrs)</span>
+                </div>
+              </div>
+              <div class="job-action-group d-flex align-items-center gap-3">
+                <div class="job-salary font-mono text-primary">$130k - $160k</div>
+                <button class="btn-premium btn-premium-outline py-2.5 px-4 font-mono text-uppercase small job-details-toggle-btn">Details</button>
+                <a href="contact.html?apply=product-manager" class="btn-premium btn-premium-solid py-2.5 px-4 font-mono text-uppercase small">Apply Now</a>
+              </div>
+            </div>
+            <div class="job-summary mt-4 pt-3 border-top border-secondary-subtle">
+              <p class="mb-3 text-secondary small">
+                Bridge the gap between complex software architectures and client delivery. Translate ambitious roadmaps into highly technical task backlogs, manage active client sprint priorities, and direct functional requirements with absolute precision.
+              </p>
+              
+              <!-- Expanded details block -->
+              <div class="job-expanded-details" style="max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+                <div class="row pt-3 pb-2 border-top border-secondary-subtle mt-3">
+                  <div class="col-md-6 mb-3">
+                    <h5 class="text-xs font-mono text-uppercase text-gradient-primary mb-2">Key Responsibilities</h5>
+                    <ul class="text-secondary small ps-3 mb-0 d-flex flex-column gap-1">
+                      <li>Direct cross-functional scrum sprints, maintaining highly clean engineering logs and backlog boards.</li>
+                      <li>Deconstruct system design maps into precise backend tasks and API schema specs.</li>
+                      <li>Manage client executive syncs, translating ambitious feedback into discrete milestones.</li>
+                      <li>Draft clear user documentation, technical specs, and interface verification guides.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <h5 class="text-xs font-mono text-uppercase text-gradient-primary mb-2">Requirements & Perks</h5>
+                    <ul class="text-secondary small ps-3 mb-0 d-flex flex-column gap-1">
+                      <li>Background in computer science or extensive web development experience is highly valued.</li>
+                      <li>Exceptional written and visual communication style, with total process discipline.</li>
+                      <li><strong>Perk:</strong> Flexible schedule with regional time zone anchors.</li>
+                      <li><strong>Perk:</strong> Yearly custom retreat with travel and accommodation fully handled.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 4: Senior DevOps & Infrastructure Lead -->
+          <div class="job-card glass value-card" data-department="engineering" data-aos="fade-up">
+            <div class="job-header-row d-flex flex-wrap justify-content-between align-items-center gap-4">
+              <div class="job-title-group">
+                <span class="job-dept-tag font-mono text-uppercase">Engineering</span>
+                <h3 class="job-title h4 mt-2 mb-2">Senior DevOps & Kubernetes Architect</h3>
+                <div class="job-meta-row d-flex flex-wrap gap-3 font-mono text-muted small">
+                  <span><i class="bi bi-geo-alt me-1"></i> Remote (Global)</span>
+                  <span><i class="bi bi-briefcase me-1"></i> Contract-to-Hire</span>
+                  <span><i class="bi bi-speedometer2 me-1"></i> Principal Level</span>
+                </div>
+              </div>
+              <div class="job-action-group d-flex align-items-center gap-3">
+                <div class="job-salary font-mono text-primary">$140k - $180k</div>
+                <button class="btn-premium btn-premium-outline py-2.5 px-4 font-mono text-uppercase small job-details-toggle-btn">Details</button>
+                <a href="contact.html?apply=devops-architect" class="btn-premium btn-premium-solid py-2.5 px-4 font-mono text-uppercase small">Apply Now</a>
+              </div>
+            </div>
+            <div class="job-summary mt-4 pt-3 border-top border-secondary-subtle">
+              <p class="mb-3 text-secondary small">
+                Spearhead our multi-tenant container orchestrations, streamline secure CI/CD build channels on Google Cloud, and harden persistent database layers with bulletproof scalability metrics.
+              </p>
+              
+              <!-- Expanded details block -->
+              <div class="job-expanded-details" style="max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+                <div class="row pt-3 pb-2 border-top border-secondary-subtle mt-3">
+                  <div class="col-md-6 mb-3">
+                    <h5 class="text-xs font-mono text-uppercase text-gradient-primary mb-2">Key Responsibilities</h5>
+                    <ul class="text-secondary small ps-3 mb-0 d-flex flex-column gap-1">
+                      <li>Architect, monitor, and scale GKE/Kubernetes container orchestrations.</li>
+                      <li>Automate robust infrastructure provisioning using Terraform scripts.</li>
+                      <li>Harden Cloud Run ingress networks, Cloud CDN routing, and cache mechanisms.</li>
+                      <li>Set up system-wide dashboards, load metrics, and automated alerts.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <h5 class="text-xs font-mono text-uppercase text-gradient-primary mb-2">Requirements & Perks</h5>
+                    <ul class="text-secondary small ps-3 mb-0 d-flex flex-column gap-1">
+                      <li>Deep mastery of container networking, secrets management, and build security.</li>
+                      <li>Expert-level familiarity with Google Cloud Platform and infrastructure compliance.</li>
+                      <li><strong>Perk:</strong> Complete medical/dental premium coverage, wellness subscriptions.</li>
+                      <li><strong>Perk:</strong> Premium workstation budgets and training conference credits.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 5: Operations & Talent Specialist -->
+          <div class="job-card glass value-card" data-department="operations" data-aos="fade-up">
+            <div class="job-header-row d-flex flex-wrap justify-content-between align-items-center gap-4">
+              <div class="job-title-group">
+                <span class="job-dept-tag font-mono text-uppercase">Operations</span>
+                <h3 class="job-title h4 mt-2 mb-2">Global Operations & Talent Partner</h3>
+                <div class="job-meta-row d-flex flex-wrap gap-3 font-mono text-muted small">
+                  <span><i class="bi bi-geo-alt me-1"></i> New York Hub / Hybrid</span>
+                  <span><i class="bi bi-briefcase me-1"></i> Full-Time</span>
+                  <span><i class="bi bi-speedometer2 me-1"></i> Mid-to-Senior</span>
+                </div>
+              </div>
+              <div class="job-action-group d-flex align-items-center gap-3">
+                <div class="job-salary font-mono text-primary">$80k - $110k</div>
+                <button class="btn-premium btn-premium-outline py-2.5 px-4 font-mono text-uppercase small job-details-toggle-btn">Details</button>
+                <a href="contact.html?apply=operations-talent" class="btn-premium btn-premium-solid py-2.5 px-4 font-mono text-uppercase small">Apply Now</a>
+              </div>
+            </div>
+            <div class="job-summary mt-4 pt-3 border-top border-secondary-subtle">
+              <p class="mb-3 text-secondary small">
+                Design custom onboarding pipelines, scale international compliance networks, manage remote hardware disbursements, and reinforce our unique asynchronous cultural routines worldwide.
+              </p>
+              
+              <!-- Expanded details block -->
+              <div class="job-expanded-details" style="max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+                <div class="row pt-3 pb-2 border-top border-secondary-subtle mt-3">
+                  <div class="col-md-6 mb-3">
+                    <h5 class="text-xs font-mono text-uppercase text-gradient-primary mb-2">Key Responsibilities</h5>
+                    <ul class="text-secondary small ps-3 mb-0 d-flex flex-column gap-1">
+                      <li>Oversee international hardware logistics, remote workstations, and peer operations.</li>
+                      <li>Coordinate global compliance systems, legal filings, and payroll schedules.</li>
+                      <li>Establish onboarding pipelines that educate and align talent with agency culture.</li>
+                      <li>Run employee engagement surveys, review feedback logs, and suggest cultural updates.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <h5 class="text-xs font-mono text-uppercase text-gradient-primary mb-2">Requirements & Perks</h5>
+                    <ul class="text-secondary small ps-3 mb-0 d-flex flex-column gap-1">
+                      <li>3+ years operating in scaling remote talent teams or global agency frameworks.</li>
+                      <li>Outstanding emotional intelligence, process discipline, and communication empathy.</li>
+                      <li><strong>Perk:</strong> Complete hardware logistics budget and travel credits.</li>
+                      <li><strong>Perk:</strong> Dynamic medical plan options and annual wellness stipends.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- No Jobs State -->
+          <div class="no-jobs-found glass p-5 text-center d-none">
+            <div class="no-jobs-icon mb-3"><i class="bi bi-search"></i></div>
+            <h4 class="mb-2">No active roles in this discipline</h4>
+            <p class="text-secondary mb-0 small">Please submit a spontaneous application via General Submissions. We always read outstanding portfolios.</p>
+            <a href="contact.html?apply=general-submission" class="btn-premium btn-premium-solid mt-4 py-2 px-4">Submit General Portfolio <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         6. HIRING PROCESS SECTION (TIMELINE INTEGRITY)
+         =================================================================== -->
+    <section class="careers-process-section" id="hiring-process">
+      <div class="container">
+        <!-- Header -->
+        <div class="row mb-5 justify-content-center text-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="text-kicker mb-3">No Games. No Hacks.</span>
+            <h2 class="h2-section text-gradient-primary mb-3">Our Meticulous Hiring Process</h2>
+            <p class="text-secondary max-w-2xl mx-auto mb-0 leading-text">
+              We respect your schedule and experience. No endless algorithmic riddles or whiteboard pressure. We focus on real-world capabilities and cultural synergy.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Interactive Horizontal Process Timeline -->
+        <div class="timeline-scroll-wrap" data-aos="fade-up" data-aos-duration="1200">
+          <div class="timeline-track-progress">
+            <div class="timeline-progress-fill"></div>
+          </div>
+          
+          <div class="timeline-steps-container">
+            <!-- Step 1: Application -->
+            <div class="timeline-step-col active">
+              <div class="timeline-marker-wrap">
+                <div class="timeline-node">1</div>
+              </div>
+              <div class="timeline-content-box glass benefit-card">
+                <span class="timeline-step-meta font-mono">STEP 01 / FORM</span>
+                <h4 class="timeline-step-title mt-2 mb-3">Application</h4>
+                <p class="timeline-step-desc mb-0 text-secondary small">
+                  Submit your GitHub, Figma, or Case Study portfolio. We ignore formal degrees; your actual work is your credentials.
+                </p>
+                <div class="timeline-badge font-mono mt-3 text-primary">2-DAY REVIEW</div>
+              </div>
+            </div>
+            
+            <!-- Step 2: Review -->
+            <div class="timeline-step-col">
+              <div class="timeline-marker-wrap">
+                <div class="timeline-node">2</div>
+              </div>
+              <div class="timeline-content-box glass benefit-card">
+                <span class="timeline-step-meta font-mono">STEP 02 / ANALYSIS</span>
+                <h4 class="timeline-step-title mt-2 mb-3">Portfolio Review</h4>
+                <p class="timeline-step-desc mb-0 text-secondary small">
+                  An active squad lead meticulously reviews your source code or visual designs. We look for execution discipline.
+                </p>
+                <div class="timeline-badge font-mono mt-3 text-secondary">FEEDBACK ALWAYS</div>
+              </div>
+            </div>
+            
+            <!-- Step 3: Interview -->
+            <div class="timeline-step-col">
+              <div class="timeline-marker-wrap">
+                <div class="timeline-node">3</div>
+              </div>
+              <div class="timeline-content-box glass benefit-card">
+                <span class="timeline-step-meta font-mono">STEP 03 / CALL</span>
+                <h4 class="timeline-step-title mt-2 mb-3">Tech Interview</h4>
+                <p class="timeline-step-desc mb-0 text-secondary small">
+                  A 45-minute technical alignment conversation. We talk shop, architectural opinions, and discuss workflow routines.
+                </p>
+                <div class="timeline-badge font-mono mt-3 text-secondary">NO RIDDLES</div>
+              </div>
+            </div>
+            
+            <!-- Step 4: Assessment -->
+            <div class="timeline-step-col">
+              <div class="timeline-marker-wrap">
+                <div class="timeline-node">4</div>
+              </div>
+              <div class="timeline-content-box glass benefit-card">
+                <span class="timeline-step-meta font-mono">STEP 04 / TRIAL</span>
+                <h4 class="timeline-step-title mt-2 mb-3">Paid Assessment</h4>
+                <p class="timeline-step-desc mb-0 text-secondary small">
+                  We don't believe in unpaid labor. Complete a small, highly contextual 4-hour task. You are paid full market rates.
+                </p>
+                <div class="timeline-badge font-mono mt-3 text-warning">100% PAID TRIAL</div>
+              </div>
+            </div>
+            
+            <!-- Step 5: Offer -->
+            <div class="timeline-step-col">
+              <div class="timeline-marker-wrap">
+                <div class="timeline-node">5</div>
+              </div>
+              <div class="timeline-content-box glass benefit-card">
+                <span class="timeline-step-meta font-mono">STEP 05 / TERM</span>
+                <h4 class="timeline-step-title mt-2 mb-3">Offer Proposal</h4>
+                <p class="timeline-step-desc mb-0 text-secondary small">
+                  If we match, we deliver a comprehensive offer including premium salary, equipment budgets, and profit-sharing models.
+                </p>
+                <div class="timeline-badge font-mono mt-3 text-success">24-HR DISPATCH</div>
+              </div>
+            </div>
+
+            <!-- Step 6: Onboarding -->
+            <div class="timeline-step-col">
+              <div class="timeline-marker-wrap">
+                <div class="timeline-node">6</div>
+              </div>
+              <div class="timeline-content-box glass benefit-card">
+                <span class="timeline-step-meta font-mono">STEP 06 / FLIGHT</span>
+                <h4 class="timeline-step-title mt-2 mb-3">Onboarding</h4>
+                <p class="timeline-step-desc mb-0 text-secondary small">
+                  We setup your hardware, walk through active codebase structures asynchronously, and slowly integrate you into active loops.
+                </p>
+                <div class="timeline-badge font-mono mt-3 text-info">WEEK 1 EASY-PACE</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         7. EMPLOYEE TESTIMONIALS SECTION (EDITORIAL GRID)
+         =================================================================== -->
+    <section class="careers-testimonials-section" id="employee-testimonials">
+      <div class="container">
+        <!-- Header -->
+        <div class="row mb-5 justify-content-between align-items-end">
+          <div class="col-lg-6" data-aos="fade-up">
+            <span class="text-kicker mb-3">Straight From The Sprints</span>
+            <h2 class="h2-section text-gradient-primary mb-0">What our global <br>partners say about us.</h2>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-secondary mb-0 leading-text">
+              We asked our active builders to summarize their AVANT journey in their own words. Real people. Absolute creative control.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Editorial Testimonials Grid (Asymmetric Composition) -->
+        <div class="row g-4 testimonial-masonry">
+          <!-- Col 1: Large Featured Card -->
+          <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="testimonial-large-card glass p-5 h-100 d-flex flex-column justify-content-between">
+              <div class="testimonial-quote-wrap">
+                <div class="quote-symbol"><i class="bi bi-quote"></i></div>
+                <p class="testimonial-body-quote text-primary leading-text mb-4">
+                  "At AVANT, there's no technical theater. No one is monitoring active Slack statuses or forcing pointless status updates. I proposed rewriting our core layouts to use CSS variable-driven fluid tracking, and the founders said 'Go for it.' That level of trust is rare."
+                </p>
+              </div>
+              <div class="testimonial-author-row mt-5 pt-4 border-top border-secondary-subtle d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="author-portrait font-mono text-uppercase">SK</div>
+                  <div>
+                    <h4 class="h5 mb-1 text-gradient-primary">Soren Kjeldsen</h4>
+                    <p class="mb-0 text-muted small">Principal Engineer / Remote (Copenhagen)</p>
+                  </div>
+                </div>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="author-social-accent"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Col 2: Stack of 2 Smaller Cards -->
+          <div class="col-lg-5 d-flex flex-column gap-4">
+            <!-- Card 2 -->
+            <div class="testimonial-small-card glass p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <div class="quote-symbol-small"><i class="bi bi-quote text-secondary opacity-25"></i></div>
+              <p class="testimonial-small-body mb-4 text-secondary small">
+                "We design for luxury clients who scrutinize everything down to the nearest frame. Working here forces you to think deep. The cooldown weeks between cycles are amazing for self-directed R&D."
+              </p>
+              <div class="author-small-row d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-secondary-subtle">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="author-portrait-small font-mono">MS</div>
+                  <div>
+                    <h5 class="mb-0 small font-mono">Marta Sforza</h5>
+                    <p class="mb-0 text-muted ultra-small">Lead UX Designer / Milan Hub</p>
+                  </div>
+                </div>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted small"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="testimonial-small-card glass p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+              <div class="quote-symbol-small"><i class="bi bi-quote text-secondary opacity-25"></i></div>
+              <p class="testimonial-small-body mb-4 text-secondary small">
+                "Managing global client roadmaps is extremely smooth when the engineers are this autonomous. No micromanagement required. Every person owns their product line completely."
+              </p>
+              <div class="author-small-row d-flex align-items-center justify-content-between mt-3 pt-3 border-top border-secondary-subtle">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="author-portrait-small font-mono">AL</div>
+                  <div>
+                    <h5 class="mb-0 small font-mono">Alexandre Laurent</h5>
+                    <p class="mb-0 text-muted ultra-small">Principal Product Lead / Remote (Paris)</p>
+                  </div>
+                </div>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-muted small"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         8. FAQ PREVIEW SECTION (ACCORDIONS)
+         =================================================================== -->
+    <section class="careers-faq-preview-section" id="faq-preview">
+      <div class="container">
+        <!-- Header -->
+        <div class="row mb-5 justify-content-center text-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="text-kicker mb-3">Transparency Policy</span>
+            <h2 class="h2-section text-gradient-primary mb-3">Common Inquiries</h2>
+            <p class="text-secondary max-w-2xl mx-auto mb-0 leading-text">
+              We believe in complete transparency. Here are quick answers to our recruitment guidelines. Need more? Browse our full <a href="faq.html" class="careers-link-highlight">Knowledge Base <i class="bi bi-arrow-up-right"></i></a>.
+            </p>
+          </div>
+        </div>
+        
+        <!-- FAQ Accordion Container -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
+            <div class="faq-accordion-container d-flex flex-column gap-3">
+              <!-- Item 1 -->
+              <div class="faq-accordion-item glass">
+                <button class="faq-accordion-btn d-flex align-items-center justify-content-between w-100 text-start p-4">
+                  <span class="faq-btn-title">Do you hire worldwide, or only in certain zones?</span>
+                  <span class="faq-btn-icon"><i class="bi bi-plus-lg"></i></span>
+                </button>
+                <div class="faq-accordion-collapse">
+                  <div class="faq-accordion-body p-4 pt-0 text-secondary">
+                    We hire completely worldwide. However, some specific roles require active crossover with European (GMT) or North American (EST/PST) working hours for asynchronous checks. This is explicitly noted in each individual job listing. We handle global compliance via specialized payroll providers.
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Item 2 -->
+              <div class="faq-accordion-item glass">
+                <button class="faq-accordion-btn d-flex align-items-center justify-content-between w-100 text-start p-4">
+                  <span class="faq-btn-title">What does the paid assessment entail?</span>
+                  <span class="faq-btn-icon"><i class="bi bi-plus-lg"></i></span>
+                </button>
+                <div class="faq-accordion-collapse">
+                  <div class="faq-accordion-body p-4 pt-0 text-secondary">
+                    Our trial is a highly focused 4-to-6 hour project mimicking a real-world ticket from our backlog. It does not use fake algorithms; you will write real code or design an actual UI container. You are paid flat market-rate compensation regardless of whether we move forward. We respect your effort.
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Item 3 -->
+              <div class="faq-accordion-item glass">
+                <button class="faq-accordion-btn d-flex align-items-center justify-content-between w-100 text-start p-4">
+                  <span class="faq-btn-title">Can I apply spontaneously if no specific opening matches?</span>
+                  <span class="faq-btn-icon"><i class="bi bi-plus-lg"></i></span>
+                </button>
+                <div class="faq-accordion-collapse">
+                  <div class="faq-accordion-body p-4 pt-0 text-secondary">
+                    Absolutely. If you are an exceptional developer, motion-design wizard, or elite systems operator, we want to hear from you. Navigate to our contact form, select "Careers Alignment," upload your digital portfolio, and tell us how you would accelerate AVANT's projects.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         9. FINAL CTA SECTION (PREMIUM GLOWING GLASSCARD)
+         =================================================================== -->
+    <section class="careers-final-cta-section text-center animate-trigger" id="careers-final-cta">
+      <div class="careers-final-cta-mesh"></div>
+      
+      <div class="container">
+        <div class="careers-cta-glass-card" data-aos="zoom-in">
+          <div class="careers-cta-glow-blob"></div>
+          
+          <div class="relative z-3">
+            <span class="text-kicker mb-3">Assemble Legends</span>
+            <h2 class="h2-section text-gradient-primary mb-3">Ready to build the future <br>of digital products?</h2>
+            <p class="text-secondary max-w-2xl mx-auto mb-5 leading-text">
+              We keep our candidate vetting process fast, highly technical, and completely respectful. Check our openings and join the alliance today.
+            </p>
+            
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="#open-positions" class="btn-premium btn-premium-solid py-3 px-5" id="btn-cta-jobs">
+                Browse Open Roles <i class="bi bi-arrow-right-short ms-2"></i>
+              </a>
+              <a href="contact.html?apply=general" class="btn-premium btn-premium-outline py-3 px-5">
+                Spontaneous Portfolio <i class="bi bi-envelope-check ms-2"></i>
+              </a>
+            </div>
+            
+            <p class="mb-0 text-muted small mt-4">
+              <i class="bi bi-shield-lock-fill text-success me-1"></i> Underrepresented minorities are highly encouraged to apply. AVANT is an equal opportunity alliance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="logo-link mb-3">AVANT<span class="logo-dot"></span></a>
+          <p class="text-secondary small mb-4">A ThemeForest-ready premium digital agency template. Crafted with extreme typography discipline, flawless layouts, and fluid micro-interactions.</p>
+          <div class="d-flex gap-2">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-dribbble"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="team.html" class="footer-link-item">Our Team</a></li>
+            <li><a href="pricing.html" class="footer-link-item">Pricing Plans</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Our Services</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="services.html" class="footer-link-item">All Services</a></li>
+            <li><a href="service-details.html" class="footer-link-item">Service Detail Page</a></li>
+            <li><a href="portfolio.html" class="footer-link-item">Our Work</a></li>
+            <li><a href="portfolio-details.html" class="footer-link-item">Project Case Study</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Help & Learn</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="faq.html" class="footer-link-item">Frequently Asked Questions</a></li>
+            <li><a href="blog.html" class="footer-link-item">Our Journal</a></li>
+            <li><a href="blog-details.html" class="footer-link-item">Article Case Study</a></li>
+            <li><a href="404.html" class="footer-link-item">Custom 404 Error</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-copyright align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="mb-0 small text-muted">&copy; <span id="copyright-year"></span> AVANT. Studio. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0 small text-muted">Designed & Developed with Passion</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/pages/careers.js"></script>
+</body>
+</html>

@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Web Engineering - AVANT. Studio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("agency-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo-link">AVANT<span class="logo-dot"></span></a>
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links-container">
+          <li><a href="index.html" class="nav-link-item">Showcase</a></li>
+          <li><a href="about.html" class="nav-link-item">About</a></li>
+          <li><a href="services.html" class="nav-link-item active">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link-item">Portfolio</a></li>
+          <li><a href="pricing.html" class="nav-link-item">Pricing</a></li>
+          <li><a href="team.html" class="nav-link-item">Team</a></li>
+          <li><a href="faq.html" class="nav-link-item">FAQ</a></li>
+          <li><a href="blog.html" class="nav-link-item">Blog</a></li>
+          <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <div class="magnetic-wrap">
+          <button class="theme-toggle-btn" aria-label="Toggle theme mode">
+            <i class="bi bi-sun-fill theme-toggle-icon theme-toggle-icon-sun"></i>
+            <i class="bi bi-moon-stars-fill theme-toggle-icon theme-toggle-icon-moon"></i>
+          </button>
+        </div>
+        <a href="contact.html" class="btn-premium btn-premium-solid header-action-btn d-none d-sm-inline-flex">
+          Get in Touch <i class="bi bi-arrow-right"></i>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Open mobile menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <button class="mobile-drawer-close" aria-label="Close mobile menu"><i class="bi bi-x-lg"></i></button>
+    <div class="mobile-drawer-nav">
+      <a href="index.html" class="mobile-drawer-nav-link">Showcase</a>
+      <a href="about.html" class="mobile-drawer-nav-link">About Us</a>
+      <a href="services.html" class="mobile-drawer-nav-link active">Our Services</a>
+      <a href="portfolio.html" class="mobile-drawer-nav-link">Creative Portfolio</a>
+      <a href="pricing.html" class="mobile-drawer-nav-link">Plans & Pricing</a>
+      <a href="team.html" class="mobile-drawer-nav-link">Our Team</a>
+      <a href="faq.html" class="mobile-drawer-nav-link">FAQ</a>
+      <a href="blog.html" class="mobile-drawer-nav-link">Articles & News</a>
+      <a href="contact.html" class="mobile-drawer-nav-link">Contact Us</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <p class="mb-3 small">Let's build something exceptional together.</p>
+      <a href="contact.html" class="btn-premium btn-premium-solid w-100 py-3">Get in Touch <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- CONTENT WRAPPER -->
+  <div class="page-shell-wrapper">
+    <div class="ambient-bg-lights">
+      <div class="floating-blob blob-2"></div>
+      <div class="floating-blob blob-3"></div>
+    </div>
+
+    <!-- 01. HERO BANNER -->
+    <section class="details-hero-section d-flex align-items-center" data-parallax-container id="hero-banner">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 col-12 text-start">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="mb-4" data-aos="fade-down">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="services.html" class="text-decoration-none">Services</a></li>
+                <li class="breadcrumb-item active text-gradient-primary" aria-current="page">Web Engineering</li>
+              </ol>
+            </nav>
+
+            <!-- Kicker Badge -->
+            <span class="text-kicker text-uppercase tracking-wider mb-3 d-inline-block" data-aos="fade-down" data-aos-delay="50">
+              Flagship Capability
+            </span>
+
+            <!-- Title -->
+            <h1 class="h1-hero text-gradient-primary mb-4" data-aos="fade-up" data-aos-delay="100">
+              Creative Web <br><span class="text-gradient-secondary">Engineering</span>
+            </h1>
+
+            <!-- Paragraph -->
+            <p class="lead text-secondary mb-5" data-aos="fade-up" data-aos-delay="150" style="font-size: 1.15rem; line-height: 1.75;">
+              We engineer bespoke digital platforms with sub-100ms response times, stunning interactive layers, and flawless responsive performance. No templates. Zero technical debt. Pure digital excellence.
+            </p>
+
+            <!-- Call to Actions -->
+            <div class="d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="magnetic-wrap">
+                <a href="contact.html" class="btn-premium btn-premium-solid">
+                  Start a Project <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+              <div class="magnetic-wrap">
+                <a href="pricing.html" class="btn-premium btn-premium-outline">
+                  View Pricing <i class="bi bi-cash-stack ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <!-- Right side dashboard / illustration visual -->
+            <div class="details-hero-visual-wrap" data-aos="zoom-in" data-aos-delay="250">
+              <div class="hero-grid-pattern"></div>
+              <div class="details-hero-mesh"></div>
+              
+              <!-- Mock Browser with Glass effects -->
+              <div class="mock-browser-container">
+                <div class="mock-browser-header">
+                  <div class="browser-dots">
+                    <span class="dot-red"></span>
+                    <span class="dot-yellow"></span>
+                    <span class="dot-green"></span>
+                  </div>
+                  <div class="browser-address">https://avant.studio/web-engineering</div>
+                </div>
+                <div class="mock-browser-body font-mono text-start">
+                  <div class="code-line"><span class="code-keyword">import</span> { <span class="code-variable">AvantPlatform</span> } <span class="code-keyword">from</span> <span class="code-string">"@avant/core"</span>;</div>
+                  <div class="code-line"><span class="code-keyword">const</span> <span class="code-def">app</span> = <span class="code-keyword">new</span> <span class="code-variable">AvantPlatform</span>({</div>
+                  <div class="code-line indent-1"><span class="code-property">speed</span>: <span class="code-number">100</span>, <span class="code-comment">// Google Lighthouse score</span></div>
+                  <div class="code-line indent-1"><span class="code-property">customLayout</span>: <span class="code-keyword">true</span>,</div>
+                  <div class="code-line indent-1"><span class="code-property">security</span>: <span class="code-string">"military-grade"</span></div>
+                  <div class="code-line">});</div>
+                  <div class="code-line"><span class="code-comment">// Active real-time page metrics</span></div>
+                  <div class="dashboard-graph mt-4">
+                    <div class="graph-bar-container">
+                      <span class="graph-label">Lighthouse</span>
+                      <div class="graph-bar-track"><div class="graph-bar-fill bar-lh"></div></div>
+                      <span class="graph-value text-success">100/100</span>
+                    </div>
+                    <div class="graph-bar-container">
+                      <span class="graph-label">FCP Loading</span>
+                      <div class="graph-bar-track"><div class="graph-bar-fill bar-fcp"></div></div>
+                      <span class="graph-value">0.12s</span>
+                    </div>
+                    <div class="graph-bar-container">
+                      <span class="graph-label">Server TTFB</span>
+                      <div class="graph-bar-track"><div class="graph-bar-fill bar-ttfb"></div></div>
+                      <span class="graph-value text-gradient-primary">34ms</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Floating UI Cards -->
+              <div class="about-hero-metric-card float-card-1">
+                <div class="metric-icon-wrap bg-success-glow text-success">
+                  <i class="bi bi-shield-fill-check"></i>
+                </div>
+                <div>
+                  <h5 class="metric-val mb-0 text-success">SSL Active</h5>
+                  <span class="metric-lbl">WAF Protected</span>
+                </div>
+              </div>
+              
+              <div class="about-hero-metric-card float-card-2">
+                <div class="metric-icon-wrap bg-warning-glow text-warning">
+                  <i class="bi bi-rocket-takeoff-fill"></i>
+                </div>
+                <div>
+                  <h5 class="metric-val mb-0 text-gradient-primary">Sub-100ms</h5>
+                  <span class="metric-lbl">Response Speed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. SERVICE OVERVIEW -->
+    <section class="overview-section" id="service-overview">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 col-12" data-aos="fade-right">
+            <!-- Large Image Panel -->
+            <div class="overview-visual-panel">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Avant premium web engineering process">
+              <div class="overview-overlay-card">
+                <div class="overview-overlay-icon">
+                  <i class="bi bi-cpu-fill"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1 text-primary text-uppercase tracking-wider font-mono small">Next-Gen Architecture</h6>
+                  <p class="mb-0 text-secondary small">React &amp; Vite serverless optimization built for enterprise loads.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12 text-start" data-aos="fade-left">
+            <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block">The Deep Dive</span>
+            <h2 class="h2-section text-gradient-primary mb-4">Precision Engineering Met with Elite Creative Artistry</h2>
+            <p class="text-secondary mb-4" style="line-height: 1.7;">
+              At AVANT. Studio, we believe code is a creative medium. We do not recycle off-the-shelf templates or stack bloated third-party plugins that degrade speed and expose security vectors.
+            </p>
+            <p class="text-secondary mb-4" style="line-height: 1.7;">
+              Every line of HTML, CSS, and TypeScript is custom-authored to fit your brand identity, delivering scale-invariant reliability, pixel-perfect responsive layouts, and robust organic search indexation.
+            </p>
+
+            <!-- Feature checklist -->
+            <ul class="overview-checklist">
+              <li class="overview-check-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>100% custom codebase, no frameworks overhead</span>
+              </li>
+              <li class="overview-check-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Google Lighthouse performance certified</span>
+              </li>
+              <li class="overview-check-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Advanced SEO structured microdata schemas</span>
+              </li>
+              <li class="overview-check-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Secure API proxies protecting all secret keys</span>
+              </li>
+            </ul>
+
+            <!-- Business outcomes & Trust indicators -->
+            <div class="overview-outcomes-wrapper mt-5">
+              <div class="row align-items-center">
+                <div class="col-md-4 col-12 border-end border-color outcome-block">
+                  <div class="outcome-stat text-gradient-primary">+45%</div>
+                  <div class="outcome-lbl">Conversion Rate</div>
+                </div>
+                <div class="col-md-4 col-12 border-end border-color outcome-block">
+                  <div class="outcome-stat text-gradient-secondary">0%</div>
+                  <div class="outcome-lbl">Technical Debt</div>
+                </div>
+                <div class="col-md-4 col-12 outcome-block">
+                  <div class="outcome-stat text-success">100%</div>
+                  <div class="outcome-lbl">IP Rights Owned</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. KEY BENEFITS -->
+    <section class="benefits-section" id="key-benefits">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">Why We Excel</span>
+        <h2 class="h2-section text-gradient-primary mb-3" data-aos="fade-up">Bespoke Advantage</h2>
+        <p class="lead text-secondary max-w-2xl mx-auto mb-5" data-aos="fade-up" data-aos-delay="100">
+          We combine advanced web infrastructure protocols with psychological design triggers to build high-converting assets.
+        </p>
+
+        <!-- 6 Premium cards with hover glows & lift animations -->
+        <div class="benefit-card-grid">
+          <div class="benefit-card text-start" data-aos="fade-up" data-aos-delay="100">
+            <div class="benefit-icon-container">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <h4 class="benefit-title">Instantaneous Load Speed</h4>
+            <p class="benefit-desc">Speed directly correlates with sales. We configure static file generation and edge caching to render web experiences in sub-100ms.</p>
+          </div>
+
+          <div class="benefit-card text-start" data-aos="fade-up" data-aos-delay="150">
+            <div class="benefit-icon-container">
+              <i class="bi bi-brush-fill"></i>
+            </div>
+            <h4 class="benefit-title">Custom Aesthetic Layout</h4>
+            <p class="benefit-desc">Stand out with custom aesthetic geometry, bespoke micro-interactions, and premium responsive layouts tailored to your visual system.</p>
+          </div>
+
+          <div class="benefit-card text-start" data-aos="fade-up" data-aos-delay="200">
+            <div class="benefit-icon-container">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <h4 class="benefit-title">Ironclad Cyber Security</h4>
+            <p class="benefit-desc">Protected by Web Application Firewalls (WAF) and server-side API proxies that shield third-party credentials from public inspection.</p>
+          </div>
+
+          <div class="benefit-card text-start" data-aos="fade-up" data-aos-delay="250">
+            <div class="benefit-icon-container">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h4 class="benefit-title">SEO Schema Dominance</h4>
+            <p class="benefit-desc">We inject rigid JSON-LD schema microdata, auto-render semantic structures, and compile fast files to command Google's first page rankings.</p>
+          </div>
+
+          <div class="benefit-card text-start" data-aos="fade-up" data-aos-delay="300">
+            <div class="benefit-icon-container">
+              <i class="bi bi-database-fill-gear"></i>
+            </div>
+            <h4 class="benefit-title">Seamless API Ecosystems</h4>
+            <p class="benefit-desc">Connect directly to any CRM, payment processors (Stripe), or custom databases via REST or GraphQL interfaces with 99.99% uptime protocols.</p>
+          </div>
+
+          <div class="benefit-card text-start" data-aos="fade-up" data-aos-delay="350">
+            <div class="benefit-icon-container">
+              <i class="bi bi-infinity"></i>
+            </div>
+            <h4 class="benefit-title">Infinite Elastic Scaling</h4>
+            <p class="benefit-desc">Host assets across distributed global CDN edges, letting your platform support massive traffic spikes effortlessly without infrastructure collapse.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. OUR WORKFLOW -->
+    <section class="workflow-section" id="our-workflow">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">The Road to Launch</span>
+        <h2 class="h2-section text-gradient-primary mb-3" data-aos="fade-up">Our Engineering Pipeline</h2>
+        <p class="lead text-secondary max-w-2xl mx-auto mb-5" data-aos="fade-up" data-aos-delay="100">
+          A modern, multi-tier operational blueprint that ensures alignment, aesthetic cohesion, and high-fidelity project execution.
+        </p>
+
+        <!-- Staggered Timeline Track -->
+        <div class="workflow-timeline-wrapper">
+          <div class="workflow-timeline-line">
+            <div class="workflow-timeline-progress"></div>
+          </div>
+          
+          <div class="workflow-steps-grid">
+            <div class="workflow-step-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="workflow-icon-wrap">
+                <i class="bi bi-binoculars-fill"></i>
+                <div class="workflow-step-badge">01</div>
+              </div>
+              <h5 class="workflow-step-title">Discovery</h5>
+              <p class="workflow-step-desc">In-depth stakeholder audits, mapping core business targets, and setting clear technical parameters.</p>
+            </div>
+
+            <div class="workflow-step-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="workflow-icon-wrap">
+                <i class="bi bi-journal-text"></i>
+                <div class="workflow-step-badge">02</div>
+              </div>
+              <h5 class="workflow-step-title">Planning</h5>
+              <p class="workflow-step-desc">Architectural wireframes, semantic mapping, API schematics, and structural development blueprinting.</p>
+            </div>
+
+            <div class="workflow-step-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="workflow-icon-wrap">
+                <i class="bi bi-search"></i>
+                <div class="workflow-step-badge">03</div>
+              </div>
+              <h5 class="workflow-step-title">Research</h5>
+              <p class="workflow-step-desc">Competitor layout analysis, speed profiling, and UX performance audits to target gaps.</p>
+            </div>
+
+            <div class="workflow-step-card" data-aos="fade-up" data-aos-delay="250">
+              <div class="workflow-icon-wrap">
+                <i class="bi bi-palette-fill"></i>
+                <div class="workflow-step-badge">04</div>
+              </div>
+              <h5 class="workflow-step-title">Design</h5>
+              <p class="workflow-step-desc">High-fidelity Figma layouts, interactive design prototypes, and custom vector asset modeling.</p>
+            </div>
+
+            <div class="workflow-step-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="workflow-icon-wrap">
+                <i class="bi bi-code-slash"></i>
+                <div class="workflow-step-badge">05</div>
+              </div>
+              <h5 class="workflow-step-title">Development</h5>
+              <p class="workflow-step-desc">Clean-code programming, framework assemblies, database configurations, and robust API links.</p>
+            </div>
+
+            <div class="workflow-step-card" data-aos="fade-up" data-aos-delay="350">
+              <div class="workflow-icon-wrap">
+                <i class="bi bi-speedometer2"></i>
+                <div class="workflow-step-badge">06</div>
+              </div>
+              <h5 class="workflow-step-title">Optimization</h5>
+              <p class="workflow-step-desc">Rigorous Lighthouse evaluations, code compression, asset scaling, sitemap setup, and launch protocol.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. TECHNOLOGIES USED -->
+    <section class="technologies-section" id="technologies-used">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">The Stack</span>
+        <h2 class="h2-section text-gradient-primary mb-3" data-aos="fade-up">Next-Gen Tech Arsenal</h2>
+        <p class="lead text-secondary max-w-2xl mx-auto mb-5" data-aos="fade-up" data-aos-delay="100">
+          We master the market's elite development standards to build fast, secure, and easily-extensible digital platforms.
+        </p>
+
+        <!-- Grid of 10 tech cards -->
+        <div class="tech-grid">
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="50">
+            <i class="bi bi-filetype-html tech-icon"></i>
+            <span class="tech-name">HTML5</span>
+          </div>
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-filetype-css tech-icon"></i>
+            <span class="tech-name">CSS3</span>
+          </div>
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="150">
+            <i class="bi bi-bootstrap-fill tech-icon"></i>
+            <span class="tech-name">Bootstrap 5</span>
+          </div>
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-filetype-js tech-icon"></i>
+            <span class="tech-name">JavaScript</span>
+          </div>
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="250">
+            <i class="bi bi-filetype-php tech-icon"></i>
+            <span class="tech-name">PHP</span>
+          </div>
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-shield-fill-check tech-icon"></i>
+            <span class="tech-name">Laravel</span>
+          </div>
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="350">
+            <i class="bi bi-wordpress tech-icon"></i>
+            <span class="tech-name">WordPress</span>
+          </div>
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-plug-fill tech-icon"></i>
+            <span class="tech-name">API Integration</span>
+          </div>
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="450">
+            <i class="bi bi-figma tech-icon"></i>
+            <span class="tech-name">Figma</span>
+          </div>
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="500">
+            <i class="bi bi-git tech-icon"></i>
+            <span class="tech-name">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. DELIVERABLES -->
+    <section class="deliverables-section" id="deliverables">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">What You Own</span>
+        <h2 class="h2-section text-gradient-primary mb-3" data-aos="fade-up">Guaranteed Project Deliverables</h2>
+        <p class="lead text-secondary max-w-2xl mx-auto mb-5" data-aos="fade-up" data-aos-delay="100">
+          Our standard development contract secures absolute ownership and a complete production package handed over directly.
+        </p>
+
+        <div class="deliverables-grid">
+          <!-- Deliverable 1 -->
+          <div class="deliverable-card text-start" data-aos="fade-up" data-aos-delay="100">
+            <div class="deliverable-header">
+              <span class="deliverable-badge">Production Code</span>
+              <h4 class="deliverable-title">Source Files</h4>
+            </div>
+            <ul class="deliverable-list">
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Clean, semantic, modular TypeScript/JavaScript files.</span>
+              </li>
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Commented and optimized styles utilizing utility systems.</span>
+              </li>
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Complete and sanitized API integration controllers.</span>
+              </li>
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Git Version Control history repositories.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Deliverable 2 -->
+          <div class="deliverable-card text-start" data-aos="fade-up" data-aos-delay="150">
+            <div class="deliverable-header">
+              <span class="deliverable-badge">Speed & SEO</span>
+              <h4 class="deliverable-title">Performance Specs</h4>
+            </div>
+            <ul class="deliverable-list">
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Responsive layouts optimized from mobile to ultra-wide.</span>
+              </li>
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Lighthouse reports detailing 100/100 performance scores.</span>
+              </li>
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Structured dynamic microdata schemas in JSON-LD.</span>
+              </li>
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Robust Safari, Chrome, Firefox, and Edge cross-compatibility.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Deliverable 3 -->
+          <div class="deliverable-card text-start" data-aos="fade-up" data-aos-delay="200">
+            <div class="deliverable-header">
+              <span class="deliverable-badge">Support & IP</span>
+              <h4 class="deliverable-title">Documentation</h4>
+            </div>
+            <ul class="deliverable-list">
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Comprehensive server configuration and deployment setup guides.</span>
+              </li>
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Content Management System (CMS) custom instruction videos.</span>
+              </li>
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>30 Days post-launch patch support & security monitoring.</span>
+              </li>
+              <li class="deliverable-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>100% intellectual property rights assignment deeds.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. PROJECT STATISTICS -->
+    <section class="stats-bento-section" id="project-statistics">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">By The Numbers</span>
+        <h2 class="h2-section text-gradient-primary mb-5" data-aos="fade-up">Proven Track Record</h2>
+
+        <div class="stats-bento-wrapper" data-aos="zoom-in">
+          <div class="row g-4 justify-content-center">
+            <!-- Stat 1 -->
+            <div class="col-lg-3 col-md-6 col-12 bento-stat-col">
+              <div class="bento-stat-card">
+                <div class="bento-icon-wrap">
+                  <i class="bi bi-emoji-smile-fill"></i>
+                </div>
+                <h3 class="stat-counter-number text-gradient-primary mb-1 display-5 fw-bold" data-target="99" data-suffix="%">0%</h3>
+                <span class="outcome-lbl font-mono text-secondary">Client Satisfaction</span>
+              </div>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="col-lg-3 col-md-6 col-12 bento-stat-col">
+              <div class="bento-stat-card">
+                <div class="bento-icon-wrap">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <h3 class="stat-counter-number text-gradient-secondary mb-1 display-5 fw-bold" data-target="250" data-suffix="+">0+</h3>
+                <span class="outcome-lbl font-mono text-secondary">Completed Projects</span>
+              </div>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="col-lg-3 col-md-6 col-12 bento-stat-col">
+              <div class="bento-stat-card">
+                <div class="bento-icon-wrap">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h3 class="stat-counter-number text-gradient-primary mb-1 display-5 fw-bold" data-target="15" data-suffix="+">0+</h3>
+                <span class="outcome-lbl font-mono text-secondary">Creative Experts</span>
+              </div>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="col-lg-3 col-md-6 col-12 bento-stat-col">
+              <div class="bento-stat-card">
+                <div class="bento-icon-wrap">
+                  <i class="bi bi-telephone-outbound-fill"></i>
+                </div>
+                <h3 class="stat-counter-number text-success mb-1 display-5 fw-bold" data-target="24" data-suffix="/7">0/7</h3>
+                <span class="outcome-lbl font-mono text-secondary">Support Desk</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 col-12 text-start" data-aos="fade-right">
+            <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block">Common Enquiries</span>
+            <h2 class="h2-section text-gradient-primary mb-4">Frequently Asked Questions</h2>
+            <p class="text-secondary mb-4" style="line-height: 1.7;">
+              Have queries about our technology stack, pricing architectures, deployment timelines, or custom features? We have outlined absolute answers here.
+            </p>
+            <p class="text-secondary mb-4" style="line-height: 1.7;">
+              For other complex custom software integrations or visual blueprints, feel free to contact our technical team anytime.
+            </p>
+            <a href="contact.html" class="btn-premium btn-premium-solid mt-2">
+              Speak to an Engineer <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+
+          <div class="col-lg-8 col-12" data-aos="fade-left">
+            <div class="accordion accordion-premium" id="serviceFAQAccordion">
+              
+              <!-- Accordion Item 1 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Why is custom web development better than standard template themes?
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#serviceFAQAccordion">
+                  <div class="accordion-body">
+                    Standard pre-built visual themes suffer from severe code inflation, loading hundreds of unnecessary modules that destroy speed and negatively affect SEO rankings. Custom development yields a clean, dedicated code structure built for your precise requirements, giving you flawless performance scores (100/100) and zero security vulnerabilities.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What security measures are implemented within your custom stacks?
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#serviceFAQAccordion">
+                  <div class="accordion-body">
+                    We secure your platform using Web Application Firewalls (WAF) to prevent DDoS threats, SQL injections, and malicious bots. Additionally, we write backend API route proxies to safely house and interact with sensitive third-party keys, preventing them from ever leaking onto the user's browser terminal.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Do you support third-party CRM, ERP, and payment gateway API connections?
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#serviceFAQAccordion">
+                  <div class="accordion-body">
+                    Yes, absolutely. We have extensive experience writing custom API connectors and data synchronizers for Salesforce, HubSpot, Stripe, PayPal, Mailchimp, and custom SQL databases, ensuring that all communications remain fast, secure, and encrypted.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 4 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    How do you support my platform after it successfully launches?
+                  </button>
+                </h3>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#serviceFAQAccordion">
+                  <div class="accordion-body">
+                    We provide a standard 30-day post-launch warranty that includes automatic patch support, security updates, server monitoring, and response bug resolution. You can also opt for our monthly premium digital support packages for ongoing feature additions and priority engineering.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 5 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Can our internal team easily manage sitemaps and content edits on our own?
+                  </button>
+                </h3>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#serviceFAQAccordion">
+                  <div class="accordion-body">
+                    Yes. We can integrate lightweight, high-end headless CMS setups or standard custom WordPress dashboards that let your marketing team edit text copy, blogs, sitemaps, and images without interacting with the primary code base.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 6 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    How do we handle design feedback and development sign-offs?
+                  </button>
+                </h3>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#serviceFAQAccordion">
+                  <div class="accordion-body">
+                    We share high-fidelity, interactive Figma layouts where you can leave direct pixel-level comments. During development, we deploy regular milestones to secure staging links, letting you inspect the responsive behaviors and speed outputs of the platform in real-time.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 7 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Do we own the absolute intellectual copyright of the custom code?
+                  </button>
+                </h3>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#serviceFAQAccordion">
+                  <div class="accordion-body">
+                    Yes. Once the final contract milestone invoice is settled, 100% of the custom intellectual property, database schemas, and visual code repositories belong exclusively to you, secured by official written copyright transfer deeds.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09. RELATED SERVICES -->
+    <section class="services-list-section" id="related-services" style="padding: 120px 0; background-color: var(--bg-secondary);">
+      <div class="container text-center">
+        <span class="text-kicker text-uppercase tracking-wider mb-2 d-inline-block" data-aos="fade-down">Synergetic Offerings</span>
+        <h2 class="h2-section text-gradient-primary mb-3" data-aos="fade-up">Explore Related Capabilities</h2>
+        <p class="lead text-secondary max-w-2xl mx-auto mb-5" data-aos="fade-up" data-aos-delay="100">
+          We combine synergistic digital disciplines to offer completely unified brand campaigns and technical support systems.
+        </p>
+
+        <!-- 3 related service cards utilizing spotlight effects -->
+        <div class="row g-4 mt-2">
+          <!-- Related Card 1 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card text-start h-100">
+              <div class="service-card-icon-container">
+                <i class="bi bi-window-sidebar"></i>
+              </div>
+              <h3 class="service-card-title">UI/UX Design</h3>
+              <p class="service-card-desc">Establishing rigorous responsive wireframes, creative visual prototyping, and high-fidelity product journeys before coding starts.</p>
+              <div class="service-card-footer mt-auto pt-4">
+                <a href="service-details.html" class="service-card-link text-decoration-none">
+                  Deep Dive <i class="bi bi-arrow-right service-card-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Related Card 2 -->
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="150">
+            <div class="service-card text-start h-100">
+              <div class="service-card-icon-container">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+              <h3 class="service-card-title">SEO Optimization</h3>
+              <p class="service-card-desc">Rigorous dynamic microdata setups, schema architecture optimizations, and speed audit implementations to rank on organic listings.</p>
+              <div class="service-card-footer mt-auto pt-4">
+                <a href="service-details.html" class="service-card-link text-decoration-none">
+                  Deep Dive <i class="bi bi-arrow-right service-card-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Related Card 3 -->
+          <div class="col-lg-4 col-md-6 col-12 d-md-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card text-start h-100">
+              <div class="service-card-icon-container">
+                <i class="bi bi-gem"></i>
+              </div>
+              <h3 class="service-card-title">Brand Identity</h3>
+              <p class="service-card-desc">Formulating creative vector logos, modern color system guidelines, and unique typography layouts to project luxury authority.</p>
+              <div class="service-card-footer mt-auto pt-4">
+                <a href="service-details.html" class="service-card-link text-decoration-none">
+                  Deep Dive <i class="bi bi-arrow-right service-card-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FINAL CTA -->
+    <section class="details-cta-section" id="final-cta">
+      <div class="container">
+        <div class="details-cta-wrapper" data-aos="zoom-in">
+          <div class="details-cta-mesh"></div>
+          <div class="details-cta-particles"></div>
+          
+          <div class="row justify-content-center text-center details-cta-content position-relative">
+            <div class="col-lg-8 col-12">
+              <span class="text-kicker text-uppercase tracking-wider mb-3 d-inline-block text-success">Let's Build</span>
+              <h2 class="display-4 font-display fw-bold text-gradient-primary mb-4">Ready to Create Your Flagship Digital Platform?</h2>
+              <p class="lead text-secondary mb-5" style="line-height: 1.7;">
+                Partner with AVANT. Studio to convert your artistic vision into lightning-fast, highly secure code that commands premium user engagement and absolute commercial authority.
+              </p>
+              
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <div class="magnetic-wrap">
+                  <a href="contact.html" class="btn-premium btn-premium-solid py-3 px-5 fs-6">
+                    Start a Project <i class="bi bi-arrow-right ms-2"></i>
+                  </a>
+                </div>
+                <div class="magnetic-wrap">
+                  <a href="contact.html" class="btn-premium btn-premium-outline py-3 px-5 fs-6">
+                    Speak to an Expert <i class="bi bi-chat-dots-fill ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="logo-link mb-3">AVANT<span class="logo-dot"></span></a>
+          <p class="text-secondary small mb-4">A ThemeForest-ready premium digital agency template. Crafted with extreme typography discipline, flawless layouts, and fluid micro-interactions.</p>
+          <div class="d-flex gap-2">
+            <a href="contact.html" class="footer-social-link"><i class="bi bi-twitter-x"></i></a>
+            <a href="contact.html" class="footer-social-link"><i class="bi bi-dribbble"></i></a>
+            <a href="contact.html" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+            <a href="contact.html" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Company</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="team.html" class="footer-link-item">Our Team</a></li>
+            <li><a href="pricing.html" class="footer-link-item">Pricing Plans</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Our Services</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="services.html" class="footer-link-item">All Services</a></li>
+            <li><a href="service-details.html" class="footer-link-item">Service Detail Page</a></li>
+            <li><a href="portfolio.html" class="footer-link-item">Our Work</a></li>
+            <li><a href="portfolio.html" class="footer-link-item">Project Case Study</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3 small text-uppercase tracking-wider">Help & Learn</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="faq.html" class="footer-link-item">Frequently Asked Questions</a></li>
+            <li><a href="blog.html" class="footer-link-item">Our Journal</a></li>
+            <li><a href="blog.html" class="footer-link-item">Article Case Study</a></li>
+            <li><a href="services.html" class="footer-link-item">Custom 404 Error</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-copyright align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="mb-0 small text-muted">&copy; <span id="copyright-year"></span> AVANT. Studio. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0 small text-muted">Designed & Developed with Passion</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
