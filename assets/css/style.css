@@ -67,7 +67,7 @@
   
   --text-primary: #ffffff;
   --text-secondary: #a3a3a3;
-  --text-muted: #525252;
+  --text-muted: #747272;
   --text-contrast: #ffffff;
   
   --accent-primary: #3b82f6;       /* Radiant Neon Blue */
@@ -120,7 +120,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-primary);
 }
-
+.text-muted{
+  color: var(--text-muted) !important;
+}
 /* Selection Highlight */
 ::selection {
   background-color: rgba(var(--accent-primary-rgb), 0.2);
