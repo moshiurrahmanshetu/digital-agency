@@ -216,10 +216,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h1-hero {
-  font-size: clamp(2.5rem, 7vw, 6rem);
+  font-size: clamp(2.5rem, 5vw, 6rem);
   font-weight: 900;
   letter-spacing: -0.04em;
-  line-height: 0.95;
+  line-height: 0.55;
 }
 
 h1 { font-size: clamp(2.25rem, 5vw, 4rem); }
@@ -1274,7 +1274,7 @@ body.drawer-open .hamburger-inner::after {
 
 /* Word Reveal Animations */
 .reveal-word {
-  display: inline-block;
+  display: block;
   opacity: 0;
   transform: translateY(35px) skewY(2deg);
   animation: reveal-word-anim 0.8s var(--transition-cubic) forwards;
