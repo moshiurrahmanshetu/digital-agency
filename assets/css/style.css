@@ -216,15 +216,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h1-hero {
-  font-size: clamp(2.5rem, 5vw, 6rem);
+  font-size: clamp(2.5rem, 4vw, 6rem);
   font-weight: 900;
   letter-spacing: -0.04em;
-  line-height: 0.55;
+  line-height: 0.45;
 }
 
-h1 { font-size: clamp(2.25rem, 5vw, 4rem); }
-h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+h1 { font-size: clamp(2.25rem, 4vw, 4rem); }
+h2 { font-size: clamp(1.75rem, 3vw, 2.75rem); }
+h3 { font-size: clamp(1.5rem, 2.5vw, 2rem); }
 h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 
 p {
@@ -1274,6 +1274,8 @@ body.drawer-open .hamburger-inner::after {
 
 /* Word Reveal Animations */
 .reveal-word {
+  padding: 13px 0;
+  height: 46px;
   display: block;
   opacity: 0;
   transform: translateY(35px) skewY(2deg);
