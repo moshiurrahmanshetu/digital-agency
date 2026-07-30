@@ -1070,3 +1070,6 @@
         max-width: 1020px;
     }
 }
+section{
+  overflow: hidden !important;
+}
